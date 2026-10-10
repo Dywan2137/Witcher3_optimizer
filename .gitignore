@@ -16,3 +16,4 @@ issues.csv
 .idea/
 .vscode/
 .DS_Store
+plan*.csv

@@ -4,7 +4,7 @@ from __future__ import annotations
 import graphlib
 import re
 from collections import defaultdict
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from pathlib import Path
 
 import openpyxl
@@ -14,6 +14,8 @@ DATA_FILE = Path(__file__).resolve().parents[1] / 'Data' / 'Witcher_3_quests cop
 LOCATIONS = ['White Orchard', 'Visima', 'Velen', 'Novigrad', 'Skellige', 'Kear Morhen', 'Toussaint']
 STEP_EDGES = {'requires', 'unlocks', 'blocks', 'excludes', 'during'}   # step -> step
 PRECEDENCE = {'requires', 'unlocks'}
+
+SCOPES = {'base': 'podstawa', 'hos': 'Serce z kamienia', 'bw': 'Krew i wino'}   # scope name -> value of the DLC column
 
 HEADER_ALIASES = {
     'describtion': 'description', 'reward_xp': 'reward_xp', 'manditory': 'mandatory',
@@ -124,6 +126,27 @@ def load(path: Path = DATA_FILE) -> Dataset:
         level_table=load_table(wb, 'Level_table', 3),
         rel_types=set(types['type'].dropna().astype(str).str.strip()),
     )
+
+
+def restrict(ds: Dataset, scope) -> Dataset:
+    """Keep only the steps of the given scopes (names from SCOPES, e.g. ('base', 'hos')) and the edges between them.
+    A scope may only depend on itself or on earlier scopes: tests/test_data.py checks that base + hos never need Blood and Wine."""
+    steps = ds.steps[ds.steps['dlc'].isin({SCOPES[s] for s in scope})].reset_index(drop=True)
+    uids, blocks = set(steps['step_uid']), set(steps['block_id'].dropna())
+    tags = {t for ts in steps['path_tags'] for t in ts}
+    rel = ds.relationships
+    ends = {'in_block': (blocks, uids), 'excludes_path': (tags, tags)}
+    keep = [e.source in ends.get(e.type, (uids, uids))[0] and e.target in ends.get(e.type, (uids, uids))[1]
+            for e in rel.itertuples()]
+    return replace(ds, steps=steps, relationships=rel[keep].reset_index(drop=True))
+
+
+def edges_leaving_scope(ds: Dataset, scope) -> pd.DataFrame:
+    """Prerequisite edges (requires/unlocks) from a step outside `scope` into a step inside it: the in-scope step
+    would silently lose that prerequisite under restrict(). Should be empty."""
+    inside = set(restrict(ds, scope).steps['step_uid'])
+    r = ds.relationships
+    return r[r['type'].isin(PRECEDENCE) & r['target'].isin(inside) & ~r['source'].isin(inside)]
 
 
 # ----------------------------------------------------------------------------------------------
@@ -250,6 +273,33 @@ def validate(ds: Dataset) -> pd.DataFrame:
         add('warning', 'relationships_out_of_sync', loc_of[tgt], tgt, f'Block_ID {src} has no in_block edge')
     for src, tgt in sorted(have - want):
         add('warning', 'relationships_out_of_sync', loc_of.get(tgt, ''), tgt, f'in_block edge {src} but no Block_ID in the sheet')
+    # tags declared as alternatives of each other by a shared anchor step (quest-level choices such as KIWF11 / KIWF12)
+    alternatives = {t for tags in st['path_tags'] if len(tags) > 1 for t in tags}
+    for s in st.itertuples():                  # branch letters and path tags should go together
+        m = re.fullmatch(r'\d+([a-z]*)', str(s.step_id))
+        letter = m.group(1).removesuffix('o') if m else ''
+        if letter and not s.path_tags:
+            add('warning', 'branch_letter_without_path_tag', s.location, s.step_uid, 'alternative step has no Path_ID')
+        if len(s.path_tags) == 1 and not letter and s.path_tags[0] not in alternatives:
+            add('warning', 'path_tag_on_unlettered_step', s.location, s.step_uid, f'{s.path_tags[0]} on a step with no branch letter')
+    by_tag = defaultdict(list)
+    for s in st.itertuples():
+        if len(s.path_tags) == 1:
+            by_tag[s.path_tags[0]].append(s.step_uid)
+    for tag, members in by_tag.items():        # one tag should be one chain of steps, i.e. one decision
+        parent = {u: u for u in members}
+
+        def find(x):
+            while parent[x] != x:
+                x = parent[x]
+            return x
+        for u in members:
+            for p in req[u] | unl[u]:
+                if p in parent:
+                    parent[find(u)] = find(p)
+        if len({find(u) for u in members}) > 1:
+            add('warning', 'path_tag_reused', loc_of[members[0]], tag, 'tag covers separate chains: two decisions share one tag')
+
     paired = set(rel.loc[rel['type'] == 'excludes_path', 'source']) | set(rel.loc[rel['type'] == 'excludes_path', 'target'])
     for tag in sorted(path_tags - paired):
         first = st[st['path_tags'].apply(lambda t: tag in t)].iloc[0]

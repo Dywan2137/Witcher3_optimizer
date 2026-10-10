@@ -5,19 +5,25 @@ Usage: python -m witcher3.build_relationships [--file PATH]   (overwrites those 
 After  -> requires (one prerequisite) or unlocks (one row per alternative: 'S2a/b', 'A|B')
 Before -> blocks
 Block  -> in_block  (source = block tag, target = member step)
-Path   -> excludes_path between the tags of a quest, and between tags listed together in one cell
+Path   -> excludes_path between the path tags of one decision (same quest, same outside prerequisites), and
+          between tags listed together in one cell
 Name-based cells (Polish quest names) resolve to the last mandatory step of the quest.
 """
 import argparse
 import collections
 import itertools
 import re
+import sys
+from pathlib import Path
 
 import openpyxl
 import pandas as pd
 from openpyxl.styles import Font
 
-from .loader import DATA_FILE, LOCATIONS, load_steps
+if __package__ in (None, ''):  # run as a plain script (python witcher3/build_relationships.py, an IDE Run button)
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from witcher3.loader import DATA_FILE, LOCATIONS, load_steps
 
 PREFIX = {'White Orchard': 'WO', 'Visima': 'VZ', 'Velen': 'VEL', 'Novigrad': 'NOV',
           'Skellige': 'SKE', 'Kear Morhen': 'KM', 'Toussaint': 'TOU'}
@@ -61,7 +67,7 @@ def build(steps):
         return ids, bad
 
     edges = {loc: {} for loc in LOCATIONS}      # loc -> {(src, type, tgt): None} (ordered, deduplicated)
-    issues = []
+    issues, prereqs = [], collections.defaultdict(set)
 
     def add(loc, src, typ, tgt):
         if src != tgt:
@@ -73,17 +79,27 @@ def build(steps):
                 continue
             ids, bad = parse_ref(cell)
             issues += [(s.location, s.row, s.step_uid, col, str(cell), b) for b in bad]
+            if col == 'After':
+                prereqs[s.step_uid].update(ids)
             for i in ids:
                 add(s.location, i, typ or ('requires' if len(ids) == 1 else 'unlocks'), s.step_uid)
         if pd.notna(s.block_id):
             add(s.location, s.block_id, 'in_block', s.step_uid)
 
-    tags_by_quest = collections.defaultdict(set)
+    # Path tags are alternatives of one decision when the quest and the outside prerequisites of their steps match.
+    # (Pairing every tag of a quest would make two separate decisions in one quest exclude each other.)
+    by_tag = collections.defaultdict(list)
     for s in steps.itertuples():
-        tags_by_quest[(s.location, s.quest_id)].update(s.path_tags)
         for a, b in itertools.combinations(sorted(s.path_tags), 2):     # tags listed together in one cell
             add(s.location, a, 'excludes_path', b)
-    for (loc, _), tags in tags_by_quest.items():
+        if len(s.path_tags) == 1:
+            by_tag[s.path_tags[0]].append(s)
+    decisions = collections.defaultdict(list)
+    for tag, group in by_tag.items():
+        own = {s.step_uid for s in group}
+        outside = frozenset(p for s in group for p in prereqs[s.step_uid] if p not in own)
+        decisions[(group[0].location, group[0].quest_id, outside)].append(tag)
+    for (loc, _, _), tags in decisions.items():
         for a, b in itertools.combinations(sorted(tags), 2):
             add(loc, a, 'excludes_path', b)
     return edges, issues

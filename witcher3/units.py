@@ -222,6 +222,43 @@ class Plan:
                 if outside and len(inside & set(g.tags)) == 1:
                     notes.append(f'block {tag}: entering it forces {sorted(inside & set(g.tags))[0]}; '
                                  f'{", ".join(outside)} sit outside the block')
+        return notes + self.circular_blocks()
+
+    def circular_blocks(self) -> list:
+        """Blocks that can never be completed in place: a step they need from outside depends on one of their own
+        members (e.g. a sealed Baron questline that needs a Ciri flashback, which itself starts after a block step)."""
+        import graphlib
+        m = self.model
+        ts = graphlib.TopologicalSorter()
+        for i in range(len(m.uids)):
+            ts.add(i, *(m.req[i] + m.unl[i]))
+        try:
+            order = list(ts.static_order())
+        except graphlib.CycleError:
+            return ['precedence graph has a cycle (see python main.py validation)']
+        anc = {}
+        for i in order:                                          # ancestors via requires/unlocks, parents first
+            anc[i] = set().union(*((anc[p] | {p}) for p in m.req[i] + m.unl[i]))
+        notes = []
+        for tag, b in self.blocks.items():
+            members = set(b.members)
+            inside = {i for i in range(len(m.uids)) if m.quest[i] in b.quests and m.block[i] is None}
+            need = set().union(*(anc[i] for i in members)) if members else set()
+            closure = members | (inside & need)
+
+            def depends_on_block(p):
+                return sorted(members & (anc[p] | {p}))
+
+            for i in sorted(closure):
+                outside = [p for p in m.req[i] if p not in closure]
+                alts = [p for p in m.unl[i] if p not in closure]
+                if m.unl[i] and not any(p in closure for p in m.unl[i]) and alts and all(depends_on_block(p) for p in alts):
+                    outside.append(alts[0])
+                for p in outside:
+                    via = depends_on_block(p)
+                    if via:
+                        notes.append(f'block {tag}: {m.uids[i]} needs {m.uids[p]}, which itself needs {m.uids[via[0]]} '
+                                     f'inside the block, so the block can never be completed')
         return notes
 
     def stats(self) -> dict:
