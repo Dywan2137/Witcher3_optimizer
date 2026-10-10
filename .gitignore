@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# Excel lock/temp files (created while the workbook is open)
+~$*
+.~lock.*
+
+# local outputs and editor files
+issues.csv
+*.log
+.idea/
+.vscode/
+.DS_Store
