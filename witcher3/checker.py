@@ -63,7 +63,7 @@ def check(ds: Dataset, order: list[str]):
         tags = st[u].path_tags
         if not tags:
             continue
-        ex = set().union(*(pexcl[c] for c in tags_chosen_before(p)), set())
+        ex = set().union(*(pexcl[c] for c in tags_chosen_before(p)))
         if all(t in ex for t in tags):
             problems.append(f'{p}: {u} is on an excluded path')
 
@@ -85,7 +85,7 @@ def check(ds: Dataset, order: list[str]):
                 return True
             r = st[u]
             if r.path_tags:
-                ex = set().union(*(pexcl[c] for c in tags_chosen_before(p + 1)), set())
+                ex = set().union(*(pexcl[c] for c in tags_chosen_before(p + 1)))
                 return all(t in ex for t in r.path_tags)
             return False
 

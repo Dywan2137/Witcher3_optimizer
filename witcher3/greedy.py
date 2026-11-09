@@ -6,11 +6,12 @@ legal actions (free steps and block units) with these rules, best first:
   1. Delay cutoffs: an action that kills still-valuable steps that could be saved first (a `blocks` edge, e.g. leaving
      White Orchard, Isle of Mists) is only taken when nothing safer is left, so everything it would destroy is played
      first. Not applied once the action itself is past its deadline (`urgent`): delaying it would cost more.
-  2. Hearts of Stone pays most when the player is under-leveled (peak 150% at +5), so while the player is more than
-     5 levels below a Hearts of Stone step's recommended level the action waits.
+  2. Hearts of Stone pays most when the player is under-leveled (peak 150% at +5..+9), so while the player is more
+     than 9 levels below a Hearts of Stone step's recommended level the action waits.
   3. Earliest deadline first: the deadline of a step is the last level at which it still pays its full rate
-     (base game / Blood and Wine: recommended level + 10, the Death March cliff; Hearts of Stone: its recommended
-     level). Steps without a recommended level never lose value and go last.
+     (base game / Blood and Wine: recommended level + 9, the last level before the Death March cliff; Hearts of
+     Stone: its recommended level). Steps without a recommended level never lose value and go last.
+  Both levels in 2 and 3 are read from the Reward_rules sheet (rule_offsets), not hardcoded.
   4. Larger XP first; the highest-paying variant of a block when everything else ties.
 
 greedy(plan) returns the policy. `noise` > 0 perturbs the deadlines (used by the randomized restarts).
@@ -30,42 +31,46 @@ if __package__ in (None, ''):  # run as a plain script (python witcher3/greedy.p
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from witcher3.baselines import play, random_policy, story_order, summarize_run, upper_bound
-from witcher3.loader import DATA_FILE, load, restrict
+from witcher3.cli import add_data_args, load_plan
 from witcher3.simulator import Model, State, is_dead
 from witcher3.units import Action, Plan
 
 FOREVER = 10 ** 6
-HOS_RULE = 'hos_gradual'
+
+
+def rule_offsets(m: Model, rule_type: str) -> tuple:
+    """Read from the Reward_rules sheet, as offsets from the recommended level (level = rec + offset):
+    deadline: last level that still pays at least the at-level (gap 0) rate (base_cliff: gap -9 -> rec + 9);
+    earliest: first level of the peak multiplier (hos_gradual: 150% from gap 9 down to gap 5, so rec - 9). Waiting
+    only until rec - 5 (the end of the window) was tried: about 1.2k XP worse on base + hos and on all scopes."""
+    gaps = range(-60, 61)
+    mult = {g: m.multiplier(rule_type, g) for g in gaps}
+    deadline = -min(g for g in gaps if g <= 0 and mult[g] >= mult[0])
+    peak = max(mult.values())
+    earliest = -max((g for g in gaps if g >= 0 and mult[g] == peak), default=0) if peak > mult[0] else -FOREVER
+    return deadline, earliest
 
 
 def step_tables(m: Model):
     """deadline[i]: last level at which step i pays its full rate; earliest[i]: level before which it should wait."""
+    offsets = {r: rule_offsets(m, r) for r in m.rules}
     deadline, earliest = [], []
     for i in range(len(m.uids)):
-        if not m.has_level[i] or m.rule[i] == 'exempt_full':
+        if not m.has_level[i] or len(set(m.rules[m.rule[i]][2])) == 1:      # one multiplier at every gap: never decays
             deadline.append(FOREVER)
             earliest.append(-FOREVER)
-        elif m.rule[i] == HOS_RULE:
-            deadline.append(m.rec[i])
-            earliest.append(m.rec[i] - 5)
         else:
-            deadline.append(m.rec[i] + 10)
-            earliest.append(-FOREVER)
+            d, e = offsets[m.rule[i]]
+            deadline.append(m.rec[i] + d)
+            earliest.append(m.rec[i] + e if e != -FOREVER else -FOREVER)
     return deadline, earliest
 
 
 def descendants(m: Model) -> list:
     """desc[i]: bitmask of the steps that need step i, directly or through a chain of prerequisites."""
-    import graphlib
-    children = [[] for _ in range(len(m.uids))]
-    ts = graphlib.TopologicalSorter()
-    for i in range(len(m.uids)):
-        ts.add(i, *(m.req[i] + m.unl[i]))
-        for p in m.req[i] + m.unl[i]:
-            children[p].append(i)
     desc = [0] * len(m.uids)
-    for i in reversed(list(ts.static_order())):
-        for c in children[i]:
+    for i in reversed(m.topo):                              # children before parents
+        for c in m.children[i]:
             desc[i] |= (1 << c) | desc[c]
     return desc
 
@@ -73,16 +78,9 @@ def descendants(m: Model) -> list:
 def effective_deadlines(m: Model, deadline: list) -> list:
     """A step is due when the earliest thing that needs it is due: zero-XP gates (e.g. Brothers in Arms) inherit the
     deadline of the high-value chain behind them. Only steps that pay XP carry a deadline of their own."""
-    import graphlib
-    children = [[] for _ in range(len(m.uids))]
-    ts = graphlib.TopologicalSorter()
-    for i in range(len(m.uids)):
-        ts.add(i, *(m.req[i] + m.unl[i]))
-        for p in m.req[i] + m.unl[i]:
-            children[p].append(i)
     eff = [deadline[i] if m.xp[i] > 0 else FOREVER for i in range(len(m.uids))]
-    for i in reversed(list(ts.static_order())):             # children before parents
-        for c in children[i]:
+    for i in reversed(m.topo):
+        for c in m.children[i]:
             eff[i] = min(eff[i], eff[c])
     return eff
 
@@ -172,8 +170,7 @@ def report(plan: Plan, label: str, run) -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split('\n\n')[0])
-    ap.add_argument('--file', default=DATA_FILE)
-    ap.add_argument('--scope', default='base,hos', help='comma separated: base, hos, bw')
+    add_data_args(ap, 'base,hos')
     ap.add_argument('--random', type=int, default=5)
     ap.add_argument('--restarts', type=int, default=0, help='randomized greedy restarts (0 = skip)')
     ap.add_argument('--noise', type=float, default=4.0, help='deadline perturbation, in levels, for the restarts')
@@ -182,8 +179,7 @@ def main() -> None:
     ap.add_argument('--ablate', action='store_true', help='also run the greedy with each rule switched off')
     args = ap.parse_args()
 
-    ds = restrict(load(args.file), args.scope.split(','))
-    plan = Plan(Model(ds))
+    _, ds, plan = load_plan(args)
     ub = upper_bound(plan)
     print(f'scope {args.scope}: {len(plan.model.uids)} steps')
     print(f'upper bound       : xp {ub["xp"]:>9,.0f}  level {ub["level"]}   (loose: best multiplier everywhere, no cutoffs)')
@@ -193,16 +189,16 @@ def main() -> None:
         runs = [play(plan, random_policy(rng)) for _ in range(args.random)]
         print(f'random x{args.random:<3}       : level {min(r.level for r in runs)}-{max(r.level for r in runs)}, '
               f'xp {min(r.xp for r in runs):,.0f}-{max(r.xp for r in runs):,.0f}')
-    report(plan, 'greedy', play(plan, greedy(plan)))
+    plain = play(plan, greedy(plan))
+    report(plan, 'greedy', plain)
     if args.ablate:
         report(plan, ' - no cutoff guard', play(plan, greedy(plan, cutoff_guard=False)))
         report(plan, ' - no HoS wait', play(plan, greedy(plan, hos_wait=False)))
         report(plan, ' - neither', play(plan, greedy(plan, cutoff_guard=False, hos_wait=False)))
+    best = plain
     if args.restarts:
         best = best_of(plan, args.restarts, args.noise, configs=CONFIGS)
         report(plan, f'best of {args.restarts}x{len(CONFIGS)} runs', best)
-    else:
-        best = play(plan, greedy(plan))
     if args.steps or args.csv:
         table = steps_table(ds, best)
         if args.csv:

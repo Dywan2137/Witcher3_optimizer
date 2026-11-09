@@ -2,18 +2,13 @@
 import random
 import unittest
 
-from tests.helpers import real, tiny
+from tests.helpers import plan_for, real
 from witcher3.baselines import play, random_policy, story_order, summarize_run, upper_bound
 from witcher3.checker import check
 from witcher3.simulator import Model
 from witcher3.units import Plan
 
 REAL = real()
-
-
-def plan_for(steps, rels):
-    ds = tiny(steps, rels)
-    return ds, Plan(Model(ds))
 
 
 class UpperBound(unittest.TestCase):

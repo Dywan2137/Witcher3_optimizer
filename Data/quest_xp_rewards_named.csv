@@ -1,0 +1,899 @@
+﻿source;reward_name;quest_name;quest_level;base_xp;gold
+Blood and Wine;q701_summons_reward;The Beast of Toussaint;34;50;0
+Blood and Wine;q701_cyclops_reward;The Beast of Toussaint;35;450;0
+Blood and Wine;q701_bruxa_recognised;The Beast of Toussaint;35;150;0
+Blood and Wine;q701_bruxa_killed;The Beast of Toussaint;35;500;0
+Blood and Wine;q701_coin_pouch_reward;The Beast of Toussaint;35;150;0
+Blood and Wine;q701_sharley_killed;The Beast of Toussaint;35;300;0
+Blood and Wine;q701_cb_deed_reward;The Beast of Toussaint;35;100;0
+Blood and Wine;q701_horse_item_reward;The Beast of Toussaint;35;150;0
+Blood and Wine;q701_swan_item_reward;The Beast of Toussaint;35;0;0
+Blood and Wine;q701_swan_item_reward_2nd_half;The Beast of Toussaint;35;50;0
+Blood and Wine;q701_swan_item_reward_just_xp;The Beast of Toussaint;35;150;0
+Blood and Wine;q701_riddle_solved;The Beast of Toussaint;35;200;0
+Blood and Wine;q701_done_reward;The Beast of Toussaint;35;1000;0
+Blood and Wine;q702_01a_dettlaff_defeated;Blood Run / La Cage au Fou / Where Children Toil, Toys Waste Away / Amidst the Mill's Grist / The Hunger Game;36;1000;0
+Blood and Wine;q702_01b_geralt_defeated;Blood Run / La Cage au Fou / Where Children Toil, Toys Waste Away / Amidst the Mill's Grist / The Hunger Game;36;600;0
+Blood and Wine;q702_02_regis_met;Blood Run / La Cage au Fou / Where Children Toil, Toys Waste Away / Amidst the Mill's Grist / The Hunger Game;37;450;0
+Blood and Wine;q702_02a_wight_bestiary_read;Blood Run / La Cage au Fou / Where Children Toil, Toys Waste Away / Amidst the Mill's Grist / The Hunger Game;37;100;0
+Blood and Wine;q702_02b_kikimora_eggs_destroyed;Blood Run / La Cage au Fou / Where Children Toil, Toys Waste Away / Amidst the Mill's Grist / The Hunger Game;37;100;0
+Blood and Wine;q702_03_wight_curse_found;Blood Run / La Cage au Fou / Where Children Toil, Toys Waste Away / Amidst the Mill's Grist / The Hunger Game;39;300;0
+Blood and Wine;q702_03a_wight_killed;Blood Run / La Cage au Fou / Where Children Toil, Toys Waste Away / Amidst the Mill's Grist / The Hunger Game;39;650;0
+Blood and Wine;q702_03b_wight_disenchanted;Blood Run / La Cage au Fou / Where Children Toil, Toys Waste Away / Amidst the Mill's Grist / The Hunger Game;39;1000;0
+Blood and Wine;q702_04_wight_brew_obtained;Blood Run / La Cage au Fou / Where Children Toil, Toys Waste Away / Amidst the Mill's Grist / The Hunger Game;39;1000;0
+Blood and Wine;q702_05_regis_met_again;Blood Run / La Cage au Fou / Where Children Toil, Toys Waste Away / Amidst the Mill's Grist / The Hunger Game;41;400;0
+Blood and Wine;q702_06_regis_sacrifice_done;Blood Run / La Cage au Fou / Where Children Toil, Toys Waste Away / Amidst the Mill's Grist / The Hunger Game;41;1000;0
+Blood and Wine;q702_07_mill_examined;Blood Run / La Cage au Fou / Where Children Toil, Toys Waste Away / Amidst the Mill's Grist / The Hunger Game;42;400;0
+Blood and Wine;q702_08a_bootblack_fight_won;Blood Run / La Cage au Fou / Where Children Toil, Toys Waste Away / Amidst the Mill's Grist / The Hunger Game;42;600;0
+Blood and Wine;q702_08b_bootblack_fight_lost;Blood Run / La Cage au Fou / Where Children Toil, Toys Waste Away / Amidst the Mill's Grist / The Hunger Game;42;400;0
+Blood and Wine;q702_09_toy_storage_found;Blood Run / La Cage au Fou / Where Children Toil, Toys Waste Away / Amidst the Mill's Grist / The Hunger Game;42;600;0
+Blood and Wine;q702_10_done;Blood Run / La Cage au Fou / Where Children Toil, Toys Waste Away / Amidst the Mill's Grist / The Hunger Game;42;1000;0
+Blood and Wine;q703_travelling_family_saved;Capture the Castle / The Man from Cintra / Wine is Sacred;42;450;0
+Blood and Wine;q703_fake_wine_found;Capture the Castle / The Man from Cintra / Wine is Sacred;42;600;0
+Blood and Wine;q703_exchange_point_done;Capture the Castle / The Man from Cintra / Wine is Sacred;42;1500;0
+Blood and Wine;q703_mandragora_done;Capture the Castle / The Man from Cintra / Wine is Sacred;43;1500;0
+Blood and Wine;q703_dun_tynne_done;Capture the Castle / The Man from Cintra / Wine is Sacred;47;1500;0
+Blood and Wine;q703_heart_of_toussaint_sketch_reward;Capture the Castle / The Man from Cintra / Wine is Sacred;36;0;0
+Blood and Wine;q703_doublet_from_anna_henrietta;Capture the Castle / The Man from Cintra / Wine is Sacred;36;0;0
+Blood and Wine;q703_dun_tynne_arena_01;Capture the Castle / The Man from Cintra / Wine is Sacred;47;500;0
+Blood and Wine;q703_dun_tynne_arena_02;Capture the Castle / The Man from Cintra / Wine is Sacred;47;500;0
+Blood and Wine;q703_dun_tynne_arena_03;Capture the Castle / The Man from Cintra / Wine is Sacred;47;500;0
+Blood and Wine;q704_ft_enter_fairytale;Tesham Mutna / Duck, Duck, Goosed! / The Night of Long Fangs / Blood Simple / What Lies Unseen;47;250;0
+Blood and Wine;q704_ft_boy_who_cries_wolf;Tesham Mutna / Duck, Duck, Goosed! / The Night of Long Fangs / Blood Simple / What Lies Unseen;47;500;0
+Blood and Wine;q704_ft_all_beans;Tesham Mutna / Duck, Duck, Goosed! / The Night of Long Fangs / Blood Simple / What Lies Unseen;47;800;0
+Blood and Wine;q704_ft_done;Tesham Mutna / Duck, Duck, Goosed! / The Night of Long Fangs / Blood Simple / What Lies Unseen;47;800;0
+Blood and Wine;q704a_01_intro_done;Tesham Mutna / Duck, Duck, Goosed! / The Night of Long Fangs / Blood Simple / What Lies Unseen;47;200;0
+Blood and Wine;q704a_02_diva_reached;Tesham Mutna / Duck, Duck, Goosed! / The Night of Long Fangs / Blood Simple / What Lies Unseen;47;200;0
+Blood and Wine;q704a_02b_damien_found;Tesham Mutna / Duck, Duck, Goosed! / The Night of Long Fangs / Blood Simple / What Lies Unseen;47;200;0
+Blood and Wine;q704a_03_garkain_investigated;Tesham Mutna / Duck, Duck, Goosed! / The Night of Long Fangs / Blood Simple / What Lies Unseen;47;100;0
+Blood and Wine;q704a_03_garkain_killed;Tesham Mutna / Duck, Duck, Goosed! / The Night of Long Fangs / Blood Simple / What Lies Unseen;47;200;0
+Blood and Wine;q704a_04_monster_hunt_done;Tesham Mutna / Duck, Duck, Goosed! / The Night of Long Fangs / Blood Simple / What Lies Unseen;47;800;0
+Blood and Wine;q704a_05_elder_one_met;Tesham Mutna / Duck, Duck, Goosed! / The Night of Long Fangs / Blood Simple / What Lies Unseen;47;300;0
+Blood and Wine;q704a_06_gift_found;Tesham Mutna / Duck, Duck, Goosed! / The Night of Long Fangs / Blood Simple / What Lies Unseen;47;200;0
+Blood and Wine;q704a_07_puzzle_done;Tesham Mutna / Duck, Duck, Goosed! / The Night of Long Fangs / Blood Simple / What Lies Unseen;47;200;0
+Blood and Wine;q704a_08_gravity_cave_done;Tesham Mutna / Duck, Duck, Goosed! / The Night of Long Fangs / Blood Simple / What Lies Unseen;47;800;0
+Blood and Wine;q704a_09_dettlaff_dealt_with;Tesham Mutna / Duck, Duck, Goosed! / The Night of Long Fangs / Blood Simple / What Lies Unseen;49;1000;0
+Blood and Wine;q705_found_letter;Pomp and Strange Circumstance / Be It Ever So Humble… / Burlap is the New Stripe / The Perks of Being a Jailbird;49;50;0
+Blood and Wine;q705_ah_lives;Pomp and Strange Circumstance / Be It Ever So Humble… / Burlap is the New Stripe / The Perks of Being a Jailbird;49;200;0
+Blood and Wine;q705_beast_slayer;Pomp and Strange Circumstance / Be It Ever So Humble… / Burlap is the New Stripe / The Perks of Being a Jailbird;49;200;5000
+Blood and Wine;q705_prison_stash;Pomp and Strange Circumstance / Be It Ever So Humble… / Burlap is the New Stripe / The Perks of Being a Jailbird;49;50;0
+Blood and Wine;sq701_shooting_range;The Warble of a Smitten Knight;35;100;0
+Blood and Wine;sq701_race;The Warble of a Smitten Knight;35;100;0
+Blood and Wine;sq701_meadow;The Warble of a Smitten Knight;35;50;0
+Blood and Wine;sq701_shield_wall;The Warble of a Smitten Knight;35;100;0
+Blood and Wine;sq701_champion;The Warble of a Smitten Knight;35;250;200
+Blood and Wine;sq701_reward;The Warble of a Smitten Knight;35;250;500
+Blood and Wine;sq701_novigrad;The Warble of a Smitten Knight;35;50;0
+Blood and Wine;sq703_safari;Big Game Hunter;37;150;200
+Blood and Wine;sq703_picture;Big Game Hunter;37;100;0
+Blood and Wine;sq703_completed;Big Game Hunter;37;200;0
+Blood and Wine;cg700_wager_sword;Gwent: Never Fear, Skellige's Here / Gwent: To Everything - Turn, Turn, Tournament!;40;100;0
+Blood and Wine;cg700_tournament_win;Gwent: Never Fear, Skellige's Here / Gwent: To Everything - Turn, Turn, Tournament!;40;150;500
+Blood and Wine;cg700_tournament_win_alternate;Gwent: Never Fear, Skellige's Here / Gwent: To Everything - Turn, Turn, Tournament!;40;250;1000
+Blood and Wine;cg700_tournament_card;Gwent: Never Fear, Skellige's Here / Gwent: To Everything - Turn, Turn, Tournament!;40;100;0
+Blood and Wine;cg700_tournament_lose;Gwent: Never Fear, Skellige's Here / Gwent: To Everything - Turn, Turn, Tournament!;40;50;100
+Blood and Wine;cg700_generic_gwint_reward;Gwent: Never Fear, Skellige's Here / Gwent: To Everything - Turn, Turn, Tournament!;1;0;50
+Blood and Wine;q704_ft_goose;Tesham Mutna / Duck, Duck, Goosed! / The Night of Long Fangs / Blood Simple / What Lies Unseen;47;250;0
+Blood and Wine;mh701_reward;Contract: The Tufo Monster;48;400;500
+Blood and Wine;mh701_bonus_reward;Contract: The Tufo Monster;48;200;100
+Blood and Wine;mh701_wife_reward;Contract: The Tufo Monster;48;200;120
+Blood and Wine;mh701_locket_owner_reward;Contract: The Tufo Monster;48;50;100
+Blood and Wine;mq7001_QG_reward;Till Death Do You Part;36;100;50
+Blood and Wine;mq7001_QG_bonus;Till Death Do You Part;36;50;100
+Blood and Wine;mq7001_gwent;Till Death Do You Part;36;75;0
+Blood and Wine;mq7001_louis_reward;Till Death Do You Part;36;75;0
+Blood and Wine;mq7002_fiancee_reward;Feet as Cold as Ice;45;200;300
+Blood and Wine;mq7002_fiancee_reward_no_money;Feet as Cold as Ice;45;200;0
+Blood and Wine;mq7002_knight_alive_reward;Feet as Cold as Ice;45;200;150
+Blood and Wine;mq7002_knight_dead_reward;Feet as Cold as Ice;45;100;0
+Blood and Wine;mq7004_reward;A Knight's Tales;40;150;100
+Blood and Wine;mq7004_reward_no_money;A Knight's Tales;40;150;0
+Blood and Wine;mq7004_storybook_reward;A Knight's Tales;40;50;0
+Blood and Wine;mq7004_scarf_reward;A Knight's Tales;40;50;0
+Blood and Wine;mq7005_baroness_reward;;15;100;0
+Blood and Wine;mq7005_duchess_normal;;15;500;0
+Blood and Wine;mq7005_duchess_half;;15;500;0
+Blood and Wine;mq7006_aerondight;There Can Be Only One;46;300;0
+Blood and Wine;mq7006_holy_stones_reward;There Can Be Only One;46;50;0
+Blood and Wine;mq7007_gargoyles_reward;Extreme Cosplay;40;250;300
+Blood and Wine;mq7009_found_paint;A Portrait of the Witcher as an Old Man;43;100;0
+Blood and Wine;mq7009_killed_griffon;A Portrait of the Witcher as an Old Man;43;250;0
+Blood and Wine;mq7009_geralt_posing;A Portrait of the Witcher as an Old Man;43;150;300
+Blood and Wine;mq7010_investigation_done;Contract: Bovine Blues;38;50;0
+Blood and Wine;mq7010_nest_found;Contract: Bovine Blues;38;150;0
+Blood and Wine;mq7010_reward;Contract: Bovine Blues;38;200;300
+Blood and Wine;mq7010_nest_destroyed;Contract: Bovine Blues;38;100;0
+Blood and Wine;mq7011_gwent;Paperchase;36;50;25
+Blood and Wine;mq7011_fistfight;Paperchase;36;100;0
+Blood and Wine;mq7011_bank_done;Paperchase;36;200;0
+Blood and Wine;mq7011_peaceful_bank;Paperchase;36;0;500
+Blood and Wine;mq7011_angry_bank;Paperchase;36;0;200
+Blood and Wine;mq7011_present_given;Paperchase;36;50;0
+Blood and Wine;mq7015_caretaker_reward;Goodness, Gracious, Great Balls of Granite!;36;100;0
+Blood and Wine;mq7015_hugues_reward;Goodness, Gracious, Great Balls of Granite!;36;100;50
+Blood and Wine;mq7017_hermit_reward;Equine Phantoms;44;0;0
+Blood and Wine;mq7017_potion_reward;Equine Phantoms;44;0;0
+Blood and Wine;mq7017_hermit_reward_xp;Equine Phantoms;44;150;0
+Blood and Wine;mq7018_count_side;Mutual of Beauclair's Wild Kingdom;46;200;350
+Blood and Wine;mq7018_hunter_side;Mutual of Beauclair's Wild Kingdom;46;200;400
+Blood and Wine;mq7018_count_thanks;Mutual of Beauclair's Wild Kingdom;46;50;50
+Blood and Wine;mq7020_le_papillion_fake_reward;Of Sheers and a Witcher I Sing;43;0;120
+Blood and Wine;mq7020_final;Of Sheers and a Witcher I Sing;43;150;0
+Blood and Wine;mq7020_jeans_reward;Of Sheers and a Witcher I Sing;43;0;150
+Blood and Wine;mq7021_whole_treasure;Father Knows Worst;37;150;300
+Blood and Wine;mq7021_33_treasure;Father Knows Worst;37;150;100
+Blood and Wine;mq7021_xp_only;Father Knows Worst;37;150;0
+Blood and Wine;mq7022_rafters_reward;;30;0;0
+Blood and Wine;mq7023_investigated_grave;Turn and Face the Strange;35;50;0
+Blood and Wine;mq7023_found_ruins;Turn and Face the Strange;35;50;0
+Blood and Wine;mq7023_killed_panthers;Turn and Face the Strange;35;100;0
+Blood and Wine;mq7023_killed_gargoyle;Turn and Face the Strange;35;100;0
+Blood and Wine;mq7023_found_lab;Turn and Face the Strange;35;100;0
+Blood and Wine;mq7023_found_all_crystals;Turn and Face the Strange;35;100;0
+Blood and Wine;mq7023_killed_pale_widows;Turn and Face the Strange;35;100;0
+Blood and Wine;mq7023_completed;Turn and Face the Strange;35;200;0
+Blood and Wine;mq7024_exp_reward;No Place Like Home;35;200;0
+Blood and Wine;ff701_gb_reward;Raging Wolf / Fists of Fury: Toussaint;36;100;100
+Blood and Wine;ff701_mnt_reward;Raging Wolf / Fists of Fury: Toussaint;36;100;100
+Blood and Wine;ff701_br_reward;Raging Wolf / Fists of Fury: Toussaint;36;100;100
+Blood and Wine;ff701_master_reward;Raging Wolf / Fists of Fury: Toussaint;40;200;150
+Blood and Wine;mq7019_picnic_reward;;30;100;0
+Blood and Wine;th700_first_diagram;The Words of the Prophets Are Written on Sarcophagi / Scavenger Hunt: Grandmaster Manticore Gear / Master Master Master Master!;40;50;0
+Blood and Wine;th700_second_diagram;The Words of the Prophets Are Written on Sarcophagi / Scavenger Hunt: Grandmaster Manticore Gear / Master Master Master Master!;40;50;0
+Blood and Wine;th700_third_diagram;The Words of the Prophets Are Written on Sarcophagi / Scavenger Hunt: Grandmaster Manticore Gear / Master Master Master Master!;40;50;0
+Blood and Wine;th700_fourth_diagram;The Words of the Prophets Are Written on Sarcophagi / Scavenger Hunt: Grandmaster Manticore Gear / Master Master Master Master!;40;50;0
+Blood and Wine;th700_fifth_sixth_diagram;The Words of the Prophets Are Written on Sarcophagi / Scavenger Hunt: Grandmaster Manticore Gear / Master Master Master Master!;40;100;0
+Blood and Wine;th700_preacher_bones;The Words of the Prophets Are Written on Sarcophagi / Scavenger Hunt: Grandmaster Manticore Gear / Master Master Master Master!;40;150;0
+Blood and Wine;th701_wolf_first_stash;Scavenger Hunt: Grandmaster Ursine Gear / Scavenger Hunt: Grandmaster Feline Gear / Scavenger Hunt: Grandmaster Griffin Gear / Scavenger Hunt: Grandmaster Wolven Gear;40;150;0
+Blood and Wine;th701_wolf_second_stash;Scavenger Hunt: Grandmaster Ursine Gear / Scavenger Hunt: Grandmaster Feline Gear / Scavenger Hunt: Grandmaster Griffin Gear / Scavenger Hunt: Grandmaster Wolven Gear;40;150;0
+Blood and Wine;th701_griffin_first_stash;Scavenger Hunt: Grandmaster Ursine Gear / Scavenger Hunt: Grandmaster Feline Gear / Scavenger Hunt: Grandmaster Griffin Gear / Scavenger Hunt: Grandmaster Wolven Gear;40;150;0
+Blood and Wine;th701_griffin_second_stash;Scavenger Hunt: Grandmaster Ursine Gear / Scavenger Hunt: Grandmaster Feline Gear / Scavenger Hunt: Grandmaster Griffin Gear / Scavenger Hunt: Grandmaster Wolven Gear;40;150;0
+Blood and Wine;th701_bear_first_stash;Scavenger Hunt: Grandmaster Ursine Gear / Scavenger Hunt: Grandmaster Feline Gear / Scavenger Hunt: Grandmaster Griffin Gear / Scavenger Hunt: Grandmaster Wolven Gear;40;150;0
+Blood and Wine;th701_bear_second_stash;Scavenger Hunt: Grandmaster Ursine Gear / Scavenger Hunt: Grandmaster Feline Gear / Scavenger Hunt: Grandmaster Griffin Gear / Scavenger Hunt: Grandmaster Wolven Gear;40;150;0
+Blood and Wine;th701_cat_first_stash;Scavenger Hunt: Grandmaster Ursine Gear / Scavenger Hunt: Grandmaster Feline Gear / Scavenger Hunt: Grandmaster Griffin Gear / Scavenger Hunt: Grandmaster Wolven Gear;40;50;0
+Blood and Wine;th701_cat_second_stash;Scavenger Hunt: Grandmaster Ursine Gear / Scavenger Hunt: Grandmaster Feline Gear / Scavenger Hunt: Grandmaster Griffin Gear / Scavenger Hunt: Grandmaster Wolven Gear;40;100;0
+Blood and Wine;th701_cat_third_stash;Scavenger Hunt: Grandmaster Ursine Gear / Scavenger Hunt: Grandmaster Feline Gear / Scavenger Hunt: Grandmaster Griffin Gear / Scavenger Hunt: Grandmaster Wolven Gear;40;150;0
+Blood and Wine;th701_zdravko_reported;Scavenger Hunt: Grandmaster Ursine Gear / Scavenger Hunt: Grandmaster Feline Gear / Scavenger Hunt: Grandmaster Griffin Gear / Scavenger Hunt: Grandmaster Wolven Gear;40;150;500
+Blood and Wine;lw_ww_coronata_reward;;37;100;700
+Blood and Wine;lw_ww_vermentino_reward;;37;100;700
+Blood and Wine;lw_ww_belgaard_reward;;39;150;900
+Blood and Wine;lw_ww_secret_path_done;;42;250;0
+Blood and Wine;lw_ww_secret_path_bulbs_destroyed;;42;100;0
+Blood and Wine;lw_plegmund_reward;;40;150;800
+Blood and Wine;poi_car_a_04_reward;;42;150;200
+Blood and Wine;poi_gor_b_02_reward;;42;150;200
+Blood and Wine;poi_vin_a_01_reward;;39;100;150
+Blood and Wine;poi_vin_b_03_reward;;39;100;150
+Blood and Wine;poi_dun_b_03_reward;;39;100;150
+Blood and Wine;camm_final_reward;;47;300;0
+Blood and Wine;EA_BeauclairWelcomeTo;;0;0;0
+Blood and Wine;EA_HeroOfBeauclair;;0;0;0
+Blood and Wine;EA_BeauclairMostWanted;;0;0;0
+Blood and Wine;EA_ChampionOfBeauclair;;0;0;0
+Blood and Wine;EA_LikeAVirgin;;0;0;0
+Blood and Wine;EA_HomeSweetHome;;0;0;0
+Blood and Wine;EA_TurnedEveryStone;;0;0;0
+Blood and Wine;EA_GotToHaveThemAll;;0;0;0
+Blood and Wine;EA_BloodAndWine;;0;0;0
+Blood and Wine;EA_Goliath;;0;0;0
+dlc12;mq2052_monsters_killed;Contract: Skellige's Most Wanted;0;100;0
+dlc12;mq2052_godlings_reward;Contract: Skellige's Most Wanted;0;200;0
+dlc15;mq1058_child_found;Contract: The Beast of Honorton / Where the Cat and Wolf Play... / Take What You Want;25;50;0
+dlc15;mq1058_witcher_killed;Contract: The Beast of Honorton / Where the Cat and Wolf Play... / Take What You Want;25;200;0
+dlc15;mq1058_witcher_spared;Contract: The Beast of Honorton / Where the Cat and Wolf Play... / Take What You Want;25;200;0
+dlc15;mq1058_lynx_stash;Contract: The Beast of Honorton / Where the Cat and Wolf Play... / Take What You Want;25;50;250
+dlc3;mh201_investigation;Contract: Missing Miners;0;25;0
+dlc3;mh201_troll_killed;Contract: Missing Miners;0;200;271
+dlc3;mh201_troll_left_alone;Contract: Missing Miners;0;100;50
+dlc3;mh201_reward_from_troll;Contract: Missing Miners;0;25;50
+Hearts of Stone;ach_TheToadPrince;;0;0;0
+Hearts of Stone;ach_PartyAnimal;;0;0;0
+Hearts of Stone;ach_Auctioneer;;0;0;0
+Hearts of Stone;ach_TheCompletePicture;;0;0;0
+Hearts of Stone;ach_HeartsOfStone;;0;0;0
+Hearts of Stone;ach_DivineWhip;;0;0;0
+Hearts of Stone;ach_KillEtherals;;0;0;0
+Hearts of Stone;cg600_shani;;0;0;0
+Hearts of Stone;cg600_olgierd;;0;0;0
+Hearts of Stone;q601_won_fist_fight;;32;150;0
+Hearts of Stone;q601_lost_fist_fight;;32;0;0
+Hearts of Stone;q601_olgierd_met;;32;150;0
+Hearts of Stone;q601_found_shani;;32;200;0
+Hearts of Stone;q601_toad_killed;;32;600;0
+Hearts of Stone;q601_ofir_dialogue_choice;;32;200;0
+Hearts of Stone;q601_ofir_killed;;32;200;0
+Hearts of Stone;q601_meet_with_mirror;;32;300;0
+Hearts of Stone;q601_reward_from_olgierd;;32;400;450
+Hearts of Stone;q602_shani_met;;33;150;0
+Hearts of Stone;q602_geralt_possessed;;33;100;0
+Hearts of Stone;q602_wedding_start;;33;100;0
+Hearts of Stone;q602_wedding_gwent_lost;;33;50;0
+Hearts of Stone;q602_wedding_gwent_won;;33;200;0
+Hearts of Stone;q602_wedding_diving_lost;;33;50;0
+Hearts of Stone;q602_wedding_diving_won;;33;200;0
+Hearts of Stone;q602_wedding_pig_lost;;33;50;0
+Hearts of Stone;q602_wedding_pig_won;;33;200;0
+Hearts of Stone;q602_wedding_fight_lost;;33;50;0
+Hearts of Stone;q602_wedding_fight_won;;33;200;0
+Hearts of Stone;q602_wedding_fireeater_found;;33;200;0
+Hearts of Stone;q602_wedding_fireeater_not_found;;33;50;0
+Hearts of Stone;q602_wedding_juggled;;33;150;0
+Hearts of Stone;q602_wedding_mirror;;33;150;0
+Hearts of Stone;q602_wedding_end;;33;200;0
+Hearts of Stone;q602_romance_gift;;33;150;0
+Hearts of Stone;q602_romance_end;;33;150;0
+Hearts of Stone;q602_olgier_reported;;33;150;0
+Hearts of Stone;q603_01_before_auction;;34;100;0
+Hearts of Stone;q603_02a_gambler;;34;100;250
+Hearts of Stone;q603_02b_gambler_no_money;;34;100;0
+Hearts of Stone;q603_03_connesour;;34;100;0
+Hearts of Stone;q603_04_noblewoman;;34;100;0
+Hearts of Stone;q603_05_after_auction;;34;200;0
+Hearts of Stone;q603_05b_painting_sold;;34;100;500
+Hearts of Stone;q603_06_after_hideout;;34;100;0
+Hearts of Stone;q603_07_circus_artist;;34;150;0
+Hearts of Stone;q603_08_thief;;34;150;0
+Hearts of Stone;q603_09_demolition_dwarf;;34;150;0
+Hearts of Stone;q603_10_safecracker;;34;150;0
+Hearts of Stone;q603_11_diversion;;34;150;0
+Hearts of Stone;q603_12_final_preparation;;34;100;0
+Hearts of Stone;q603_13_hostage_situation;;34;150;0
+Hearts of Stone;q603_14_standoff;;34;100;0
+Hearts of Stone;q603_15_vault_escaped;;34;150;0
+Hearts of Stone;q603_16_task_completed;;34;250;0
+Hearts of Stone;q603_maximilians_house;;0;0;0
+Hearts of Stone;q603_magister_glasses;;0;0;0
+Hearts of Stone;q603_antique_statue;;0;0;0
+Hearts of Stone;q603_auctioned_painting;;0;0;0
+Hearts of Stone;q604_killed_caretaker;;35;200;0
+Hearts of Stone;q604_killed_corridor;;35;200;0
+Hearts of Stone;q604_found_iris;;35;100;0
+Hearts of Stone;q604_gazebo_done;;35;100;0
+Hearts of Stone;q604_fountain_done;;35;100;0
+Hearts of Stone;q604_dinner_done;;35;100;0
+Hearts of Stone;q604_bedroom_done;;35;100;0
+Hearts of Stone;q604_painting_done;;35;100;0
+Hearts of Stone;q604_study_done;;35;100;0
+Hearts of Stone;q604_summer_world_done;;35;200;0
+Hearts of Stone;q604_cellar_done;;35;100;0
+Hearts of Stone;q604_sad_dinner_done;;35;100;0
+Hearts of Stone;q604_killed_ethereals;;35;300;0
+Hearts of Stone;q604_quest_done;;35;500;0
+Hearts of Stone;q605_olgierd_finale_reward;;36;200;0
+Hearts of Stone;q605_mirror_finale_only_exp;;36;300;0
+Hearts of Stone;q605_mirror_finale_cornucopia;;36;150;0
+Hearts of Stone;q605_mirror_finale_booze_refill;;36;150;0
+Hearts of Stone;q605_mirror_finale_demon_horse;;36;150;0
+Hearts of Stone;q605_mirror_finale_cash;;36;150;10000
+Hearts of Stone;q605_mad_scholar_xp_reward;;36;100;0
+Hearts of Stone;mq6001_completed;;32;100;0
+Hearts of Stone;mq6002_fooled;Without a Trace;32;50;200
+Hearts of Stone;mq6002_completed;Without a Trace;32;100;200
+Hearts of Stone;mq6003_completed;The Taxman Cometh;32;50;0
+Hearts of Stone;mq6004_completed;Rose on a Red Field;33;150;200
+Hearts of Stone;mq6005_lvl_1_unlocked;Enchanting: Start-up Costs / Enchanting: Quality Has Its Price / Enchanting: Mastery Demands Sacrifice;32;100;0
+Hearts of Stone;mq6005_lvl_2_unlocked;Enchanting: Start-up Costs / Enchanting: Quality Has Its Price / Enchanting: Mastery Demands Sacrifice;32;100;0
+Hearts of Stone;mq6005_lvl_3_unlocked;Enchanting: Start-up Costs / Enchanting: Quality Has Its Price / Enchanting: Mastery Demands Sacrifice;32;100;0
+Hearts of Stone;mq6005_nephrite;Enchanting: Start-up Costs / Enchanting: Quality Has Its Price / Enchanting: Mastery Demands Sacrifice;32;0;0
+Base game;q001_1_after_dream;Kaer Morhen / Lilac and Gooseberries;1;250;0
+Base game;q001_2_after_bandits;Kaer Morhen / Lilac and Gooseberries;1;350;0
+Base game;q001_found_yen_skull;Kaer Morhen / Lilac and Gooseberries;0;50;0
+Base game;q001_griffin_merchant_reward;Kaer Morhen / Lilac and Gooseberries;1;0;50
+Base game;q002_1_helped_herbalist;The Incident at White Orchard / The Beast of White Orchard / On Death's Bed / Imperial Audience;2;350;50
+Base game;q002_4_killed_bandits;The Incident at White Orchard / The Beast of White Orchard / On Death's Bed / Imperial Audience;2;300;0
+Base game;q002_5_after_emhyr;The Incident at White Orchard / The Beast of White Orchard / On Death's Bed / Imperial Audience;2;150;0
+Base game;q002_1_helped_hunter;The Incident at White Orchard / The Beast of White Orchard / On Death's Bed / Imperial Audience;2;350;0
+Base game;q002_2_level_up;The Incident at White Orchard / The Beast of White Orchard / On Death's Bed / Imperial Audience;2;500;0
+Base game;q002_3_griffin_dead_reward_nomoney;The Incident at White Orchard / The Beast of White Orchard / On Death's Bed / Imperial Audience;2;500;0
+Base game;q002_3_griffin_dead_reward;The Incident at White Orchard / The Beast of White Orchard / On Death's Bed / Imperial Audience;3;300;250
+Base game;q101_found_hendrik_notes;The Nilfgaardian Connection;5;100;0
+Base game;q103_01_baron_met;Family Matters / Ciri's Room / Ciri's Story: The King of the Wolves / A Princess in Distress / Ciri's Story: The Race / Ciri's Story: Out of the Shadows;5;100;0
+Base game;q103_02_rooms_checked;Family Matters / Ciri's Room / Ciri's Story: The King of the Wolves / A Princess in Distress / Ciri's Story: The Race / Ciri's Story: Out of the Shadows;6;150;0
+Base game;q103_02_ciri_room_checked;Family Matters / Ciri's Room / Ciri's Story: The King of the Wolves / A Princess in Distress / Ciri's Story: The Race / Ciri's Story: Out of the Shadows;5;100;0
+Base game;q103_03_brought_goat;Family Matters / Ciri's Room / Ciri's Story: The King of the Wolves / A Princess in Distress / Ciri's Story: The Race / Ciri's Story: Out of the Shadows;5;100;0
+Base game;q103_15i_ritual_end;Family Matters / Ciri's Room / Ciri's Story: The King of the Wolves / A Princess in Distress / Ciri's Story: The Race / Ciri's Story: Out of the Shadows;6;100;0
+Base game;q103_04_after_fistfight;Family Matters / Ciri's Room / Ciri's Story: The King of the Wolves / A Princess in Distress / Ciri's Story: The Race / Ciri's Story: Out of the Shadows;6;50;0
+Base game;q103_05_learnt_about_daughter;Family Matters / Ciri's Room / Ciri's Story: The King of the Wolves / A Princess in Distress / Ciri's Story: The Race / Ciri's Story: Out of the Shadows;6;300;0
+Base game;q103_06_find_daughter;Family Matters / Ciri's Room / Ciri's Story: The King of the Wolves / A Princess in Distress / Ciri's Story: The Race / Ciri's Story: Out of the Shadows;6;0;200
+Base game;q103_06_visited_daughter;Family Matters / Ciri's Room / Ciri's Story: The King of the Wolves / A Princess in Distress / Ciri's Story: The Race / Ciri's Story: Out of the Shadows;6;150;0
+Base game;q103_07_learnt_about_ciri;Family Matters / Ciri's Room / Ciri's Story: The King of the Wolves / A Princess in Distress / Ciri's Story: The Race / Ciri's Story: Out of the Shadows;6;300;0
+Base game;q103_08_completed;Family Matters / Ciri's Room / Ciri's Story: The King of the Wolves / A Princess in Distress / Ciri's Story: The Race / Ciri's Story: Out of the Shadows;6;200;0
+Base game;q103_09_stablemaster_reward;Family Matters / Ciri's Room / Ciri's Story: The King of the Wolves / A Princess in Distress / Ciri's Story: The Race / Ciri's Story: Out of the Shadows;6;0;20
+Base game;q103_06_visit_oxenfurt;Family Matters / Ciri's Room / Ciri's Story: The King of the Wolves / A Princess in Distress / Ciri's Story: The Race / Ciri's Story: Out of the Shadows;6;0;50
+Base game;q103_10_botchling_buried;Family Matters / Ciri's Room / Ciri's Story: The King of the Wolves / A Princess in Distress / Ciri's Story: The Race / Ciri's Story: Out of the Shadows;6;150;0
+Base game;q104_1_met_keira;Wandering in the Dark / Hunting a Witch / Magic Lamp;5;100;0
+Base game;q104_1_aarded_rat_nest;Wandering in the Dark / Hunting a Witch / Magic Lamp;6;100;0
+Base game;q104_2_first_teleport_gate;Wandering in the Dark / Hunting a Witch / Magic Lamp;6;100;0
+Base game;q104_3_survived_blizzard;Wandering in the Dark / Hunting a Witch / Magic Lamp;6;100;0
+Base game;q104_4_defeated_wild_hunt_warrior;Wandering in the Dark / Hunting a Witch / Magic Lamp;6;250;0
+Base game;q104_5_quest_completed;Wandering in the Dark / Hunting a Witch / Magic Lamp;6;350;0
+Base game;q104_6_found_grave;Wandering in the Dark / Hunting a Witch / Magic Lamp;6;100;0
+Base game;q105_1_found_johnny;Ciri's Story: Fleeing the Bog / The Whispering Hillock / Ladies of the Wood;6;150;0
+Base game;q105_2_talk_gobelin;Ciri's Story: Fleeing the Bog / The Whispering Hillock / Ladies of the Wood;6;150;0
+Base game;q105_3_soltis_reward;Ciri's Story: Fleeing the Bog / The Whispering Hillock / Ladies of the Wood;6;250;0
+Base game;q105_4_info_witches;Ciri's Story: Fleeing the Bog / The Whispering Hillock / Ladies of the Wood;6;200;0
+Base game;q106_2_exp_oillamp_preparing;An Invitation from Keira Metz / A Towerful of Mice;6;50;0
+Base game;q106_3_exp_oillamp_dinner;An Invitation from Keira Metz / A Towerful of Mice;6;50;0
+Base game;q106_4_exp_oillamp_magnate;An Invitation from Keira Metz / A Towerful of Mice;6;50;0
+Base game;q106_5_exp_found_lab;An Invitation from Keira Metz / A Towerful of Mice;6;100;0
+Base game;q106_6a_exp_anabelle_taken_to_graham;An Invitation from Keira Metz / A Towerful of Mice;6;300;0
+Base game;q106_6b_exp_plague_maiden_uncursed;An Invitation from Keira Metz / A Towerful of Mice;6;500;0
+Base game;q106_1_oillamp_running;An Invitation from Keira Metz / A Towerful of Mice;6;50;0
+Base game;q106_1a_oillamp_swimloot;An Invitation from Keira Metz / A Towerful of Mice;6;50;0
+Base game;q106_1b_oillamp_ratcages;An Invitation from Keira Metz / A Towerful of Mice;6;50;0
+Base game;q106_1c_oillamp_morowa_victim;An Invitation from Keira Metz / A Towerful of Mice;6;100;0
+Base game;q107_1_killed_bies;Return to Crookback Bog;9;200;0
+Base game;q107_2_found_johnny;Return to Crookback Bog;9;50;0
+Base game;q107_3_cured_anna;Return to Crookback Bog;9;300;0
+Base game;q107_4_reward_baron;Return to Crookback Bog;9;0;150
+Base game;q107_5_helped_treasure;Return to Crookback Bog;9;15;0
+Base game;q107_6_helped_raped;Return to Crookback Bog;9;15;0
+Base game;q108_01_eve_ended;Forefathers' Eve;7;200;0
+Base game;q108_02_guslar_father_buried;Forefathers' Eve;7;50;50
+Base game;q109_01_find_keira;For the Advancement of Learning;8;50;0
+Base game;q109_02_kill_keira;For the Advancement of Learning;8;200;0
+Base game;q109_02_persuade_keira;For the Advancement of Learning;8;100;0
+Base game;q109_02_keira_gone;For the Advancement of Learning;8;100;0
+Base game;q109_03_achievement;For the Advancement of Learning;8;0;0
+Base game;q110_1a_refused_emhyrs_money;Blood on the Battlefield;20;0;0
+Base game;q110_1b_accepted_emhyrs_reward;Blood on the Battlefield;20;0;4000
+Base game;q111_1_passed_the_test;Bald Mountain;26;300;0
+Base game;q111_2_killed_witches;Bald Mountain;26;500;0
+Base game;q111_3_killed_imlerith;Bald Mountain;26;1000;0
+Base game;q201_01_boat_bought;The King is Dead - Long Live the King / Destination: Skellige;16;500;0
+Base game;q201_02_reached_burial;The King is Dead - Long Live the King / Destination: Skellige;16;250;0
+Base game;q201_03_suit_obtained;The King is Dead - Long Live the King / Destination: Skellige;16;150;0
+Base game;q201_04_after_race;The King is Dead - Long Live the King / Destination: Skellige;16;150;0
+Base game;q201_05_after_fistfight;The King is Dead - Long Live the King / Destination: Skellige;16;150;0
+Base game;q201_06_completed;The King is Dead - Long Live the King / Destination: Skellige;16;600;0
+Base game;q201_07_afterparty;The King is Dead - Long Live the King / Destination: Skellige;16;100;0
+Base game;q202_5_killed_giant;The Lord of Undvik;17;100;0
+Base game;q202_2_folan_alive;The Lord of Undvik;17;50;0
+Base game;q202_1_undvik_discovered;The Lord of Undvik;17;100;0
+Base game;q202_2_saved_folan;The Lord of Undvik;17;200;0
+Base game;q202_2_saved_vigi;The Lord of Undvik;17;200;0
+Base game;q202_4_eight_wood;The Lord of Undvik;17;200;0
+Base game;q202_3_killed_giant;The Lord of Undvik;17;500;0
+Base game;q203_1_exp_drowners_killed;Echoes of the Past / Possession;17;400;0
+Base game;q203_2_exp_found_broksvard;Echoes of the Past / Possession;17;400;0
+Base game;q203_3_exp_discover_him;Echoes of the Past / Possession;17;550;0
+Base game;q203_4_exp_got_rid_of_him;Echoes of the Past / Possession;17;750;0
+Base game;q203_6_exp_examined_cataclysm;Echoes of the Past / Possession;13;500;0
+Base game;q205_1_skjal_found;The Calm Before the Storm / Nameless / Missing Persons;14;200;0
+Base game;q205_2_quest_completed;The Calm Before the Storm / Nameless / Missing Persons;15;200;0
+Base game;q206_01_won_fistfight;King's Gambit;16;100;0
+Base game;q206_01b_defeated_all_vildkaarls;King's Gambit;16;50;0
+Base game;q206_02_crachs_reward;King's Gambit;16;500;0
+Base game;q206_03_berserkers_killed;King's Gambit;16;300;0
+Base game;q206_04_discovered_hallgrim;King's Gambit;16;200;0
+Base game;q206_04_discovered_arnvalds_involvement;King's Gambit;16;300;0
+Base game;q206_05_stopped_aryts;King's Gambit;16;300;0
+Base game;q206_05_stopped_arnvald;King's Gambit;16;200;0
+Base game;q206_06_crachs_final_reward;King's Gambit;16;400;0
+Base game;q208_1_finished_race_for_crown;Coronation;18;200;0
+Base game;q210_1_emhyr_done;Child of the Elder Blood / Veni Vidi Vigo / The Sunstone / Battle Preparations / Skjall's Grave;28;200;0
+Base game;q210_2_vault_done;Child of the Elder Blood / Veni Vidi Vigo / The Sunstone / Battle Preparations / Skjall's Grave;28;500;0
+Base game;q210_3_lab_done;Child of the Elder Blood / Veni Vidi Vigo / The Sunstone / Battle Preparations / Skjall's Grave;31;300;0
+Base game;q210_4_skjall_done;Child of the Elder Blood / Veni Vidi Vigo / The Sunstone / Battle Preparations / Skjall's Grave;28;100;0
+Base game;q301_2_helped_triss;Pyres of Novigrad / Novigrad Dreaming / Haunted House;7;200;0
+Base game;q301_4_exp_dreamer_dreams;Pyres of Novigrad / Novigrad Dreaming / Haunted House;10;100;0
+Base game;q301_1_oren_followed_thieves;Pyres of Novigrad / Novigrad Dreaming / Haunted House;7;100;0
+Base game;q301_3_bonus_for_house;Pyres of Novigrad / Novigrad Dreaming / Haunted House;9;300;100
+Base game;q302_01_met_big_four;Honor Among Thieves / A Favor for Radovid / Get Junior / Ciri's Story: Visiting Junior / The Gangs of Novigrad;12;150;0
+Base game;q302_02_investigated_ring;Honor Among Thieves / A Favor for Radovid / Get Junior / Ciri's Story: Visiting Junior / The Gangs of Novigrad;9;150;0
+Base game;q302_02_investigated_casino;Honor Among Thieves / A Favor for Radovid / Get Junior / Ciri's Story: Visiting Junior / The Gangs of Novigrad;9;150;0
+Base game;q302_02_cleaver_reward;Honor Among Thieves / A Favor for Radovid / Get Junior / Ciri's Story: Visiting Junior / The Gangs of Novigrad;9;50;300
+Base game;q302_02_cleaver_reward_half;Honor Among Thieves / A Favor for Radovid / Get Junior / Ciri's Story: Visiting Junior / The Gangs of Novigrad;9;50;150
+Base game;q302_02_cleaver_reward_nogold;Honor Among Thieves / A Favor for Radovid / Get Junior / Ciri's Story: Visiting Junior / The Gangs of Novigrad;9;200;0
+Base game;q302_02_cleaver_reward_beggarking;Honor Among Thieves / A Favor for Radovid / Get Junior / Ciri's Story: Visiting Junior / The Gangs of Novigrad;9;100;0
+Base game;q302_03_roche_camp_visited;Honor Among Thieves / A Favor for Radovid / Get Junior / Ciri's Story: Visiting Junior / The Gangs of Novigrad;12;150;0
+Base game;q302_04_radovid_met;Honor Among Thieves / A Favor for Radovid / Get Junior / Ciri's Story: Visiting Junior / The Gangs of Novigrad;12;150;0
+Base game;q302_05_completed;Honor Among Thieves / A Favor for Radovid / Get Junior / Ciri's Story: Visiting Junior / The Gangs of Novigrad;12;500;0
+Base game;q302_whoreson_secret_stash;Honor Among Thieves / A Favor for Radovid / Get Junior / Ciri's Story: Visiting Junior / The Gangs of Novigrad;9;0;30
+Base game;q302_5_radovid_met;Honor Among Thieves / A Favor for Radovid / Get Junior / Ciri's Story: Visiting Junior / The Gangs of Novigrad;12;50;0
+Base game;q303_01_found_out_about_bomb;Count Reuven's Treasure;12;200;0
+Base game;q303_02_find_lead_to_margrave;Count Reuven's Treasure;12;50;0
+Base game;q303_03_solve_dudus_riddle;Count Reuven's Treasure;12;50;0
+Base game;q303_04_witch_hunters_tricked_menge;Count Reuven's Treasure;12;300;0
+Base game;q303_05_witch_hunters_didnt_trick_menge;Count Reuven's Treasure;12;200;0
+Base game;q303_06_told_dijkstra_about_treasure;Count Reuven's Treasure;12;100;90
+Base game;q303_07_trapped_spy;Count Reuven's Treasure;12;50;0
+Base game;q304_01_hobos_killed;Broken Flowers;11;500;0
+Base game;q304_02_visited_rosa;Broken Flowers;11;150;0
+Base game;q304_02_rosa_pays;Broken Flowers;11;0;100
+Base game;q304_03_visited_vespula;Broken Flowers;11;150;0
+Base game;q304_04_visited_molly;Broken Flowers;11;150;0
+Base game;q304_04_saddle;Broken Flowers;11;0;0
+Base game;q304_05_visited_marabella;Broken Flowers;11;150;0
+Base game;q304_06_visited_elihal;Broken Flowers;11;150;0
+Base game;q304_07_visited_all_girls;Broken Flowers;11;300;0
+Base game;q304_08_completed;Broken Flowers;11;800;0
+Base game;q305_01_play_written;Ciri's Story: Breakneck Speed / A Poet Under Pressure / The Play's the Thing;11;300;0
+Base game;q305_02_jugglers_addiotionally_hired;Ciri's Story: Breakneck Speed / A Poet Under Pressure / The Play's the Thing;11;150;0
+Base game;q305_03_play_finished;Ciri's Story: Breakneck Speed / A Poet Under Pressure / The Play's the Thing;11;500;0
+Base game;q305_03a_play_correct;Ciri's Story: Breakneck Speed / A Poet Under Pressure / The Play's the Thing;11;150;50
+Base game;q305_03b_play_almost_correct;Ciri's Story: Breakneck Speed / A Poet Under Pressure / The Play's the Thing;11;125;20
+Base game;q305_03c_play_almost_all_bad;Ciri's Story: Breakneck Speed / A Poet Under Pressure / The Play's the Thing;11;110;0
+Base game;q305_03d_picked_not_drunken_prince;Ciri's Story: Breakneck Speed / A Poet Under Pressure / The Play's the Thing;11;110;30
+Base game;q305_04_quest_completed;Ciri's Story: Breakneck Speed / A Poet Under Pressure / The Play's the Thing;13;1000;0
+Base game;q305_03b_dandelion_free;Ciri's Story: Breakneck Speed / A Poet Under Pressure / The Play's the Thing;11;0;0
+Base game;q305_10_blanka_found;Ciri's Story: Breakneck Speed / A Poet Under Pressure / The Play's the Thing;11;50;0
+Base game;q305_9a_irina_actress;Ciri's Story: Breakneck Speed / A Poet Under Pressure / The Play's the Thing;11;25;10
+Base game;q305_9b_priscilla_actress;Ciri's Story: Breakneck Speed / A Poet Under Pressure / The Play's the Thing;11;25;20
+Base game;q305_6_jugglers_bonus;Ciri's Story: Breakneck Speed / A Poet Under Pressure / The Play's the Thing;11;25;30
+Base game;q308_1_investigated_crimescenes;Carnal Sins;16;200;0
+Base game;q308_2_killed_nathanel;Carnal Sins;16;100;0
+Base game;q308_3_killed_the_real_psycho;Carnal Sins;16;500;0
+Base game;q309_1_saved_additional_mages;Now or Never / Novigrad, Closed City / Novigrad, Closed City II;11;200;0
+Base game;q309_2_didnt_abandon_triss;Now or Never / Novigrad, Closed City / Novigrad, Closed City II;11;200;0
+Base game;q309_3_killed_vampire;Now or Never / Novigrad, Closed City / Novigrad, Closed City II;11;500;0
+Base game;q309_4_left_sewers;Now or Never / Novigrad, Closed City / Novigrad, Closed City II;11;200;0
+Base game;q309_5_saved_mages_on_ship;Now or Never / Novigrad, Closed City / Novigrad, Closed City II;14;300;0
+Base game;q309_6_triss_stayed;Now or Never / Novigrad, Closed City / Novigrad, Closed City II;14;300;0
+Base game;q309_1a_saved_only_mage;Now or Never / Novigrad, Closed City / Novigrad, Closed City II;14;300;0
+Base game;q309_1b_saved_only_sorceress;Now or Never / Novigrad, Closed City / Novigrad, Closed City II;14;300;0
+Base game;q310_1_retrieved_keiras_body;Payback / A Final Kindness / Blindingly Obvious / Final Preparations / The Great Escape / It Takes Three to Tango;26;200;0
+Base game;q310_2_got_philippa;Payback / A Final Kindness / Blindingly Obvious / Final Preparations / The Great Escape / It Takes Three to Tango;28;500;0
+Base game;q310_3_questioned_escapist;Payback / A Final Kindness / Blindingly Obvious / Final Preparations / The Great Escape / It Takes Three to Tango;28;200;0
+Base game;q310_4_got_rita_out;Payback / A Final Kindness / Blindingly Obvious / Final Preparations / The Great Escape / It Takes Three to Tango;28;300;0
+Base game;q310_5_escaped_prison_fight;Payback / A Final Kindness / Blindingly Obvious / Final Preparations / The Great Escape / It Takes Three to Tango;28;100;0
+Base game;q310_5_escaped_prison_quiet;Payback / A Final Kindness / Blindingly Obvious / Final Preparations / The Great Escape / It Takes Three to Tango;28;300;0
+Base game;q310_6_whoreson_done;Payback / A Final Kindness / Blindingly Obvious / Final Preparations / The Great Escape / It Takes Three to Tango;28;200;0
+Base game;q310_7_helped_ciris_friend;Payback / A Final Kindness / Blindingly Obvious / Final Preparations / The Great Escape / It Takes Three to Tango;28;200;0
+Base game;q310_8_ciri_complete;Payback / A Final Kindness / Blindingly Obvious / Final Preparations / The Great Escape / It Takes Three to Tango;28;300;0
+Base game;q310_9_lodge_gathered;Payback / A Final Kindness / Blindingly Obvious / Final Preparations / The Great Escape / It Takes Three to Tango;28;1000;0
+Base game;q310_10_lessons_learned;Payback / A Final Kindness / Blindingly Obvious / Final Preparations / The Great Escape / It Takes Three to Tango;28;300;0
+Base game;q311_01_survived_spiral_alone;Through Time and Space;26;500;0
+Base game;q311_02_completed;Through Time and Space;26;1000;0
+Base game;q401_02_claim_uma;To Bait a Forktail... / Ugly Baby / Disturbance / The Final Trial / No Place Like Home / Va Fail, Elaine / The Key to the Riddle;19;125;0
+Base game;q401_01_help_yennefer;To Bait a Forktail... / Ugly Baby / Disturbance / The Final Trial / No Place Like Home / Va Fail, Elaine / The Key to the Riddle;19;600;0
+Base game;q401_02_help_eskel;To Bait a Forktail... / Ugly Baby / Disturbance / The Final Trial / No Place Like Home / Va Fail, Elaine / The Key to the Riddle;19;600;0
+Base game;q401_03_eskels_race_prize;To Bait a Forktail... / Ugly Baby / Disturbance / The Final Trial / No Place Like Home / Va Fail, Elaine / The Key to the Riddle;19;200;0
+Base game;q401_04_help_lambert;To Bait a Forktail... / Ugly Baby / Disturbance / The Final Trial / No Place Like Home / Va Fail, Elaine / The Key to the Riddle;19;500;0
+Base game;q401_05_find_drunk_eskel;To Bait a Forktail... / Ugly Baby / Disturbance / The Final Trial / No Place Like Home / Va Fail, Elaine / The Key to the Riddle;19;500;0
+Base game;q401_06_break_umas_curse;To Bait a Forktail... / Ugly Baby / Disturbance / The Final Trial / No Place Like Home / Va Fail, Elaine / The Key to the Riddle;19;1500;0
+Base game;q402_1_optional_crach_sword;The Isle of Mists / Brothers in Arms / Brothers In Arms: Nilfgaard / Brothers In Arms: Novigrad / Brothers In Arms: Skellige / Brothers In Arms: Velen;22;50;0
+Base game;q402_2_found_ciri;The Isle of Mists / Brothers in Arms / Brothers In Arms: Nilfgaard / Brothers In Arms: Novigrad / Brothers In Arms: Skellige / Brothers In Arms: Velen;22;4000;0
+Base game;q402_1_full_crew_achiv;The Isle of Mists / Brothers in Arms / Brothers In Arms: Nilfgaard / Brothers In Arms: Novigrad / Brothers In Arms: Skellige / Brothers In Arms: Velen;22;50;0
+Base game;q402_1_optional_dijkstra_help;The Isle of Mists / Brothers in Arms / Brothers In Arms: Nilfgaard / Brothers In Arms: Novigrad / Brothers In Arms: Skellige / Brothers In Arms: Velen;22;50;1000
+Base game;q403_superb_elixirs;The Battle of Kaer Morhen;24;0;0
+Base game;q403_new_gear;The Battle of Kaer Morhen;24;0;0
+Base game;q403_01_got_all_supporters;The Battle of Kaer Morhen;24;1000;0
+Base game;q403_02_before_battle;The Battle of Kaer Morhen;24;500;0
+Base game;q403_03_elixirs;The Battle of Kaer Morhen;24;50;0
+Base game;q403_03_new_gear;The Battle of Kaer Morhen;24;50;0
+Base game;q403_04_killed_wild_hunt_in_forest;The Battle of Kaer Morhen;24;200;0
+Base game;q403_05_forest_done;The Battle of Kaer Morhen;24;500;0
+Base game;q403_06_middle_yard;The Battle of Kaer Morhen;24;500;0
+Base game;q403_07_final_standoff;The Battle of Kaer Morhen;24;700;0
+Base game;q403_08_survived_assault;The Battle of Kaer Morhen;24;1000;0
+Base game;q403_09_completed;The Battle of Kaer Morhen;24;1000;0
+Base game;q501_eredin_killed;On Thin Ice;30;0;0
+Base game;q502_01_conjuntion_started;Tedd Deireadh, the Final Age;30;500;0
+Base game;q502_02_completed;Tedd Deireadh, the Final Age;30;1000;0
+Base game;q503_1_optional_helped_werewolf;Something Ends, Something Begins;30;200;0
+Base game;q503_2_ding_dong_witch_is_dead;Something Ends, Something Begins;30;1000;0
+Base game;q504_1_scare_bear;Something Ends, Something Begins;30;200;0
+Base game;q504_horse_returned;Something Ends, Something Begins;30;20;15
+Base game;q505_1_meet_emhyr;Something Ends, Something Begins;30;150;0
+Base game;q505_2_killed_monster;Something Ends, Something Begins;30;20;0
+Base game;sq101_1_found_parcel;A Favor for a Friend;6;25;0
+Base game;sq101_2_won_race_keira;A Favor for a Friend;6;50;0
+Base game;sq101_3_had_date;A Favor for a Friend;6;80;0
+Base game;sq102_01_found_lockbox;The Fall of the House of Reardon / Ghosts of the Past;6;50;0
+Base game;sq102_02_found_brother;The Fall of the House of Reardon / Ghosts of the Past;6;80;0
+Base game;sq102_03_told_brother_dead;The Fall of the House of Reardon / Ghosts of the Past;6;50;0
+Base game;sq102_03_told_farm_safe;The Fall of the House of Reardon / Ghosts of the Past;6;25;0
+Base game;sq102_01_find_letho;The Fall of the House of Reardon / Ghosts of the Past;6;25;0
+Base game;sq102_02_defeat_assassins;The Fall of the House of Reardon / Ghosts of the Past;6;50;0
+Base game;sq102_03_defeat_bandits;The Fall of the House of Reardon / Ghosts of the Past;6;50;0
+Base game;sq104_1_lied_about_hanna;Wild at Heart;7;50;10
+Base game;sq104_2_finished_quest;Wild at Heart;7;50;0
+Base game;sq104_3_reward_from_margaret;Wild at Heart;7;80;55
+Base game;sq104_4_generic_xp;Wild at Heart;7;30;0
+Base game;sq106_1_ekimma_killed;Following the Thread;11;50;0
+Base game;sq106_2_vienne_killed;Following the Thread;11;50;0
+Base game;sq106_2_vienne_saved;Following the Thread;11;80;0
+Base game;sq106_3_hammond_killed;Following the Thread;11;80;0
+Base game;sq106_3_hammond_killed_crach;Following the Thread;11;50;200
+Base game;sq106_4_tauler_killed;Following the Thread;11;70;0
+Base game;sq106_4_tauler_saved;Following the Thread;11;90;0
+Base game;sq107_1_full_money;Fools' Gold;6;0;100
+Base game;sq107_1_half_money;Fools' Gold;10;0;50
+Base game;sq107_2_full_xp;Fools' Gold;10;50;0
+Base game;sq107_2_half_xp;Fools' Gold;10;25;0
+Base game;sq108_griffon_killed;Contract: The Griffin from the Highlands / Master Armorers;24;0;25
+Base game;sq108_unlocked_blacksmith;Contract: The Griffin from the Highlands / Master Armorers;24;0;0
+Base game;sq108_special_armor;Contract: The Griffin from the Highlands / Master Armorers;24;0;0
+Base game;sq201_1_a_killed_werewolf_for_good;In Wolf's Clothing;15;50;0
+Base game;sq201_1_b_lifted_the_curse;In Wolf's Clothing;15;80;0
+Base game;sq201_2_a_let_morkvarg_go;In Wolf's Clothing;15;80;0
+Base game;sq201_2_b_kill_morkvarg;In Wolf's Clothing;15;85;0
+Base game;sq201_3_c_helped_morkvarg;In Wolf's Clothing;15;50;0
+Base game;for_killing_morkvarg_priestess;;15;50;85
+Base game;sq202_01_crater_found;The Last Wish;15;50;0
+Base game;sq202_02_completed;The Last Wish;15;50;0
+Base game;sq202_pirate_treasure;The Last Wish;15;0;60
+Base game;sq204_leshy_achievement;In the Heart of the Woods;22;0;0
+Base game;sq204_1_investigation;In the Heart of the Woods;22;10;0
+Base game;sq204_2_leshy_offerings;In the Heart of the Woods;22;20;0
+Base game;sq204_2a_leshy_killed;In the Heart of the Woods;22;50;0
+Base game;sq204_3a_leshy_reward_harald;In the Heart of the Woods;22;50;60
+Base game;sq204_3b_leshy_reward_sven;In the Heart of the Woods;22;50;60
+Base game;sq205_1_got_alcohol;Practicum in Advanced Alchemy;24;80;0
+Base game;sq205_2_helped_with_ritual;Practicum in Advanced Alchemy;24;80;0
+Base game;sq205_3_got_fernflower;Practicum in Advanced Alchemy;24;80;0
+Base game;sq205_4_finished_quest;Practicum in Advanced Alchemy;24;80;0
+Base game;sq209_1_tavern_done;Stranger in a Strange Land / The Cave of Dreams;14;50;0
+Base game;sq209_2_talked_with_lugos_the_mad;Stranger in a Strange Land / The Cave of Dreams;14;80;0
+Base game;sq209_3_cave_of_dreams_entered;Stranger in a Strange Land / The Cave of Dreams;14;25;0
+Base game;sq209_4_vision_1_done;Stranger in a Strange Land / The Cave of Dreams;14;50;0
+Base game;sq209_5_vision_2_done;Stranger in a Strange Land / The Cave of Dreams;14;50;0
+Base game;sq209_6_vision_3_done;Stranger in a Strange Land / The Cave of Dreams;14;50;0
+Base game;sq209_7_vision_4_done;Stranger in a Strange Land / The Cave of Dreams;14;80;0
+Base game;sq209_8_final_no_gold;Stranger in a Strange Land / The Cave of Dreams;14;50;0
+Base game;sq209_8_final_with_gold;Stranger in a Strange Land / The Cave of Dreams;14;50;80
+Base game;sq210_wizard_reward;The Tower Outta Nowheres;30;0;0
+Base game;sq210_villager_reward;The Tower Outta Nowheres;30;0;65
+Base game;sq210_xp_reward;The Tower Outta Nowheres;30;50;0
+Base game;sq301_1_wore_full_dublet;A Matter of Life and Death;12;25;0
+Base game;sq301_2_didnt_fight_drunkard;A Matter of Life and Death;12;25;0
+Base game;sq301_3_won_cards_on_party;A Matter of Life and Death;12;50;0
+Base game;sq301_4_defeated_inquisitors;A Matter of Life and Death;12;50;0
+Base game;sq301_5_completed_quest;A Matter of Life and Death;12;50;0
+Base game;sq302_01_philippa_hideout_opened;Redania's Most Wanted;12;50;0
+Base game;sq302_02_got_to_lowest_floor;Redania's Most Wanted;12;70;0
+Base game;sq302_03_crystal_gave_away_completed;Redania's Most Wanted;12;50;0
+Base game;sq302_04_completed;Redania's Most Wanted;12;50;0
+Base game;sq302_05_radovid_payment;Redania's Most Wanted;12;0;135
+Base game;sq303_1_lost_to_dandelion;Cabaret;14;50;0
+Base game;sq303_1_won_with_dandelion;Cabaret;14;25;0
+Base game;sq303_2_polly_acquired;Cabaret;14;50;0
+Base game;sq303_3_poster_found;Cabaret;14;25;0
+Base game;sq303_5_quest_finished;Cabaret;14;70;0
+Base game;sq303_4_horse_race_won;Cabaret;14;25;80
+Base game;sq303_race_reward;Cabaret;14;0;0
+Base game;sq303_4_quest_finished;Cabaret;14;50;0
+Base game;sq304_1_deal_made;Of Swords and Dumplings;24;25;20
+Base game;sq304_2_bodyguards_resolved;Of Swords and Dumplings;24;10;10
+Base game;sq304_3_sword;Of Swords and Dumplings;24;0;0
+Base game;sq304_negotiation_success;Of Swords and Dumplings;24;25;0
+Base game;sq305_1_finished_quest_vern;Contract: Woodland Beast;6;0;0
+Base game;sq305_1_finished_quest_guard;Contract: Woodland Beast;6;0;30
+Base game;sq305_1_generic_xp;Contract: Woodland Beast;6;25;0
+Base game;sq305_always;Contract: Woodland Beast;6;25;0
+Base game;sq306_01_defeated_bernard;High Stakes;26;25;0
+Base game;sq306_02_defeated_sacha;High Stakes;26;50;0
+Base game;sq306_03_defeated_finneas;High Stakes;26;50;0
+Base game;sq306_04_defeated_tybalt;High Stakes;26;80;0
+Base game;sq306_05_solved_investigation;High Stakes;26;50;0
+Base game;sq306_06_retrieved_prize_money;High Stakes;26;50;4500
+Base game;sq310_gwint_cards;A Dangerous Game;12;0;0
+Base game;sq310_coins;A Dangerous Game;12;80;150
+Base game;sq312_ves_assisted;An Eye for an Eye;12;50;0
+Base game;sq312_ves_died;An Eye for an Eye;12;75;0
+Base game;sq313_1_ruse_complete;;0;50;0
+Base game;sq315_finished;A Deadly Plot;14;25;0
+Base game;mh101_investigation;Contract: Shrieker;8;25;0
+Base game;mh101_final_reward;Contract: Shrieker;8;235;235
+Base game;mh101_final_reward_no_gold;Contract: Shrieker;8;250;0
+Base game;mh102_final_reward;Contract: Missing Brother;33;200;280
+Base game;mh102_final_reward_no_gold;Contract: Missing Brother;33;300;0
+Base game;mh102_investigation;Contract: Missing Brother;33;25;0
+Base game;mh103_investigation;Contract: Jenny o' the Woods;10;25;0
+Base game;mh103_final_reward;Contract: Jenny o' the Woods;10;240;239
+Base game;mh104_investigation_done;Contract: The Mystery of the Byways Murders;22;25;0
+Base game;mh104_father_reward;Contract: The Mystery of the Byways Murders;22;25;210
+Base game;mh104_final_reward;Contract: The Mystery of the Byways Murders;22;300;260
+Base game;mh105_villagers_found;Contract: Phantom of the Trade Route;23;30;0
+Base game;mh105_investigation;Contract: Phantom of the Trade Route;23;25;0
+Base game;mh105_final;Contract: Phantom of the Trade Route;23;250;256
+Base game;mh106_final_reward;Contract: The Merry Widow;10;240;240
+Base game;mh106_investigation;Contract: The Merry Widow;10;10;0
+Base game;mh107_investigation;Contract: Mysterious Tracks;20;25;0
+Base game;mh107_final_reward;Contract: Mysterious Tracks;20;400;258
+Base game;mh108_investigation;Contract: Swamp Thing;12;25;0
+Base game;mh108_final_reward;Contract: Swamp Thing;12;240;242
+Base game;mh202_1_investigation;Contract: Strange Beast;16;25;0
+Base game;mh202_2_final_reward;Contract: Strange Beast;16;250;520
+Base game;mh203_01_witness_interrogated;Contract: Muire D'yaeblen;18;25;0
+Base game;mh203_02_lair_found;Contract: Muire D'yaeblen;18;25;0
+Base game;mh203_03_completed;Contract: Muire D'yaeblen;18;250;250
+Base game;mh206_arena;Contract: Missing Son;29;15;0
+Base game;mh206_lair;Contract: Missing Son;29;25;0
+Base game;mh206_final;Contract: Missing Son;29;300;273
+Base game;mh207_mikkjal_found;Contract: The Phantom of Eldberg;17;25;0
+Base game;mh207_investigation;Contract: The Phantom of Eldberg;17;25;0
+Base game;mh207_final;Contract: The Phantom of Eldberg;17;260;246
+Base game;mh208_investigation;Contract: Dragon;28;25;0
+Base game;mh208_final;Contract: Dragon;28;350;273
+Base game;mh208_final_bigger;Contract: Dragon;28;40;273
+Base game;mh208_final_reward_smaller;Contract: Dragon;28;90;20
+Base game;mh210_investigation;Contract: Here Comes the Groom;19;25;0
+Base game;mh210_final;Contract: Here Comes the Groom;19;250;249
+Base game;mh210_britt;Contract: Here Comes the Groom;19;25;0
+Base game;mh210_britt_gold;Contract: Here Comes the Groom;19;20;25
+Base game;mh301_reward;Contract: The Creature from Oxenfurt Forest;35;300;295
+Base game;mh301_investigation;Contract: The Creature from Oxenfurt Forest;35;25;0
+Base game;mh302_investigation;Contract: Lord of the Wood;25;25;0
+Base game;mh302_final;Contract: Lord of the Wood;25;250;260
+Base game;mh303_investigation;Contract: Deadly Delights;15;25;0
+Base game;mh303_succubus;Contract: Deadly Delights;15;0;0
+Base game;mh303_final;Contract: Deadly Delights;15;270;249
+Base game;mh304_investigation;Contract: The Oxenfurt Drunk;26;25;0
+Base game;mh304_final;Contract: The Oxenfurt Drunk;26;300;273
+Base game;mh305_investigation;Contract: An Elusive Thief;13;25;0
+Base game;mh305_final;Contract: An Elusive Thief;13;245;243
+Base game;mh305_doppler_reward;Contract: An Elusive Thief;13;25;215
+Base game;mh306_investigation;Contract: Doors Slamming Shut;24;25;0
+Base game;mh306_final;Contract: Doors Slamming Shut;24;300;267
+Base game;mh307_01_lair_located;Contract: The Apiarian Phantom;14;25;0
+Base game;mh307_02_minion_fleed_completed;Contract: The Apiarian Phantom;14;125;80
+Base game;mh307_02_minion_killed_completed;Contract: The Apiarian Phantom;14;250;249
+Base game;mh308_investigation;Contract: The White Lady;16;25;0
+Base game;mh308_final;Contract: The White Lady;16;260;246
+Base game;mq0001_01_reunite_brothers;Missing in Action;1;25;25
+Base game;mq0002_01_returned_chest;Precious Cargo;1;25;20
+Base game;mq0002_01_deal_with_merchant;Precious Cargo;1;10;30
+Base game;mq0002_01_extorted_merchant;Precious Cargo;1;10;50
+Base game;mq0002_01_merchant_to_guards;Precious Cargo;1;10;30
+Base game;mq0003_01_dispelled_wraith;Contract: Devil by the Well;2;50;0
+Base game;mq0003_02_found_sister;Contract: Devil by the Well;2;10;10
+Base game;mq0003_03_farmers_reward;Contract: Devil by the Well;2;50;20
+Base game;mq0003_03_farmers_reward_refused;Contract: Devil by the Well;2;50;0
+Base game;mq003_02_found_sister;;2;10;0
+Base game;mq0004_01_returned_pan;A Frying Pan, Spick and Span;1;10;0
+Base game;mq0005_01_found_arsonist;Twisted Firestarter;1;25;0
+Base game;mq0005_02_arsonists_pay;Twisted Firestarter;1;50;20
+Base game;mq0005_02_dwarf_pay;Twisted Firestarter;1;50;20
+Base game;mq1051_1_wyvern_killed;Contract: Patrol Gone Missing;7;10;50
+Base game;mq1051_1_wyvern_killed_no_gold;Contract: Patrol Gone Missing;7;35;0
+Base game;mq1045_encounter_02_gold;Love's Cruel Snares;10;20;40
+Base game;mq1045_encounter_02_exp;Love's Cruel Snares;10;60;0
+Base game;mq1019_1_site01_burned;Funeral Pyres;3;10;0
+Base game;mq1019_1_site02_burned;Funeral Pyres;3;10;0
+Base game;mq1019_1_site03_burned;Funeral Pyres;3;10;0
+Base game;mq1019_2_clue_dealer_story;Funeral Pyres;3;25;0
+Base game;mq1019_completed;Funeral Pyres;3;50;20
+Base game;mq1019_completed_with_bribe;Funeral Pyres;3;50;60
+Base game;mq1019_completed_fight;Funeral Pyres;3;50;0
+Base game;mq1010_3_quest_finished;Last Rites;9;25;20
+Base game;mq1010_1_ring_placed;Last Rites;9;10;0
+Base game;mq1010_2_ghost_lamp;Last Rites;9;25;0
+Base game;mq1033_1_encounter_1;;0;25;0
+Base game;mq1033_2_encounter_2;;0;25;0
+Base game;mq1033_3_encounter_final;;0;50;0
+Base game;mq1014_enc01_finished;;0;10;0
+Base game;mq1014_enc02_finished;;0;10;0
+Base game;mq1014_enc03_finished;;0;10;0
+Base game;mq1041_1_peaceful_ending;;0;25;0
+Base game;mq1041_1_pro_redanian_ending;;0;25;0
+Base game;mq1041_1_fight_all_ending;;0;25;0
+Base game;mq1041_1_pro_soldier_ending;;0;25;0
+Base game;mq1045_1_cache;Love's Cruel Snares;10;0;50
+Base game;mq1016_1_children_found;Empty Coop;0;10;0
+Base game;mq1016_2_quest_finished_no_gold;Empty Coop;0;25;0
+Base game;mq1016_2_quest_finished_gold;Empty Coop;0;25;20
+Base game;mq1024_1_encounter_finished;;0;25;0
+Base game;mq1012_1_helping_believer;Defender of the Faith;10;10;0
+Base game;mq1012_2_chapel_fixed;Defender of the Faith;10;25;0
+Base game;mq1012_3_quest_finished;Defender of the Faith;10;50;0
+Base game;mq1051_1_mother_pays;Contract: Patrol Gone Missing;7;10;50
+Base game;mq1050_1_food_delivered;The Truth is in the Stars;7;10;0
+Base game;mq1050_2_quest_finished;The Truth is in the Stars;7;50;0
+Base game;mq1035_1_merchant_gold;;0;25;50
+Base game;mq1002_1_room_1_cleared;Of Dairy and Darkness;9;50;0
+Base game;mq1002_2_room_2_cleared;Of Dairy and Darkness;9;50;0
+Base game;mq1002_3_quest_finished;Of Dairy and Darkness;9;75;0
+Base game;mq1002_3_treasure_chest;Of Dairy and Darkness;9;0;50
+Base game;mq1011_2_chest;;0;0;20
+Base game;mq1011_1_merchant_reward;;0;25;20
+Base game;mq1038_1_finished;;0;10;0
+Base game;mq1028_2_completed_no_gold;The Dwarven Document Dilemma;2;25;0
+Base game;mq1028_2_completed;The Dwarven Document Dilemma;2;25;20
+Base game;mq1020_1_elves_found;Spooked Mare;12;25;0
+Base game;mq1020_2_wrong_horse_returned;Spooked Mare;12;25;50
+Base game;mq1020_2_quick_end;Spooked Mare;12;25;20
+Base game;mq1036_bandits_killed;;0;50;0
+Base game;mq1036_deserter_met;;0;25;0
+Base game;mq1036_bandits_reward;;0;50;50
+Base game;mq1046_1_elf_saved;Death By Fire;10;25;0
+Base game;mq1046_1_hidden_loot;Death By Fire;10;0;20
+Base game;mq1057_fugas_located;A Greedy God;7;25;0
+Base game;mq1057_reward_from_villagers;A Greedy God;7;50;50
+Base game;mq1057_no_reward_from_villagers;A Greedy God;7;50;0
+Base game;mq1039_quest_completed;A Barnful of Trouble;11;25;20
+Base game;mq1013_quest_finished;Witcher Wannabe;10;75;0
+Base game;mq1022_1_finished;The Volunteer;13;50;0
+Base game;mq1022_1_troll_killed;The Volunteer;13;50;0
+Base game;mq1015_finished;Lynch Mob;7;25;0
+Base game;mq1007_success;;0;25;0
+Base game;mq1006_1_cheap_item;;0;10;10
+Base game;mq1006_1_medium_item;;0;10;25
+Base game;mq1006_1_elf_stew;;0;25;0
+Base game;mq1001_1_dog_saved;A Dog's Life;5;25;0
+Base game;mq1001_2_locker;A Dog's Life;5;0;10
+Base game;mq1037_enc_01_sword;;0;0;0
+Base game;mq1005_1_perfect_score;Bitter Harvest;9;50;50
+Base game;mq1005_1_middle_score;Bitter Harvest;9;50;20
+Base game;mq1005_1_low_score;Bitter Harvest;9;50;15
+Base game;mq1005_1_boss_bonus;Bitter Harvest;9;0;50
+Base game;mq1003_final;Hazardous Goods;1;25;0
+Base game;mq1003_cart_owner_freed;Hazardous Goods;1;10;0
+Base game;mq1003_cart_burned_down;Hazardous Goods;1;10;0
+Base game;mq1013_pretender_outed;Witcher Wannabe;10;10;0
+Base game;mq1013_pretender_let_go;Witcher Wannabe;10;10;0
+Base game;mq1046_burning_down_the_house_reward;Death By Fire;10;10;0
+Base game;mq1060_schematics_reward;Scavenger Hunt: Forgotten Wolf School Gear Diagrams / In the Eternal Fire's Shadow;15;0;0
+Base game;mq1060_schematics_reward_1;Scavenger Hunt: Forgotten Wolf School Gear Diagrams / In the Eternal Fire's Shadow;15;0;0
+Base game;mq1060_schematics_reward_2;Scavenger Hunt: Forgotten Wolf School Gear Diagrams / In the Eternal Fire's Shadow;15;0;0
+Base game;mq1060_priest_reward;Scavenger Hunt: Forgotten Wolf School Gear Diagrams / In the Eternal Fire's Shadow;15;75;200
+Base game;mq1060_priest_dead_reward;Scavenger Hunt: Forgotten Wolf School Gear Diagrams / In the Eternal Fire's Shadow;15;75;0
+Base game;mq2013_1_location_reward;The Sad Tale of the Grossbart Brothers;26;50;20
+Base game;mq2013_1_half_of_bounty;The Sad Tale of the Grossbart Brothers;26;25;50
+Base game;mq2020_chest;Flesh for Sale;12;0;0
+Base game;mq2020_slaves_freed;Flesh for Sale;12;50;0
+Base game;mq2006_chest_1;X Marks the Spot / Ruins, Hidden Treasure, You Know...;18;0;20
+Base game;mq2006_chest_2;X Marks the Spot / Ruins, Hidden Treasure, You Know...;18;0;60
+Base game;mq2034_01_completed;;0;50;0
+Base game;mq2041_1_suceeded;;0;50;0
+Base game;mq2003_enc_1_women_in_tomb;Peace Disturbed;25;50;0
+Base game;mq2015_1_half;Taken as a Lass;25;50;0
+Base game;mq2015_2_final;Taken as a Lass;25;75;0
+Base game;mq2030_1_lifted_curse;The Nithing;14;75;0
+Base game;mq2030_1_reversed_curse;The Nithing;14;25;60
+Base game;mq2017_wannabes_saved;For Fame and Glory;15;50;60
+Base game;mq2043_1_succeeded;;0;50;0
+Base game;mq2008_reward_in_chest;;0;0;20
+Base game;mq2011_1_second_encounter;Worthy of Trust;0;0;20
+Base game;mq2011_2_final_reward;Worthy of Trust;0;50;200
+Base game;mq2039_01_completed;Shock Therapy;24;75;0
+Base game;mq2051_final;An Unpaid Debt;15;50;0
+Base game;mq2021_shepherd_saved;;0;50;0
+Base game;mq2022_herbs_given;Brave Fools Die Young;0;50;0
+Base game;mq2024_ghost_vanquished;Master of the Arena;14;25;0
+Base game;mq2024_final_reward;Master of the Arena;14;25;20
+Base game;mq2024_first_reward;Master of the Arena;14;10;15
+Base game;mq2001_kaer_trolde_completed;A Hallowed Horn / The Family Blade;12;75;20
+Base game;mq2001_holmstein_completed;A Hallowed Horn / The Family Blade;12;25;20
+Base game;mq2037_01_completed;The Price of Honor;14;75;0
+Base game;mq2018_1_final_no_gold;Armed Assault;15;25;0
+Base game;mq2002_lied_or_no_sword;Finders Keepers;24;75;50
+Base game;mq2002_sword_given_away;Finders Keepers;24;75;55
+Base game;mq2010_quest_done;Abandoned Sawmill;24;0;20
+Base game;mq2038_won_w_jutta;Iron Maiden;19;25;0
+Base game;mq2019_1_ambushers_killed;;0;15;0
+Base game;mq2012_1_final_only_exp;Hard Times;21;25;0
+Base game;mq2012_1_final_exp_and_gold;Hard Times;21;25;20
+Base game;mq2045_1_saved_the_prisoner;Crime and Punishment;18;10;0
+Base game;mq2045_2_teach_a_lesson;Crime and Punishment;18;10;0
+Base game;mq2049_1_saved_atheist;Free Spirit;13;25;0
+Base game;mq2049_2_brought_him_books;Free Spirit;13;50;0
+Base game;mq2010_all_journals_found;Abandoned Sawmill;24;0;20
+Base game;mq2048_saved_foreigner_n_her_child;From a Land Far, Far Away;13;50;0
+Base game;mq2009_water_hag_killed;A Bard's Beloved;15;25;0
+Base game;mq2009_water_hag_loot;A Bard's Beloved;15;10;0
+Base game;mq2010_leshys_killed;Abandoned Sawmill;24;50;0
+Base game;mq2011_final_reward;Worthy of Trust;0;50;0
+Base game;mq3024_1_blockade_lifted;Thou Shalt Not Pass;7;75;0
+Base game;mq3009_saving_reward;;0;50;0
+Base game;mq3041_1_finished_reward;Out On Your Arse!;14;25;15
+Base game;mq3036_1_villa;Fencing Lessons;12;10;0
+Base game;mq3036_2_bridge;Fencing Lessons;12;25;0
+Base game;mq3036_3_inn;Fencing Lessons;12;25;0
+Base game;mq3036_1_encounter;Fencing Lessons;12;10;0
+Base game;mq3036_2_second_meeting;Fencing Lessons;12;25;0
+Base game;mq3031_1_got_pearl;Black Pearl;13;25;0
+Base game;mq3031_2_finished_quest;Black Pearl;13;0;10
+Base game;mq3005_quest_completed;A Walk on the Waterfront;12;50;10
+Base game;mq3035_1_radovid_dead;Reason of State;30;25;0
+Base game;mq3017_1_bribe;Little Red;15;25;20
+Base game;mq3017_1_villager_reward;Little Red;15;50;10
+Base game;mq3026_01_1opponent_beaten;Race: The Great Erasmus Vegelbud Memorial Derby;0;10;80
+Base game;mq3026_02_2oppponent_beaten;Race: The Great Erasmus Vegelbud Memorial Derby;0;10;160
+Base game;mq3026_03_3opponent_beaten;Race: The Great Erasmus Vegelbud Memorial Derby;0;25;200
+Base game;mq3026_04_4_completed;Race: The Great Erasmus Vegelbud Memorial Derby;0;75;80
+Base game;mq3026_04_won_night_race;Race: The Great Erasmus Vegelbud Memorial Derby;0;0;40
+Base game;mq3026_reward_race1;Race: The Great Erasmus Vegelbud Memorial Derby;0;0;0
+Base game;mq3026_reward_race2;Race: The Great Erasmus Vegelbud Memorial Derby;0;0;0
+Base game;mq3026_reward_race3;Race: The Great Erasmus Vegelbud Memorial Derby;0;0;0
+Base game;mq3026_reward_race4;Race: The Great Erasmus Vegelbud Memorial Derby;0;0;0
+Base game;mq3012_1_noble_reward;The Soldier Statuette;14;50;30
+Base game;mq3012_2_soldier_reward;The Soldier Statuette;14;10;0
+Base game;mq3002_1_starting_stash;Hidden Messages of the Nilfgaardian Kind;8;10;0
+Base game;mq3002_2_key_stash;Hidden Messages of the Nilfgaardian Kind;8;10;0
+Base game;mq3002_3_chest;Hidden Messages of the Nilfgaardian Kind;8;0;50
+Base game;mq3002_3_final;Hidden Messages of the Nilfgaardian Kind;8;25;0
+Base game;mq3005_1_encounter_1_finished;A Walk on the Waterfront;12;25;0
+Base game;mq3005_2_encounter_2_finished;A Walk on the Waterfront;12;25;0
+Base game;mq3015_1_final;;0;25;0
+Base game;mq3027_found_my_manifest;Message from an Old Friend;0;50;51
+Base game;mq3040_1_encounter_01;;0;10;0
+Base game;mq3040_2_encounter_02;;0;10;0
+Base game;mq3040_3_encounter_final;;0;50;0
+Base game;mq3023_4_threaten;;0;10;0
+Base game;mq3023_1_finished_attack;;0;25;0
+Base game;mq3023_2_ignore;;0;10;0
+Base game;mq3023_3_we_are_awesome;;0;10;0
+Base game;mq3037_01_completed;A Tome Entombed;13;50;0
+Base game;mq3038_1_human_guilty;Warehouse of Woe;13;25;60
+Base game;mq3038_1_dwarf_guilty_or_no_clue;Warehouse of Woe;13;25;60
+Base game;mq3008_encounter_01;;0;25;50
+Base game;mq3008_encounter_02;;0;10;0
+Base game;mq3039_1_loot_chest;A Feast for Crows;20;0;50
+Base game;mq3039_1_no_chest;A Feast for Crows;20;0;20
+Base game;mq3016_bards_found;Novigrad Hospitality;8;10;0
+Base game;mq4006_01_completed;The Witchers' Forge;30;25;0
+Base game;mq4002_01_completed;Greenhouse Effect;27;25;0
+Base game;mq4005_01_completed;Berengar's Blade;27;50;0
+Base game;mq4004_01_completed;The Bastion;23;50;0
+Base game;mq4001_01_completed;;0;25;0
+Base game;mq4003_01_completed;Monster Slayer;26;50;0
+Base game;lw_rescuetown_plg;;0;90;0
+Base game;lw_rescuetown_nml;;0;120;50
+Base game;lw_rescuetown_nov;;0;150;50
+Base game;lw_rescuetown_skl;;0;170;50
+Base game;vivaldis_loan;;0;0;100
+Base game;generic_gwint_reward;;0;0;10
+Base game;high_price_gwint_reward;;0;0;100
+Base game;achievement_monster_hunt_cockatrice;;0;0;0
+Base game;achievement_monster_hunt_ekimma;;0;0;0
+Base game;achievement_monster_hunt_fiend;;0;0;0
+Base game;achievement_monster_hunt_dao;;0;0;0
+Base game;achievement_monster_hunt_doppler;;0;0;0
+Base game;achievment_complete_all_monster_hunts;;0;0;0
+Base game;achievment_complete_all_races;;0;0;0
+Base game;achievment_ea_explorer;;0;0;0
+Base game;cg_all_opponents;;0;0;0
+Base game;ff302_1_victory;;0;25;50
+Base game;br301_1_victory;Regatta: Novigrad;0;25;0
+Base game;br302_1_victory;Regatta: Oxenfurt;0;25;0
+Base game;ff301_1_victory;;0;25;80
+Base game;ff304_1_victory;;0;75;120
+Base game;ff303_1_victory;;0;25;95
+Base game;ff203_1_victory;;0;25;70
+Base game;ff204_2_achievement;;0;0;0
+Base game;ff204_1_victory;;0;50;90
+Base game;ff201_1_victory;;0;25;70
+Base game;br201_1_victory;Regatta: Helmsman's Dash;0;25;0
+Base game;br202_1_victory;Regatta: Rally of the Wrecks;0;25;0
+Base game;ff205_1_victory;;0;50;90
+Base game;ff202_1_victory;;0;25;70
+Base game;hr201_regular_reward;The Heroes' Pursuits: Fayrlund;0;25;50
+Base game;hr202_regular_reward;The Heroes' Pursuits: Fyresdal;0;25;50
+Base game;hr203_regular_reward;The Heroes' Pursuits: Kaer Trolde;0;30;80
+Base game;hr204_regular_reward;The Heroes' Pursuits: For the Goddess' Glory!;0;50;90
+Base game;hr201_regular_reward_repeat;The Heroes' Pursuits: Fayrlund;0;20;30
+Base game;hr202_regular_reward_repeat;The Heroes' Pursuits: Fyresdal;0;20;40
+Base game;hr203_regular_reward_repeat;The Heroes' Pursuits: Kaer Trolde;0;20;50
+Base game;ff101_1_victory;;0;25;70
+Base game;ff103_1_victory;;0;25;50
+Base game;ff102_1_victory;;0;25;70
+Base game;hr101_1_victory;Races: Crow's Perch;0;25;50
+Base game;hr101_2_item;Races: Crow's Perch;0;0;20
+Base game;hr101_3_item;Races: Crow's Perch;0;0;30
+Base game;hr101_4_item;Races: Crow's Perch;0;0;40
+Base game;ff104_1_victory;;0;75;80
+Base game;cg_academic;;0;0;0
+Base game;cg_all_cards_gathered;;0;50;0
+Base game;cg_card_prodigy;;0;25;0
+Base game;cg_baron;;0;25;0
+Base game;cg_hermit;;0;25;0
+Base game;cg_talar;;0;25;0
+Base game;cg_crossroads_innkeeper;;0;25;0
+Base game;cg_boat_builder_nml;;0;25;0
+Base game;cg_dijkstra;;0;25;0
+Base game;cg_zoltan;;0;25;0
+Base game;cg_olivier;;0;25;0
+Base game;cg_lambert;;0;25;0
+Base game;cg_vimme_vivaldi;;0;25;0
+Base game;cg_roche;;0;25;0
+Base game;cg_markiza_serenity;;0;25;0
+Base game;cg_scojateal_trader;;0;25;0
+Base game;cg_crach_an_craite;;0;25;0
+Base game;cg_gremista;;0;25;0
+Base game;cg_lugos_the_mad;;0;25;0
+Base game;cg_stjepan;;0;25;0
+Base game;cg_mousesack;;0;25;0
+Base game;cg_sjusta_the_tailor;;0;25;0
+Base game;ach_SwiftJustice;;0;0;0

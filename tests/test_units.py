@@ -2,7 +2,7 @@
 import random
 import unittest
 
-from tests.helpers import real, tiny
+from tests.helpers import plan_for as build_plan, real
 from witcher3.checker import check
 from witcher3.simulator import Model, simulate, start_state
 from witcher3.units import Action, Plan
@@ -11,9 +11,8 @@ REAL = real()
 
 
 def plan_for(steps, rels):
-    ds = tiny(steps, rels)
-    m = Model(ds)
-    return ds, m, Plan(m)
+    ds, plan = build_plan(steps, rels)
+    return ds, plan.model, plan
 
 
 def uids(m, taken):

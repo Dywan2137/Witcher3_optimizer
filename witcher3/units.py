@@ -16,11 +16,12 @@ Unit boundaries never leave a block open, so between actions `state.open_block i
 """
 from __future__ import annotations
 
+import graphlib
 import itertools
 from collections import defaultdict
 from dataclasses import dataclass
 
-from .simulator import Model, State, Taken, available, is_dead, take, why_not
+from .simulator import Model, State, available, is_dead, take, why_not
 
 
 @dataclass(frozen=True)
@@ -158,21 +159,23 @@ class Plan:
         if state.open_block is not None:
             raise ValueError(f'block {state.open_block} is open: units are only started between units')
 
-    def legal_actions(self, state: State) -> list:
-        """Everything the search may start now: available free steps, and every block unit (with each variant
-        and optional mode) that can be entered and played to its end from this state."""
+    def candidates(self, state: State) -> list:
+        """Cheap superset of the legal actions: available free steps (all legal) and every variant / optional
+        mode of each block with an available member (legal only if `try_play` succeeds)."""
         m = self.model
         self._between_units(state)
         av = set(available(m, state))
         acts = [Action('step', i) for i in self.free_steps if i in av]
         for tag, b in self.blocks.items():
-            if not any(i in av for i in b.members):    # cheap filter before the dry runs
-                continue
-            for variant in self.variants(tag) or [()]:
-                for opts in self.optional_modes(tag):
-                    if self.try_play(state, tag, variant, opts) is not None:
-                        acts.append(Action('block', tag, variant, opts))
+            if any(i in av for i in b.members):
+                acts += [Action('block', tag, v, o) for v in self.variants(tag) for o in self.optional_modes(tag)]
         return acts
+
+    def legal_actions(self, state: State) -> list:
+        """Everything the search may start now: available free steps, and every block unit (with each variant
+        and optional mode) that can be entered and played to its end from this state."""
+        return [a for a in self.candidates(state)
+                if a.kind == 'step' or self.try_play(state, a.ref, a.variant, a.optionals) is not None]
 
     def apply(self, state: State, action: Action):
         """-> (new_state, [Taken]). Raises ValueError if the action is not legal in `state`."""
@@ -212,7 +215,7 @@ class Plan:
             # counts as done, including earlier blocks of the same quest
             ideal = State(done={i for i in range(len(m.uids))
                                 if m.block[i] != tag and not (m.quest[i] in b.quests and m.block[i] is None)})
-            plays = [self.try_play(ideal, tag, v, o) for v in self.variants(tag) or [()] for o in self.optional_modes(tag)]
+            plays = [self.try_play(ideal, tag, v, o) for v in self.variants(tag) for o in self.optional_modes(tag)]
             if not any(plays):
                 notes.append(f'block {tag}: cannot be played through even when every outside step is done')
             for gid in b.groups:
@@ -227,13 +230,9 @@ class Plan:
     def circular_blocks(self) -> list:
         """Blocks that can never be completed in place: a step they need from outside depends on one of their own
         members (e.g. a sealed Baron questline that needs a Ciri flashback, which itself starts after a block step)."""
-        import graphlib
         m = self.model
-        ts = graphlib.TopologicalSorter()
-        for i in range(len(m.uids)):
-            ts.add(i, *(m.req[i] + m.unl[i]))
         try:
-            order = list(ts.static_order())
+            order = m.topo
         except graphlib.CycleError:
             return ['precedence graph has a cycle (see python main.py validation)']
         anc = {}
@@ -262,7 +261,7 @@ class Plan:
         return notes
 
     def stats(self) -> dict:
-        var = [len(self.variants(t)) or 1 for t in self.blocks]
+        var = [len(self.variants(t)) for t in self.blocks]
         return dict(steps=len(self.model.uids), free_steps=len(self.free_steps), blocks=len(self.blocks),
                     block_members=sum(len(b.members) for b in self.blocks.values()),
                     blocks_with_choices=sum(1 for b in self.blocks.values() if b.groups),

@@ -7,7 +7,8 @@ Sheets
   Skipped  the steps the plan does not play and why (another path was chosen, a story step cuts them off, ...).
   Summary  scope, final level, XP, and the step at which each level is reached.
 
-Usage: python -m witcher3.export [--scope base,hos,bw] [--restarts 25] [--noise 2] [--out output/optimal_order.xlsx]
+Usage: python -m witcher3.export [--scope base,hos,bw] [--restarts 25] [--noise 2] [--local ITERS] [--chains K]
+       [--out output/optimal_order.xlsx]
 """
 from __future__ import annotations
 
@@ -23,9 +24,9 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 
 from witcher3.baselines import Run, lost_steps
+from witcher3.cli import add_data_args, load_plan
 from witcher3.greedy import CONFIGS, best_of
-from witcher3.loader import DATA_FILE, load, restrict
-from witcher3.simulator import Model, is_dead
+from witcher3.local import optimize
 from witcher3.units import Plan
 
 DEFAULT_OUT = Path(__file__).resolve().parents[1] / 'output' / 'optimal_order.xlsx'
@@ -54,24 +55,22 @@ def cell_value(key, value):
 
 
 def skipped_rows(plan: Plan, ds, run: Run):
+    """-> [(original step row, reason)] for every step the plan does not play."""
     m, s = plan.model, run.state
     info = ds.steps.set_index('step_uid')
     played = {m.idx[u] for u in run.order}
     lost = lost_steps(m, s, played)
-    out = []
-    for i in range(len(m.uids)):
-        if i in played:
-            continue
+
+    def why(i):
         if m.tags[i] and all(t in s.excluded for t in m.tags[i]):
-            why = 'Another path of this quest was chosen'
-        elif i in s.dead:
-            why = 'Cut off by an earlier story step or exclusive choice'
-        elif i in lost:
-            why = 'Needs a step that is skipped'
-        else:
-            why = 'Never became available (check the data)'
-        out.append((i, why))
-    return [(info.loc[m.uids[i]], why) for i, why in out]
+            return 'Another path of this quest was chosen'
+        if i in s.dead:
+            return 'Cut off by an earlier story step or exclusive choice'
+        if i in lost:
+            return 'Needs a step that is skipped'
+        return 'Never became available (check the data)'
+
+    return [(info.loc[m.uids[i]], why(i)) for i in range(len(m.uids)) if i not in played]
 
 
 def style_header(ws, row, ncols, fill='1F3864'):
@@ -97,7 +96,7 @@ def write_plan(wb, ds, run: Run):
         r = ws.max_row
         for c in range(1, len(PLAN_HEAD) + 1):
             cell = ws.cell(r, c)
-            cell.font = Font(name=FONT, bold=(PLAN_HEAD[c - 1] in ('Level after',) and t.level > t.level_before))
+            cell.font = Font(name=FONT, bold=(PLAN_HEAD[c - 1] == 'Level after' and t.level > t.level_before))
             if t.level > t.level_before:
                 cell.fill = up
             if s['quest_id'] != last_quest:
@@ -120,7 +119,7 @@ def write_skipped(wb, plan: Plan, ds, run: Run):
     style_header(ws, 1, len(head))
     for s, why in skipped_rows(plan, ds, run):
         ws.append([s['location'], s['category'], s['dlc'], s.name, s['quest_id'], cell_value('step_id', s['step_id']),
-                   s['quest_name'], s['description'], cell_value('x', s['reward_xp']), why])
+                   s['quest_name'], s['description'], cell_value('reward_xp', s['reward_xp']), why])
         for c in range(1, len(head) + 1):
             ws.cell(ws.max_row, c).font = Font(name=FONT)
     for i, w in enumerate([14, 20, 16, 13, 11, 8, 34, 60, 10, 52], 1):
@@ -179,19 +178,20 @@ def export(ds, plan: Plan, run: Run, path, scope, level_table) -> Path:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split('\n\n')[0])
-    ap.add_argument('--file', default=DATA_FILE)
-    ap.add_argument('--scope', default='base,hos,bw', help='comma separated: base, hos, bw')
+    add_data_args(ap, 'base,hos,bw')
     ap.add_argument('--restarts', type=int, default=25, help='randomized restarts per rule setting (0 = plain greedy only)')
     ap.add_argument('--noise', type=float, default=2.0)
+    ap.add_argument('--local', type=int, default=0, help='local search iterations after the greedy (0 = greedy only)')
+    ap.add_argument('--chains', type=int, default=1, help='independent local search runs')
     ap.add_argument('--out', default=str(DEFAULT_OUT))
     args = ap.parse_args()
 
-    scope = args.scope.split(',')
-    full = load(args.file)
-    ds = restrict(full, scope)
-    plan = Plan(Model(ds))
-    run = best_of(plan, args.restarts, args.noise, configs=CONFIGS if args.restarts else None)
-    out = export(ds, plan, run, args.out, scope, full.level_table)
+    full, ds, plan = load_plan(args)
+    if args.local:
+        run = optimize(plan, args.local, restarts=args.restarts, noise=args.noise, chains=args.chains)[0]
+    else:
+        run = best_of(plan, args.restarts, args.noise, configs=CONFIGS if args.restarts else None)
+    out = export(ds, plan, run, args.out, args.scope.split(','), full.level_table)
     print(f'scope {args.scope}: level {run.level}, {run.xp:,.0f} XP, {len(run.trace)} steps -> {out}')
 
 

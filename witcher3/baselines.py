@@ -13,13 +13,14 @@ import argparse
 import random
 import statistics
 import sys
+from collections import Counter
 from dataclasses import dataclass, field
 from pathlib import Path
 
 if __package__ in (None, ''):  # run as a plain script (python witcher3/baselines.py, an IDE Run button)
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from witcher3.loader import DATA_FILE, Dataset, load, restrict
+from witcher3.cli import add_data_args, load_plan
 from witcher3.simulator import Model, State, is_dead, start_state
 from witcher3.units import Action, Plan
 
@@ -29,8 +30,8 @@ class Run:
     order: list                     # step ids in the order they were played
     state: State
     trace: list = field(default_factory=list)       # [Taken]
-    actions: int = 0
     unresolved: list = field(default_factory=list)  # choice groups that still owed a choice at the end
+    actions: list = field(default_factory=list)     # [Action] in the order they were chosen
 
     @property
     def xp(self) -> float:
@@ -61,18 +62,15 @@ def random_policy(rng: random.Random):
 
 def play(plan: Plan, policy, start_xp: float = 0.0) -> Run:
     """Play until nothing is legal. `policy(plan, state, legal_actions) -> Action`."""
-    m = plan.model
-    s, run = start_state(m, start_xp), None
-    order, trace, n = [], [], 0
-    while True:
-        actions = plan.legal_actions(s)
-        if not actions:
-            break
-        s, taken = plan.apply(s, policy(plan, s, actions))
+    s = start_state(plan.model, start_xp)
+    order, trace, chosen = [], [], []
+    while actions := plan.legal_actions(s):
+        a = policy(plan, s, actions)
+        s, taken = plan.apply(s, a)
         order += [t.uid for t in taken]
         trace += taken
-        n += 1
-    return Run(order, s, trace, n, plan.unresolved_choices(s))
+        chosen.append(a)
+    return Run(order, s, trace, plan.unresolved_choices(s), chosen)
 
 
 def upper_bound(plan: Plan) -> dict:
@@ -93,51 +91,42 @@ def upper_bound(plan: Plan) -> dict:
 def lost_steps(m: Model, s: State, done: set) -> set:
     """Steps that can never be played any more: killed by a cutoff / path choice, or needing a lost step."""
     lost = {i for i in range(len(m.uids)) if i not in done and is_dead(m, s, i)}
-    changed = True
-    while changed:
-        changed = False
-        for i in range(len(m.uids)):
-            if i in done or i in lost:
-                continue
-            if any(j in lost for j in m.req[i]) or (m.unl[i] and all(j in lost for j in m.unl[i])):
-                lost.add(i)
-                changed = True
+    for i in m.topo:                                         # prerequisites come first, so one pass is enough
+        if i not in done and i not in lost and (any(j in lost for j in m.req[i]) or
+                                                (m.unl[i] and all(j in lost for j in m.unl[i]))):
+            lost.add(i)
     return lost
 
 
-def summarize_run(plan: Plan, run: Run) -> dict:
-    """`lost` steps were made unavailable by a path choice or cutoff, or need a lost step (expected); `stuck` steps are
-    still alive but can never be reached, which points at missing entry gates or circular prerequisites in the data."""
+def unplayed(plan: Plan, run: Run) -> tuple[set, list]:
+    """-> (lost, stuck). `lost` steps were made unavailable by a path choice or cutoff, or need a lost step (expected);
+    `stuck` steps are still alive but can never be reached, which points at missing entry gates or circular
+    prerequisites in the data."""
     m = plan.model
     taken = {m.idx[u] for u in run.order}
-    lost_set = lost_steps(m, run.state, taken)
-    lost = sorted(lost_set)
-    stuck = [i for i in range(len(m.uids)) if i not in taken and i not in lost_set]
-    return dict(xp=round(run.xp), level=run.level, steps=len(taken), lost=len(lost), stuck=len(stuck),
-                stuck_xp=round(sum(m.xp[i] for i in stuck)), cliff_steps=run.cliff_steps,
+    lost = lost_steps(m, run.state, taken)
+    return lost, [i for i in range(len(m.uids)) if i not in taken and i not in lost]
+
+
+def summarize_run(plan: Plan, run: Run) -> dict:
+    lost, stuck = unplayed(plan, run)
+    return dict(xp=round(run.xp), level=run.level, steps=len(run.order), lost=len(lost), stuck=len(stuck),
+                stuck_xp=round(sum(plan.model.xp[i] for i in stuck)), cliff_steps=run.cliff_steps,
                 unresolved_choices=len(run.unresolved))
 
 
 def stuck_quests(plan: Plan, run: Run, top: int = 8) -> list:
-    m = plan.model
-    taken = {m.idx[u] for u in run.order}
-    lost = lost_steps(m, run.state, taken)
-    counts = {}
-    for i in range(len(m.uids)):
-        if i not in taken and i not in lost:
-            counts[m.quest[i]] = counts.get(m.quest[i], 0) + 1
-    return sorted(counts.items(), key=lambda kv: -kv[1])[:top]
+    return Counter(plan.model.quest[i] for i in unplayed(plan, run)[1]).most_common(top)
 
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split('\n\n')[0])
-    ap.add_argument('--file', default=DATA_FILE)
+    add_data_args(ap, 'base,hos,bw')
     ap.add_argument('--random', type=int, default=10, help='number of random playthroughs (0 to skip)')
     ap.add_argument('--seed', type=int, default=0)
-    ap.add_argument('--scope', default='base,hos,bw', help='comma separated: base, hos, bw')
     args = ap.parse_args()
 
-    plan = Plan(Model(restrict(load(args.file), args.scope.split(','))))
+    _, _, plan = load_plan(args)
     ub = upper_bound(plan)
     print(f'upper bound        : xp {ub["xp"]:>9,.0f}  level {ub["level"]}')
     run = play(plan, story_order)

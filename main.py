@@ -39,7 +39,7 @@ def main() -> int:
             print(' ', note)
     if args.csv:
         issues.to_csv(args.csv, index=False, encoding='utf-8-sig')
-    return int((issues['severity'] == 'error').any()) if not issues.empty else 0
+    return int((issues['severity'] == 'error').any())
 
 
 if __name__ == '__main__':

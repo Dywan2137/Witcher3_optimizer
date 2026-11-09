@@ -23,6 +23,7 @@ The data is still being completed by hand; run `python main.py --units` for the 
 Data/                    quest workbook (one sheet per region + Relationships, Reward_rules, Level_table)
 witcher3/
   loader.py              workbook -> pandas tables, data validation
+  cli.py                 --file / --scope arguments and plan loading shared by the runnable modules
   build_relationships.py regenerates the '<Region> Relationships' sheets from Before/After/Block_ID/Path_ID
   simulator.py           step-by-step game rules: availability, rewards, levels, sealed blocks
   checker.py             independent re-check of a finished ordering (does not share code with the simulator)

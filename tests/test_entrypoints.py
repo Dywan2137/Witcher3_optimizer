@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-MODULES = ['greedy', 'baselines', 'build_relationships', 'export']
+MODULES = ['greedy', 'baselines', 'build_relationships', 'export', 'local']
 
 
 def run(args, cwd):

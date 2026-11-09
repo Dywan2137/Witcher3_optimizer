@@ -17,10 +17,7 @@ PRECEDENCE = {'requires', 'unlocks'}
 
 SCOPES = {'base': 'podstawa', 'hos': 'Serce z kamienia', 'bw': 'Krew i wino'}   # scope name -> value of the DLC column
 
-HEADER_ALIASES = {
-    'describtion': 'description', 'reward_xp': 'reward_xp', 'manditory': 'mandatory',
-    'has_level_recommendation': 'has_level_recommendation', 'recommended_level': 'recommended_level',
-}
+HEADER_ALIASES = {'describtion': 'description', 'manditory': 'mandatory'}      # misspelt headers in the workbook
 
 
 @dataclass
@@ -37,9 +34,13 @@ def _header(h) -> str:
     return HEADER_ALIASES.get(key, key)
 
 
+def _blank(value) -> bool:
+    return value is None or str(value).strip() in ('', '-')
+
+
 def _tag(value, quest_id):
     """None for empty/'-'; evaluates the =CONCAT(D<row>,"suffix") formulas used for Block_ID/Path_ID."""
-    if value is None or str(value).strip() in ('', '-'):
+    if _blank(value):
         return None
     if isinstance(value, str) and value.startswith('='):
         m = re.fullmatch(r'=_xlfn\.CONCAT\(D\d+,"(.*)"\)', value)
@@ -55,7 +56,7 @@ def split_tags(value) -> tuple:
 
 
 def _ref(value):
-    return None if value is None or str(value).strip() in ('', '-') else str(value).strip()
+    return None if _blank(value) else str(value).strip()
 
 
 def _bool(value):
@@ -135,9 +136,11 @@ def restrict(ds: Dataset, scope) -> Dataset:
     uids, blocks = set(steps['step_uid']), set(steps['block_id'].dropna())
     tags = {t for ts in steps['path_tags'] for t in ts}
     rel = ds.relationships
-    ends = {'in_block': (blocks, uids), 'excludes_path': (tags, tags)}
-    keep = [e.source in ends.get(e.type, (uids, uids))[0] and e.target in ends.get(e.type, (uids, uids))[1]
-            for e in rel.itertuples()]
+    ends = {'in_block': (blocks, uids), 'excludes_path': (tags, tags)}          # what an edge's two ends must belong to
+    keep = []
+    for e in rel.itertuples():
+        src_pool, tgt_pool = ends.get(e.type, (uids, uids))
+        keep.append(e.source in src_pool and e.target in tgt_pool)
     return replace(ds, steps=steps, relationships=rel[keep].reset_index(drop=True))
 
 
@@ -166,6 +169,7 @@ def validate(ds: Dataset) -> pd.DataFrame:
     for uid, g in st.groupby('step_uid'):
         if len(g) > 1:
             add('error', 'duplicate_step_uid', g.iloc[0]['location'], uid, f'rows {list(g["row"])}')
+    rule_types = set(ds.reward_rules['reward_rule_type'])
     for _, s in st.iterrows():
         if not s['step_id'] or s['step_id'] == 'None':
             add('error', 'missing_step_id', s['location'], f'row {s["row"]}', s['quest_id'])
@@ -173,7 +177,7 @@ def validate(ds: Dataset) -> pd.DataFrame:
             add('error', 'bad_reward_xp', s['location'], s['step_uid'], f'reward_xp={s["reward_xp"]}')
         if s['has_level_recommendation'] and pd.isna(s['recommended_level']):
             add('error', 'missing_recommended_level', s['location'], s['step_uid'], 'has_level_recommendation but no level')
-        if s['reward_rule_type'] not in set(ds.reward_rules['reward_rule_type']):
+        if s['reward_rule_type'] not in rule_types:
             add('error', 'unknown_reward_rule', s['location'], s['step_uid'],
                 'empty' if pd.isna(s['reward_rule_type']) else repr(s['reward_rule_type']))
 
@@ -246,7 +250,7 @@ def validate(ds: Dataset) -> pd.DataFrame:
         add('error', 'unreachable_step', loc_of[t], t, 'prerequisites can never be satisfied')
 
     # a blocker that is also a (transitive) prerequisite of its own target
-    parents ={t: req[t] | unl[t] for t in uids}
+    parents = {t: req[t] | unl[t] for t in uids}
     for s, t in blk:
         seen, stack = set(), [t]
         while stack:

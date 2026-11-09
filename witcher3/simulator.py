@@ -18,11 +18,11 @@ Rewards: reward_xp x multiplier(rule type, recommended_level - level before the 
 """
 from __future__ import annotations
 
+import graphlib
 from bisect import bisect_right
 from collections import defaultdict
 from dataclasses import dataclass, field
-
-import pandas as pd
+from functools import cached_property
 
 from .loader import Dataset
 
@@ -75,6 +75,23 @@ class Model:
         self.rules = {t: (g['level_gap_min'].tolist(), g['level_gap_max'].tolist(), g['multiplier'].tolist())
                       for t, g in rules.groupby('reward_rule_type')}
         self.cum = ds.level_table['cumulative_xp_to_reach_level'].tolist()
+
+    @cached_property
+    def children(self) -> list:
+        """children[i]: the steps that list step i as a prerequisite (requires or unlocks)."""
+        out = [[] for _ in self.uids]
+        for i in range(len(self.uids)):
+            for p in self.req[i] + self.unl[i]:
+                out[p].append(i)
+        return out
+
+    @cached_property
+    def topo(self) -> list:
+        """Step indices with every prerequisite before the step that needs it. Raises graphlib.CycleError on a cycle."""
+        ts = graphlib.TopologicalSorter()
+        for i in range(len(self.uids)):
+            ts.add(i, *(self.req[i] + self.unl[i]))
+        return list(ts.static_order())
 
     def level_of(self, xp: float) -> int:
         return bisect_right(self.cum, xp)           # cum[0] == 0, so the minimum is level 1; capped by the table
@@ -187,7 +204,3 @@ def simulate(model: Model, order: list[str], start_xp: float = 0.0, on_violation
             continue
         trace.append(take(model, s, i))
     return Result(s.xp, s.level, trace, bad, s)
-
-
-def trace_frame(result: Result) -> pd.DataFrame:
-    return pd.DataFrame([t.__dict__ for t in result.trace])

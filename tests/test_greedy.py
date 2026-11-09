@@ -1,5 +1,4 @@
 """Tests for witcher3.greedy (step 5). Run with: python -m unittest -v"""
-import random
 import unittest
 
 from tests.helpers import real, tiny
@@ -44,7 +43,7 @@ class Rules(unittest.TestCase):
         self.assertEqual(run(steps, rels)[1].order, ['VICTIM', 'KILLER'])
         self.assertEqual(run(steps, rels, cutoff_guard=False)[1].order, ['KILLER'])      # victim is cut off
 
-    def test_hearts_of_stone_waits_until_under_leveled_by_five(self):
+    def test_hearts_of_stone_waits_for_its_peak_window(self):
         steps = [('HOS', 'Q', {'rec': 20, 'rule': 'hos_gradual'}), ('BASE', 'R', {'rec': 40})]
         self.assertEqual(run(steps, [])[1].order, ['BASE', 'HOS'])                       # level 1 is 19 below: wait
         self.assertEqual(run(steps, [], hos_wait=False)[1].order, ['HOS', 'BASE'])

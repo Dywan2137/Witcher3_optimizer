@@ -75,7 +75,7 @@ def build(steps):
 
     for s in steps.itertuples():
         for col, cell, typ in (('After', s.after, None), ('Before', s.before, 'blocks')):
-            if cell is None or cell != cell:    # None or NaN
+            if pd.isna(cell):
                 continue
             ids, bad = parse_ref(cell)
             issues += [(s.location, s.row, s.step_uid, col, str(cell), b) for b in bad]

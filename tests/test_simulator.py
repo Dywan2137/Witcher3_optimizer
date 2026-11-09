@@ -28,8 +28,8 @@ class Tables(unittest.TestCase):
 
     def test_cliff_boundary(self):
         m = Model(REAL)
-        self.assertEqual(m.multiplier('base_cliff', -10), 0.8)
-        self.assertEqual(m.multiplier('base_cliff', -11), 0.05)
+        self.assertEqual(m.multiplier('base_cliff', -9), 0.8)
+        self.assertEqual(m.multiplier('base_cliff', -10), 0.05)
         self.assertEqual(m.multiplier('base_cliff', -999), 0.05)
         self.assertEqual(m.multiplier('base_cliff', 50), 0.8)
 
@@ -39,8 +39,10 @@ class Tables(unittest.TestCase):
             for gap in range(r.level_gap_min, r.level_gap_max + 1) if r.level_gap_max - r.level_gap_min < 50 else [r.level_gap_min, r.level_gap_max]:
                 self.assertEqual(m.multiplier(r.reward_rule_type, gap), r.multiplier, (r.reward_rule_type, gap))
         self.assertEqual(m.multiplier('hos_gradual', 5), 1.5)
-        self.assertEqual(m.multiplier('hos_gradual', 6), 0.8)
-        self.assertEqual(m.multiplier('hos_gradual', -6), 0.05)
+        self.assertEqual(m.multiplier('hos_gradual', 9), 1.5)
+        self.assertEqual(m.multiplier('hos_gradual', 10), 0.8)
+        self.assertEqual(m.multiplier('hos_gradual', -4), 0.16)
+        self.assertEqual(m.multiplier('hos_gradual', -5), 0.05)
 
     def test_no_level_pays_full(self):
         self.assertEqual(Model(REAL).multiplier('base_cliff', -50, has_level=False), 1.0)
@@ -100,12 +102,12 @@ class Rules(unittest.TestCase):
         self.assertEqual([t.gap for t in r.trace], [0, 0, -1])
         self.assertEqual((r.xp, r.level), (2400, 3))
 
-    def test_cliff_applies_at_minus_11(self):
+    def test_cliff_applies_at_minus_10(self):
         m = Model(tiny([('A', 'Q', {'xp': 1000, 'rec': 1})], []))
-        s = start_state(m, xp=REAL.level_table.loc[11, 'cumulative_xp_to_reach_level'])   # level 12
-        self.assertEqual(s.level, 12)
-        self.assertAlmostEqual(take(m, s, 0).gain, 50)                                   # gap 1 - 12 = -11 -> 5%
-        s = start_state(m, xp=REAL.level_table.loc[10, 'cumulative_xp_to_reach_level'])  # level 11, gap -10
+        s = start_state(m, xp=REAL.level_table.loc[10, 'cumulative_xp_to_reach_level'])  # level 11
+        self.assertEqual(s.level, 11)
+        self.assertAlmostEqual(take(m, s, 0).gain, 50)                                   # gap 1 - 11 = -10 -> 5%
+        s = start_state(m, xp=REAL.level_table.loc[9, 'cumulative_xp_to_reach_level'])   # level 10, gap -9
         self.assertAlmostEqual(take(m, s, 0).gain, 800)
 
     def test_skip_mode_records_violations(self):
