@@ -39,6 +39,13 @@ class Validate(unittest.TestCase):
         self.assertIn('unreachable_step', cyc)
         self.assertIn('blocker_is_prerequisite', checks(steps, [('A', 'requires', 'B'), ('A', 'blocks', 'B')]))
 
+    def test_a_blocker_on_one_alternative_route_is_fine(self):
+        # A or C unlocks B, then D; A blocks D: D is still reachable through C
+        steps = [S('A'), S('B'), S('C'), S('D')]
+        rels = [('A', 'unlocks', 'B'), ('C', 'unlocks', 'B'), ('B', 'requires', 'D'), ('A', 'blocks', 'D')]
+        self.assertNotIn('blocker_is_prerequisite', checks(steps, rels))
+        self.assertIn('blocker_is_prerequisite', checks(steps, rels[:1] + rels[2:]))  # A is the only route
+
     def test_block_sync(self):
         self.assertIn('relationships_out_of_sync', checks([S('A', block='T')], []))                 # tag without an in_block edge
         self.assertIn('relationships_out_of_sync', checks([S('A')], [('T', 'in_block', 'A')]))      # edge without a tag

@@ -1,0 +1,899 @@
+﻿source;reward_name;id;quest_name;step_name;quest_level;base_xp;gold
+Blood and Wine;q701_summons_reward;q701;Poselstwo z Krainy Wina;odpowiedz na wezwanie anny henrietty i zakończ zadanie;34;50;0
+Blood and Wine;q701_cyclops_reward;q701;Bestia z Toussaint;za pokonanie Goliata;35;450;0
+Blood and Wine;q701_bruxa_recognised;q701;Bestia z Toussaint;za przeczytanie wpisu o bruxie z Corvo Bianco;35;150;0
+Blood and Wine;q701_bruxa_killed;q701;Bestia z Toussaint;za zabicie bruxy;35;500;0
+Blood and Wine;q701_coin_pouch_reward;q701;Bestia z Toussaint;za wyjęcie mieszka z florenami;35;150;0
+Blood and Wine;q701_sharley_killed;q701;Bestia z Toussaint;za pokonanie szarleja;35;300;0
+Blood and Wine;q701_cb_deed_reward;q701;Bestia z Toussaint;za otrzymanie Corvo Bianco;35;100;0
+Blood and Wine;q701_horse_item_reward;q701;Bestia z Toussaint;za zdobycie wskazówki z rogu jednorożca;35;150;0
+Blood and Wine;q701_swan_item_reward;q701;Bestia z Toussaint;-;35;0;0
+Blood and Wine;q701_swan_item_reward_2nd_half;q701;Bestia z Toussaint;2 nieudane podejścia do znalezienia kluczyka ze złotej rybki;35;50;0
+Blood and Wine;q701_swan_item_reward_just_xp;q701;Bestia z Toussaint;za zdobycie kluczyka ze złotej rybki;35;150;0
+Blood and Wine;q701_riddle_solved;q701;Bestia z Toussaint;za podanie prawidłowego rozwiązania zagadki;35;200;0
+Blood and Wine;q701_done_reward;q701;Bestia z Toussaint;za ukończenie zadania;35;1000;0
+Blood and Wine;q702_01a_dettlaff_defeated;q702;Na tropie…;za pokonanie dettlafa;36;1000;0
+Blood and Wine;q702_01b_geralt_defeated;q702;Na tropie…;za przegranie walki z dettlafem;36;600;0
+Blood and Wine;q702_02_regis_met;q702;Pogłos;po rozmowie z Regisem na cmentarzu;37;450;0
+Blood and Wine;q702_02a_wight_bestiary_read;q702;Pogłos;po przeczytaniu wpisu o wichcie plamistym;37;100;0
+Blood and Wine;q702_02b_kikimora_eggs_destroyed;q702;Pogłos;po zniszczeniu jaj kikimor;37;100;0
+Blood and Wine;q702_03_wight_curse_found;q702;Pogłos;po zbadaniu śladów w domu Marleny;39;300;0
+Blood and Wine;q702_03a_wight_killed;q702;Pogłos;po zabiciu wichta;39;650;0
+Blood and Wine;q702_03b_wight_disenchanted;q702;Pogłos;po zdobyciu wywaru wichta;39;1000;0
+Blood and Wine;q702_04_wight_brew_obtained;q702;Pogłos;po rozmowie z majordomusem w Corvo Bianco;39;1000;0
+Blood and Wine;q702_05_regis_met_again;q702;Pogłos;po rozmowie z Regisem po przyniesieniu mu śliny wichta;41;400;0
+Blood and Wine;q702_06_regis_sacrifice_done;q702;Pogłos;po zakończeniu zadania;41;1000;0
+Blood and Wine;q702_07_mill_examined;q702;W starym młynie;po zbadaniu młynu i zakończeniu zadania;42;400;0
+Blood and Wine;q702_08a_bootblack_fight_won;q702;Leże Bestii;po pokonaniu robotników;42;600;0
+Blood and Wine;q702_08b_bootblack_fight_lost;q702;Leże Bestii;po przegraniu walki z robotnikami;42;400;0
+Blood and Wine;q702_09_toy_storage_found;q702;Leże Bestii;po wejściu do budynku;42;600;0
+Blood and Wine;q702_10_done;q702;Leże Bestii;po zakończeniu zadania;42;1000;0
+Blood and Wine;q703_travelling_family_saved;q703;Wino rzecz święta;za pokonanie panter;42;450;0
+Blood and Wine;q703_fake_wine_found;q703;Wino rzecz święta;za znalezienie właściwej beczki;42;600;0
+Blood and Wine;q703_exchange_point_done;q703;Wino rzecz święta;po przybyciu na ostatnie spotkanie z Anną Henriettą;42;1500;0
+Blood and Wine;q703_mandragora_done;q703;Szlachcic z Cintry;za zakończenie zadania;43;1500;0
+Blood and Wine;q703_dun_tynne_done;q703;Szturm na Dun Tynne;za zakończenie zadania;47;1500;0
+Blood and Wine;q703_heart_of_toussaint_sketch_reward;q703;-;-;36;0;0
+Blood and Wine;q703_doublet_from_anna_henrietta;q703;-;-;36;0;0
+Blood and Wine;q703_dun_tynne_arena_01;q703;Szturm na Dun Tynne;po pokonaniu ludzi Roderika;47;500;0
+Blood and Wine;q703_dun_tynne_arena_02;q703;Szturm na Dun Tynne;po pokonaniu Roderika;47;500;0
+Blood and Wine;q703_dun_tynne_arena_03;q703;Szturm na Dun Tynne;po przybyciu wampirów;47;500;0
+Blood and Wine;q704_ft_enter_fairytale;q704;Dawno, dawno temu…;po dotarciu do Złej wiedźmy;47;250;0
+Blood and Wine;q704_ft_boy_who_cries_wolf;q704;Dawno, dawno temu…;po rozmowie z Józiem;47;500;0
+Blood and Wine;q704_ft_all_beans;q704;Dawno, dawno temu…;po zebraniu ostatniej fasolki;47;800;0
+Blood and Wine;q704_ft_done;q704;Dawno, dawno temu…;po zakończeniu zadania;47;800;0
+Blood and Wine;q704a_01_intro_done;q704;Długa noc;po zabiciu bruxy w pałacu;47;200;0
+Blood and Wine;q704a_02_diva_reached;q704;Długa noc;po wyruszeniu do sierocińca;47;200;0
+Blood and Wine;q704a_02b_damien_found;q704;Długa noc;po zabiciu fledera zagrażającego oddziałowi Damiena (musimy wpierw zgubić regisa na walce z garkainem);47;200;0
+Blood and Wine;q704a_03_garkain_investigated;q704;Zew krwi;za przeczytanie wpisu o garkainie przywódcy stada;47;100;0
+Blood and Wine;q704a_03_garkain_killed;q704;Zew krwi;po zabraniu trofeum z garkaina;47;200;0
+Blood and Wine;q704a_04_monster_hunt_done;q704;Zew krwi;po ostatniej rozmowie z Orianą;47;800;0
+Blood and Wine;q704a_05_elder_one_met;q704;Między światami;po wypiciu Jaskółki;47;300;0
+Blood and Wine;q704a_06_gift_found;q704;Między światami;po zabraniu podarku dla Ukrytego;47;200;0
+Blood and Wine;q704a_07_puzzle_done;q704;Między światami;po urwaniu czubka skały;47;200;0
+Blood and Wine;q704a_08_gravity_cave_done;q704;Między światami;po ostatniej rozmowie z Ukrytym;47;800;0
+Blood and Wine;q704a_09_dettlaff_dealt_with;q704;Tesham Mutna;po zakończeniu zadania;49;1000;0
+Blood and Wine;q705_found_letter;q705;Ceremonia/Za żelazną kratą;po zdobyciu piątego zlecenia morderstwa;49;50;0
+Blood and Wine;q705_ah_lives;q705;Za żelazną kratą;po rozmowie z Jaskrem w więzieniu;49;200;0
+Blood and Wine;q705_beast_slayer;q705;Ceremonia;po odebraniu nagrody od księżnej;49;200;5000
+Blood and Wine;q705_prison_stash;q705;Skarby spod celi;za zakończenie zadania;49;50;0
+Blood and Wine;sq701_shooting_range;sq701;Pieśń rycerskiego serca;po wygraniu zawodów łuczniczych;35;100;0
+Blood and Wine;sq701_race;sq701;Pieśń rycerskiego serca;po wygraniu wyścigu;35;100;0
+Blood and Wine;sq701_meadow;sq701;Pieśń rycerskiego serca;po pierwszej rozmowie z Vivienne nad jeziorem;35;50;0
+Blood and Wine;sq701_shield_wall;sq701;Pieśń rycerskiego serca;po wygraniu walki na arenie;35;100;0
+Blood and Wine;sq701_champion;sq701;Pieśń rycerskiego serca;po wygraniu walki z Gregoirem;35;250;200
+Blood and Wine;sq701_reward;sq701;Pieśń rycerskiego serca;Zakończ zadanie;35;250;500
+Blood and Wine;sq701_novigrad;sq701;Pieśń rycerskiego serca;po wygraniu partii gwinta z miltonem;35;50;0
+Blood and Wine;sq703_safari;sq703;Beauclairskie safari;po odbiorze zapłaty za zlecenie;37;150;200
+Blood and Wine;sq703_picture;sq703;Beauclairskie safari;po odebraniu obrazu;37;100;0
+Blood and Wine;sq703_completed;sq703;Beauclairskie safari;po zakończeniu zadania;37;200;0
+Blood and Wine;cg700_wager_sword;cq700;Gwint: Wielki Turniej w Beauclair;za wygraną z Hamalem (tylko jeśli założyliśmy się z nim o miecz);40;100;0
+Blood and Wine;cg700_tournament_win;cq700;Gwint: Wielki Turniej w Beauclair;za wygraną w turnieju;40;150;500
+Blood and Wine;cg700_tournament_win_alternate;cq700;Gwint: Wielki Turniej w Beauclair;za wygraną w turnieju grając talią skellige;40;250;1000
+Blood and Wine;cg700_tournament_card;cq700;Gwint: Wielki Turniej w Beauclair;po zakończeniu zadania;40;100;0
+Blood and Wine;cg700_tournament_lose;cq700;Gwint: Wielki Turniej w Beauclair;za przegraną w turnieju;40;50;100
+Blood and Wine;cg700_generic_gwint_reward;cq700;Gwint: Wielki Turniej w Beauclair;nagroda w złocie za wygranie partii w gwinta;1;0;50
+Blood and Wine;q704_ft_goose;q704;Gę, gę, gę!;za zakończenie zadania;47;250;0
+Blood and Wine;mh701_reward;mh701;Zlecenie: Monstrum z Tufo;za zakończenie zadania;48;400;500
+Blood and Wine;mh701_bonus_reward;mh701;Zlecenie: Monstrum z Tufo;za zniszczenie jaj kikimor;48;200;100
+Blood and Wine;mh701_wife_reward;mh701;Zlecenie: Monstrum z Tufo;za przekazanie wisiorka Andrée;48;200;120
+Blood and Wine;mh701_locket_owner_reward;mh701;Zlecenie: Monstrum z Tufo;za poinformowanie monsieura o zdradzie żony;48;50;100
+Blood and Wine;mq7001_QG_reward;mq7001;Wieczne Odpoczywanie;odebranie nagrody od lanzano;36;100;50
+Blood and Wine;mq7001_QG_bonus;mq7001;Wieczne Odpoczywanie;odebranie nagrody od lanzano (okłamaliśmy go);36;50;100
+Blood and Wine;mq7001_gwent;mq7001;Wieczne Odpoczywanie;za wygranie w gwinta z trentinem;36;75;0
+Blood and Wine;mq7001_louis_reward;mq7001;Wieczne Odpoczywanie;odebranie miecza od trentina;36;75;0
+Blood and Wine;mq7002_fiancee_reward;mq7002;Jeśli nie chcesz mojej zguby…;Zakończ zadanie (nie pozwól rycerzowi zginąć) quest zaczęty od rozmowy z babą przyjmij pieniądze;45;200;300
+Blood and Wine;mq7002_fiancee_reward_no_money;mq7002;Jeśli nie chcesz mojej zguby…;Zakończ zadanie (nie pozwól rycerzowi zginąć) quest zaczęty od rozmowy z babą nie przyjmij pieniędzy;45;200;0
+Blood and Wine;mq7002_knight_alive_reward;mq7002;Jeśli nie chcesz mojej zguby…;Zakończ zadanie (nie pozwól rycerzowi zginąć);45;200;150
+Blood and Wine;mq7002_knight_dead_reward;mq7002;Jeśli nie chcesz mojej zguby…;Zakończ zadanie (pozwól rycerzowi zginąć);45;100;0
+Blood and Wine;mq7004_reward;mq7004;O damie i jej rycerzu;po odebraniu nagrody ;40;150;100
+Blood and Wine;mq7004_reward_no_money;mq7004;O damie i jej rycerzu;po zbadaniu ciała Jacoba;40;150;0
+Blood and Wine;mq7004_storybook_reward;mq7004;O damie i jej rycerzu;po otrzymaniu egzemplarza Legend i baśni;40;50;0
+Blood and Wine;mq7004_scarf_reward;mq7004;O damie i jej rycerzu;po zabraniu jedwabnej chustki z pentagramu;40;50;0
+Blood and Wine;mq7005_baroness_reward;mq7005;-;-;15;100;0
+Blood and Wine;mq7005_duchess_normal;mq7005;-;-;15;500;0
+Blood and Wine;mq7005_duchess_half;mq7005;-;-;15;500;0
+Blood and Wine;mq7006_aerondight;mq7006;Ścieżki Przeznaczenia;po zakończeniu zadania;46;300;0
+Blood and Wine;mq7006_holy_stones_reward;mq7006;Ścieżki Przeznaczenia;po przeczytaniu inskrypcji;46;50;0
+Blood and Wine;mq7007_gargoyles_reward;mq7007;Rekonstrukcja;po zakończeniu zadania;40;250;300
+Blood and Wine;mq7009_found_paint;mq7009;Portrecista;po znalezieniu akcesoriów;43;100;0
+Blood and Wine;mq7009_killed_griffon;mq7009;Portrecista;po zabiciu gryfa;43;250;0
+Blood and Wine;mq7009_geralt_posing;mq7009;Portrecista;po odbiorze pieniędzy za pozowanie;43;150;300
+Blood and Wine;mq7010_investigation_done;mq7010;Zlecenie: Łaciate kłopoty;po zbadaniu dźwigu;38;50;0
+Blood and Wine;mq7010_nest_found;mq7010;Zlecenie: Łaciate kłopoty;po wejściu do gniada oszluzgów;38;150;0
+Blood and Wine;mq7010_reward;mq7010;Zlecenie: Łaciate kłopoty;po zakończeniu zadania;38;200;300
+Blood and Wine;mq7010_nest_destroyed;mq7010;Zlecenie: Łaciate kłopoty;po zniszczeniu gniazda oszluzgów;38;100;0
+Blood and Wine;mq7011_gwent;mq7011;Klient ma zawsze rację;po wygranej w gwinta;36;50;25
+Blood and Wine;mq7011_fistfight;mq7011;Klient ma zawsze rację;po walce na pięści z petentem (niezależnie od jej wyniku);36;100;0
+Blood and Wine;mq7011_bank_done;mq7011;Klient ma zawsze rację;po przyjściu Cianfanellego;36;200;0
+Blood and Wine;mq7011_peaceful_bank;mq7011;Klient ma zawsze rację;-;36;0;500
+Blood and Wine;mq7011_angry_bank;mq7011;Klient ma zawsze rację;-;36;0;200
+Blood and Wine;mq7011_present_given;mq7011;Klient ma zawsze rację;po wręczeniu urzędniczce podarunku (lub skomplementowaniu jej);36;50;0
+Blood and Wine;mq7015_caretaker_reward;mq7015;Bohater narodowy;po pozwoleniu starcowi zatrzymać jaja;36;100;0
+Blood and Wine;mq7015_hugues_reward;mq7015;Bohater narodowy;po oddaniu jaj do posągu;36;100;50
+Blood and Wine;mq7017_hermit_reward;mq7017;O czym szepczą grzyby;-;44;0;0
+Blood and Wine;mq7017_potion_reward;mq7017;O czym szepczą grzyby;-;44;0;0
+Blood and Wine;mq7017_hermit_reward_xp;mq7017;O czym szepczą grzyby;po zakończeniu zadania;44;150;0
+Blood and Wine;mq7018_count_side;mq7018;Równowaga w przyrodzie;oszczędzamy bazyliszka;46;200;350
+Blood and Wine;mq7018_hunter_side;mq7018;Równowaga w przyrodzie;zabijamy bazyliszka;46;200;400
+Blood and Wine;mq7018_count_thanks;mq7018;Równowaga w przyrodzie;podziękowania od hrabii (tylko kiedy oszczędziliśmy bazyliszka);46;50;50
+Blood and Wine;mq7020_le_papillion_fake_reward;mq7020;W służbie muzy;;43;0;120
+Blood and Wine;mq7020_final;mq7020;W służbie muzy;po zakończeniu zadania;43;150;0
+Blood and Wine;mq7020_jeans_reward;mq7020;W służbie muzy;;43;0;150
+Blood and Wine;mq7021_whole_treasure;mq7021;Braterska miłość;zakończ zadanie godząc braci;37;150;300
+Blood and Wine;mq7021_33_treasure;mq7021;Braterska miłość;zakończ zadanie atakując braci;37;150;100
+Blood and Wine;mq7021_xp_only;mq7021;Braterska miłość;po odzyskaniu destylatora;37;150;0
+Blood and Wine;mq7022_rafters_reward;mq7022;-;-;30;0;0
+Blood and Wine;mq7023_investigated_grave;mq7023;Przemiana;po przeczytaniu mapy Toussaint po odwiedzeniu grobu Moreau;35;50;0
+Blood and Wine;mq7023_found_ruins;mq7023;Przemiana;po wejściu przez portal do opuszczonej budowli;35;50;0
+Blood and Wine;mq7023_killed_panthers;mq7023;Przemiana;po pokonaniu pierwszych panter;35;100;0
+Blood and Wine;mq7023_killed_gargoyle;mq7023;Przemiana;po zabiciu gargulca;35;100;0
+Blood and Wine;mq7023_found_lab;mq7023;Przemiana;po wejściu do laboratorium;35;100;0
+Blood and Wine;mq7023_found_all_crystals;mq7023;Przemiana;po wysłuchaniu informacji z dodatkowych kryształów;35;100;0
+Blood and Wine;mq7023_killed_pale_widows;mq7023;Przemiana;po zabraniu białka skolopendromorfa;35;100;0
+Blood and Wine;mq7023_completed;mq7023;Przemiana;po zakończeniu zadania;35;200;0
+Blood and Wine;mq7024_exp_reward;mq7024;Corvo Bianco;po zakończeniu zadania;35;200;0
+Blood and Wine;ff701_gb_reward;ff701;Turniej pięściarski;a pokonanie Cichej Mocy;36;100;100
+Blood and Wine;ff701_mnt_reward;ff701;Turniej pięściarski;za pokonanie Szczoty;36;100;100
+Blood and Wine;ff701_br_reward;ff701;Turniej pięściarski;za pokonanie Kolosa;36;100;100
+Blood and Wine;ff701_master_reward;ff701;Mistrz pięściarski;po zakończeniu zadania;40;200;150
+Blood and Wine;mq7019_picnic_reward;mq7019;-;-;30;100;0
+Blood and Wine;th700_first_diagram;th700;Poszukiwania: arcymistrzowski rynsztunek Mantikory;znajdź pierwszy diagram;40;50;0
+Blood and Wine;th700_second_diagram;th700;Poszukiwania: arcymistrzowski rynsztunek Mantikory;znajdź drugi diagram;40;50;0
+Blood and Wine;th700_third_diagram;th700;Poszukiwania: arcymistrzowski rynsztunek Mantikory;znajdź trzeci diagram;40;50;0
+Blood and Wine;th700_fourth_diagram;th700;Poszukiwania: arcymistrzowski rynsztunek Mantikory;znajdź czwarty diagram;40;50;0
+Blood and Wine;th700_fifth_sixth_diagram;th700;Poszukiwania: arcymistrzowski rynsztunek Mantikory;znajdź piąty i szósty diagram;40;100;0
+Blood and Wine;th700_preacher_bones;th700;Kości Wielkiego Żebraka;odłóż kości żebraka do sarkofagu;40;150;0
+Blood and Wine;th701_wolf_first_stash;th701;Poszukiwania: arcymistrzowski rynsztunek Wilka;znajdź pierwszy diagram;40;150;0
+Blood and Wine;th701_wolf_second_stash;th701;Poszukiwania: arcymistrzowski rynsztunek Wilka;znajdź drugi diagram;40;150;0
+Blood and Wine;th701_griffin_first_stash;th701;Poszukiwania: arcymistrzowski rynsztunek Gryfa;znajdź pierwszy diagram;40;150;0
+Blood and Wine;th701_griffin_second_stash;th701;Poszukiwania: arcymistrzowski rynsztunek Gryfa;znajdź drugi diagram;40;150;0
+Blood and Wine;th701_bear_first_stash;th701;Poszukiwania: arcymistrzowski rynsztunek Niedźwiedzia;znajdź pierwszy diagram;40;150;0
+Blood and Wine;th701_bear_second_stash;th701;Poszukiwania: arcymistrzowski rynsztunek Niedźwiedzia;znajdź drugi diagram;40;150;0
+Blood and Wine;th701_cat_first_stash;th701;Poszukiwania: arcymistrzowski rynsztunek Kota;znajdź pierwszy diagram;40;50;0
+Blood and Wine;th701_cat_second_stash;th701;Poszukiwania: arcymistrzowski rynsztunek Kota;znajdź drugi diagram;40;100;0
+Blood and Wine;th701_cat_third_stash;th701;Poszukiwania: arcymistrzowski rynsztunek Kota;znajdź trzeci diagram;40;150;0
+Blood and Wine;th701_zdravko_reported;th701;Poszukiwania: arcymistrzowski rynsztunek Kota/Poszukiwania: arcymistrzowski rynsztunek Niedźwiedzia/Poszukiwania: arcymistrzowski rynsztunek Gryfa/Poszukiwania: arcymistrzowski rynsztunek Wilka/Poszukiwania: arcymistrzowski rynsztunek Mantikory;za poinformowanie kowala o zdobytych schematach;40;150;500
+Blood and Wine;lw_ww_coronata_reward;;Awantura o wino: Coronata;po zakończeniu zadania;37;100;700
+Blood and Wine;lw_ww_vermentino_reward;;Awantura o wino: Vermentino;po zakończeniu zadania;37;100;700
+Blood and Wine;lw_ww_belgaard_reward;;Awantura o wino: Belgaard;po zakończeniu zadania;39;150;900
+Blood and Wine;lw_ww_secret_path_done;;Awantura o wino: Nieczysta gra;po przeczytaniu arkusza inwentaryzacyjnego;42;250;0
+Blood and Wine;lw_ww_secret_path_bulbs_destroyed;;Awantura o wino: Nieczysta gra;po spaleniu sadzonek archesporów;42;100;0
+Blood and Wine;lw_plegmund_reward;;Komu w drogę, temu w czas;po zakończeniu zadania;40;150;800
+Blood and Wine;poi_car_a_04_reward;;Zlecenie winiarzy: Koci Grzbiet;po zakończeniu zadania;42;150;200
+Blood and Wine;poi_gor_b_02_reward;;Zlecenie winiarzy: Szara Grota;po zakończeniu zadania;42;150;200
+Blood and Wine;poi_vin_a_01_reward;;Zlecenie winiarzy: Magazyn na Cichym Brzegu;po zakończeniu zadania;39;100;150
+Blood and Wine;poi_vin_b_03_reward;;Zlecenie winiarzy: Jaskinia Szept;po zakończeniu zadania;39;100;150
+Blood and Wine;poi_dun_b_03_reward;;Zlecenie winiarzy: Wzgórze Dun Tynne;po zakończeniu zadania;39;100;150
+Blood and Wine;camm_final_reward;;Rycerz do wynajęcia;po zakończeniu zadania;47;300;0
+Blood and Wine;EA_BeauclairWelcomeTo;-;-;-;0;0;0
+Blood and Wine;EA_HeroOfBeauclair;-;-;-;0;0;0
+Blood and Wine;EA_BeauclairMostWanted;-;-;-;0;0;0
+Blood and Wine;EA_ChampionOfBeauclair;-;-;-;0;0;0
+Blood and Wine;EA_LikeAVirgin;-;-;-;0;0;0
+Blood and Wine;EA_HomeSweetHome;-;-;-;0;0;0
+Blood and Wine;EA_TurnedEveryStone;-;-;-;0;0;0
+Blood and Wine;EA_GotToHaveThemAll;-;-;-;0;0;0
+Blood and Wine;EA_BloodAndWine;-;-;-;0;0;0
+Blood and Wine;EA_Goliath;-;-;-;0;0;0
+dlc12;mq2052_monsters_killed;;Zlecenie: Najgroźniejszy potwór na Skellige;Walcz z wszystkimi potworami;0;100;0
+dlc12;mq2052_godlings_reward;;Zlecenie: Najgroźniejszy potwór na Skellige;Powiedz że czasem pomagasz potworom i walcz tylko z wilkołakiem;0;200;0
+dlc15;mq1058_child_found;;Jak kot z wilkiem;po rozmowie z Miłką;25;50;0
+dlc15;mq1058_witcher_killed;;Jak kot z wilkiem;zabij wiedźmina i zakończ zadanie;25;200;0
+dlc15;mq1058_witcher_spared;;Jak kot z wilkiem;oszczędź wiedźmina i zakończ zadanie;25;200;0
+dlc15;mq1058_lynx_stash;;Bierz co chcesz;odbierz nagrodę ze skrytki wiedźina;25;50;250
+dlc3;mh201_investigation;;Zlecenie: Zaginieni górnicy;zbadaj obozowisko górników;0;25;0
+dlc3;mh201_troll_killed;;Zlecenie: Zaginieni górnicy;zabij trolla;0;200;271
+dlc3;mh201_troll_left_alone;;Zlecenie: Zaginieni górnicy;oszczędź trolla;0;100;50
+dlc3;mh201_reward_from_troll;;Zlecenie: Zaginieni górnicy;nagroda od trolla (tylko jak go oszczędziliśmy);0;25;50
+Hearts of Stone;ach_TheToadPrince;-;-;-;0;0;0
+Hearts of Stone;ach_PartyAnimal;-;-;-;0;0;0
+Hearts of Stone;ach_Auctioneer;-;-;-;0;0;0
+Hearts of Stone;ach_TheCompletePicture;-;-;-;0;0;0
+Hearts of Stone;ach_HeartsOfStone;-;-;-;0;0;0
+Hearts of Stone;ach_DivineWhip;-;-;-;0;0;0
+Hearts of Stone;ach_KillEtherals;-;-;-;0;0;0
+Hearts of Stone;cg600_shani;-;-;-;0;0;0
+Hearts of Stone;cg600_olgierd;-;-;-;0;0;0
+Hearts of Stone;q601_won_fist_fight;q601;Miłe złego początki…;po pokonaniu Dzikiego w walce na pięści;32;150;0
+Hearts of Stone;q601_lost_fist_fight;q601;Miłe złego początki…;po przegraniu walki z dzikim na pięści;32;0;0
+Hearts of Stone;q601_olgierd_met;q601;Miłe złego początki…;po przyjęciu zlecenia od olgierda na potwora z kanałów;32;150;0
+Hearts of Stone;q601_found_shani;q601;Miłe złego początki…;po odnalezieniu shani w kanałach;32;200;0
+Hearts of Stone;q601_toad_killed;q601;Miłe złego początki…;po pokonaniu królewicza ropucha;32;600;0
+Hearts of Stone;q601_ofir_dialogue_choice;q601;Miłe złego początki…;za wybranie prawidłowej kwestii w ofirskim na statku;32;200;0
+Hearts of Stone;q601_ofir_killed;q601;Miłe złego początki…;po pokonaniu Ofirczyków;32;200;0
+Hearts of Stone;q601_meet_with_mirror;q601;Miłe złego początki…;po rozmowie z O'Dimem pod Jantrą;32;300;0
+Hearts of Stone;q601_reward_from_olgierd;q601;Miłe złego początki…;Odbierz nagrodę od Olgierda i Zakończ zadanie;32;400;450
+Hearts of Stone;q602_shani_met;q602;Hulaj dusza!;po rozmowie z Shani w jej klinice;33;150;0
+Hearts of Stone;q602_geralt_possessed;q602;Hulaj dusza!;po rozmowie z Witoldem i Shani w krypcie;33;100;0
+Hearts of Stone;q602_wedding_start;q602;Hulaj dusza!;na początku wesela;33;100;0
+Hearts of Stone;q602_wedding_gwent_lost;q602;Hulaj dusza!;po przegranej w gwinta;33;50;0
+Hearts of Stone;q602_wedding_gwent_won;q602;Hulaj dusza!;po wygranej w gwinta;33;200;0
+Hearts of Stone;q602_wedding_diving_lost;q602;Hulaj dusza!;po wyłowieniu wszystkich 3 butów;33;50;0
+Hearts of Stone;q602_wedding_diving_won;q602;Hulaj dusza!;po wyłowieniu buta Shani ;33;200;0
+Hearts of Stone;q602_wedding_pig_lost;q602;Hulaj dusza!;po zagonieniu świń do chlewa z Axii;33;50;0
+Hearts of Stone;q602_wedding_pig_won;q602;Hulaj dusza!;po zagonieniu świń do chlewa;33;200;0
+Hearts of Stone;q602_wedding_fight_lost;q602;Hulaj dusza!;po przegraniu walki z braćmi dziewczyny;33;50;0
+Hearts of Stone;q602_wedding_fight_won;q602;Hulaj dusza!;po pokonaniu braci dziewczyny;33;200;0
+Hearts of Stone;q602_wedding_fireeater_found;q602;Hulaj dusza!;po występie odnalezionego połykacza ognia;33;200;0
+Hearts of Stone;q602_wedding_fireeater_not_found;q602;Hulaj dusza!;po poinformowaniu o ucieczce połykacza ognia;33;50;0
+Hearts of Stone;q602_wedding_juggled;q602;Hulaj dusza!;po występie żonglowania;33;150;0
+Hearts of Stone;q602_wedding_mirror;q602;Hulaj dusza!;po rozmowie Witolda z Gaunterem o'Dimem podczas wesela;33;150;0
+Hearts of Stone;q602_wedding_end;q602;Hulaj dusza!;po odejściu Witolda z ciała Geralta i rozmowie z o'Dimem;33;200;0
+Hearts of Stone;q602_romance_gift;q602;W księżycową jasną noc;po daniu jażębiny shani;33;150;0
+Hearts of Stone;q602_romance_end;q602;W księżycową jasną noc;po zakończeniu romansu z shani;33;150;0
+Hearts of Stone;q602_olgier_reported;q602;Hulaj dusza!;po rozmowie z Olgierdem i zakończeniu zadania;33;150;0
+Hearts of Stone;q603_01_before_auction;q603;Sezamie, otwórz się!;po rozmowie z Vivaldim po wejściu do domu aukcyjnego;34;100;0
+Hearts of Stone;q603_02a_gambler;q603;Sezamie, otwórz się!;po wygraniu w gwinta z Hilbertem na pieniądze;34;100;250
+Hearts of Stone;q603_02b_gambler_no_money;q603;Sezamie, otwórz się!;po wygraniu w gwinta z Hilbertem ;34;100;0
+Hearts of Stone;q603_03_connesour;q603;Sezamie, otwórz się!;po wskazaniu prawidłowego obrazu i rozmowie z Yaromirem;34;100;0
+Hearts of Stone;q603_04_noblewoman;q603;Sezamie, otwórz się!;po rozmowie z hrabiną Mignole o Vesemirze;34;100;0
+Hearts of Stone;q603_05_after_auction;q603;Sezamie, otwórz się!;po rozmowie z Ewaldem przed domem aukcyjnym;34;200;0
+Hearts of Stone;q603_05b_painting_sold;q603;Kolekcjoner;sprzedaj obraz i zakończ zadanie;34;100;500
+Hearts of Stone;q603_06_after_hideout;q603;Sezamie, otwórz się!;po pierwszej rozmowie z Ewaldem w chacie zielarza;34;100;0
+Hearts of Stone;q603_07_circus_artist;q603;Sezamie, otwórz się: Włamywacz;po zwerbowaniu Eveline i zakończeniu zadania;34;150;0
+Hearts of Stone;q603_08_thief;q603;Sezamie, otwórz się: Włamywacz;po odnalezieniu ciała Hugo Hoffa;34;150;0
+Hearts of Stone;q603_09_demolition_dwarf;q603;Sezamie, otwórz się: Kasiarz;zrekrutuj cassimira;34;150;0
+Hearts of Stone;q603_10_safecracker;q603;Sezamie, otwórz się: Kasiarz;zrekrutuj kasiarza;34;150;0
+Hearts of Stone;q603_11_diversion;q603;Sezamie, otwórz się: Wiedźmińskie przyprawy;przekonaj kucharza i zakończ zadanie;34;150;0
+Hearts of Stone;q603_12_final_preparation;q603;Sezamie, otwórz się!;po naradzie u zielarza przed napadem na dom aukcyjny;34;100;0
+Hearts of Stone;q603_13_hostage_situation;q603;Sezamie, otwórz się!;po otwarciu drzwi do skarbca;34;150;0
+Hearts of Stone;q603_14_standoff;q603;Sezamie, otwórz się!;po zabraniu Domu Maksymiliana Borsody'ego;34;100;0
+Hearts of Stone;q603_15_vault_escaped;q603;Sezamie, otwórz się!;po wyjściu ze skarbca ukrytym przejściem;34;150;0
+Hearts of Stone;q603_16_task_completed;q603;Sezamie, otwórz się!;Zakończ zadanie;34;250;0
+Hearts of Stone;q603_maximilians_house;q603;-;-;0;0;0
+Hearts of Stone;q603_magister_glasses;q603;-;-;0;0;0
+Hearts of Stone;q603_antique_statue;q603;-;-;0;0;0
+Hearts of Stone;q603_auctioned_painting;q603;-;-;0;0;0
+Hearts of Stone;q604_killed_caretaker;q604;Żyli długo i szczęśliwie;po pokonaniu Klucznika;35;200;0
+Hearts of Stone;q604_killed_corridor;q604;Żyli długo i szczęśliwie;po pokonaniu Upiora z obrazów;35;200;0
+Hearts of Stone;q604_found_iris;q604;Żyli długo i szczęśliwie;po zbadaniu ciała Iris;35;100;0
+Hearts of Stone;q604_gazebo_done;q604;Żyli długo i szczęśliwie;po obejrzeniu wspomnienia;35;100;0
+Hearts of Stone;q604_fountain_done;q604;Żyli długo i szczęśliwie;po obejrzeniu wspomnienia;35;100;0
+Hearts of Stone;q604_dinner_done;q604;Żyli długo i szczęśliwie;po obejrzeniu wspomnienia;35;100;0
+Hearts of Stone;q604_bedroom_done;q604;Żyli długo i szczęśliwie;po obejrzeniu wspomnienia;35;100;0
+Hearts of Stone;q604_painting_done;q604;Żyli długo i szczęśliwie;po obejrzeniu wspomnienia;35;100;0
+Hearts of Stone;q604_study_done;q604;Żyli długo i szczęśliwie;po obejrzeniu wspomnienia;35;100;0
+Hearts of Stone;q604_summer_world_done;q604;Żyli długo i szczęśliwie;po ucieczce przez obraz z płonącej pracowni Olgierda;35;200;0
+Hearts of Stone;q604_cellar_done;q604;Żyli długo i szczęśliwie;po obejrzeniu wspomnienia;35;100;0
+Hearts of Stone;q604_sad_dinner_done;q604;Żyli długo i szczęśliwie;po obejrzeniu wspomnienia;35;100;0
+Hearts of Stone;q604_killed_ethereals;q604;Żyli długo i szczęśliwie;po pokonaniu Największego lęku Iris von Everec;35;300;0
+Hearts of Stone;q604_quest_done;q604;Żyli długo i szczęśliwie;po zakończeniu zadania;35;500;0
+Hearts of Stone;q605_olgierd_finale_reward;q605;Kto sieje wiatr…;Zakończ zadanie - pomagamy olgierdowi;36;200;0
+Hearts of Stone;q605_mirror_finale_only_exp;q605;Kto sieje wiatr…;Zakończ zadanie - Odmawiamy nagrody od odima;36;300;0
+Hearts of Stone;q605_mirror_finale_cornucopia;q605;Kto sieje wiatr…;Zakończ zadanie - wybierz róg jako nagrodę;36;150;0
+Hearts of Stone;q605_mirror_finale_booze_refill;q605;Kto sieje wiatr…;Zakończ zadanie - wybierz alkohol jako nagrodę;36;150;0
+Hearts of Stone;q605_mirror_finale_demon_horse;q605;Kto sieje wiatr…;Zakończ zadanie - wybierz siodło jako nagrodę;36;150;0
+Hearts of Stone;q605_mirror_finale_cash;q605;Kto sieje wiatr…;Zakończ zadanie - wybierz pieniądze jako nagrodę;36;150;10000
+Hearts of Stone;q605_mad_scholar_xp_reward;q605;Kto sieje wiatr…;po pójściu do profesora i dowiedzeniu się o gaunterze ;36;100;0
+Hearts of Stone;mq6001_completed;mq6001;Wyścigi: Jak zachodni wiatr;wygraj wyścig i zakończ zadanie;32;100;0
+Hearts of Stone;mq6002_fooled;mq6002;Bez śladu;nie badamy sprawy;32;50;200
+Hearts of Stone;mq6002_completed;mq6002;Bez śladu;badamy sprawe i znajdujemy niziołka;32;100;200
+Hearts of Stone;mq6003_completed;mq6003;Płać i płacz;Zakończ zadanie;32;50;0
+Hearts of Stone;mq6004_completed;mq6004;Róża na czerwonym polu;zabij rycerzy zakonu płonącej róży i zakończ zadanie;33;150;200
+Hearts of Stone;mq6005_lvl_1_unlocked;mq6005;Zaklinanie: Jakość kosztuje;po przyniesieniu zaklinaczowi nefrytu;32;100;0
+Hearts of Stone;mq6005_lvl_2_unlocked;mq6005;Zaklinanie: Jakość kosztuje;po zapłaceniu 10 000 koron za ulepszone narzędzia;32;100;0
+Hearts of Stone;mq6005_lvl_3_unlocked;mq6005;Zaklinanie: Jakość kosztuje;po zapłaceniu 15 000 koron za mistrzowskie narzędzia;32;100;0
+Hearts of Stone;mq6005_nephrite;mq6005;-;;32;0;0
+Base game;q001_1_after_dream;q001;Bez i agrest ;Zabij ghule;1;250;0
+Base game;q001_2_after_bandits;q001;Bez i agrest ;Pokonaj chłopów przed karczmą;1;350;0
+Base game;q001_found_yen_skull;q001;Bez i agrest ;znajdź czaszkę kruka yennefer;0;50;0
+Base game;q001_griffin_merchant_reward;q001;Bez i agrest ;-;1;0;50
+Base game;q002_1_helped_herbalist;q002;Na łożu śmierci;po udzieleniu pomocy tomirze i zakończeniu zadania;2;350;50
+Base game;q002_4_killed_bandits;q002;Incydent w Białym Sadzie;po zabicu bandytów i zakończeniu zadania;2;300;0
+Base game;q002_5_after_emhyr;q002;Audiencja;po wysłuchaniu emhyra i zakońćzeniu zadania;2;150;0
+Base game;q002_1_helped_hunter;q002;Bestia z Białego Sadu;Wysłuchaj historii Mysława;2;350;0
+Base game;q002_2_level_up;q002;Bestia z Białego Sadu;Po zbadaniu gniazda gryfa;2;500;0
+Base game;q002_3_griffin_dead_reward_nomoney;q002;Bestia z Białego Sadu;Zakończ zadanie (odrzuć nagrodę);2;500;0
+Base game;q002_3_griffin_dead_reward;q002;Bestia z Białego Sadu;Zakończ zadanie (przyjmij nagrodę);3;300;250
+Base game;q101_found_hendrik_notes;;Nilfgardzki łącznik;zbadaj ciało hendrika i przeczytaj jego notatki i zakończ zadanie;5;100;0
+Base game;q103_01_baron_met;;Sprawy Rodzinne;po pierwszej rozmowie z Baronem;5;100;0
+Base game;q103_02_rooms_checked;;Sprawy Rodzinne;po rozmowie z Baronem po przeszukanie pokojów;6;150;0
+Base game;q103_02_ciri_room_checked;;Pokój Ciri;zbadaj pokój ciri i zakończ zadanie;5;100;0
+Base game;q103_03_brought_goat;;Sprawy Rodzinne;po rozmowie z guślarzem o porońcu;5;100;0
+Base game;q103_15i_ritual_end;;Sprawy Rodzinne;po odprawieniu przez guślarza rytuału;6;100;0
+Base game;q103_04_after_fistfight;;Sprawy Rodzinne;po pokonaniu Barona w walce na pięści;6;50;0
+Base game;q103_05_learnt_about_daughter;;Sprawy Rodzinne;po wyjściu z chaty rybaka;6;300;0
+Base game;q103_06_find_daughter;;Sprawy Rodzinne;po rozmowie z Tamarą;6;0;200
+Base game;q103_06_visited_daughter;;Sprawy Rodzinne;po rozmowie z Tamarą;6;150;0
+Base game;q103_07_learnt_about_ciri;;Sprawy Rodzinne;po rozmowie z Baronem o Annie i Evanie;6;300;0
+Base game;q103_08_completed;;Sprawy Rodzinne;po zakończeniu zadania;6;200;0
+Base game;q103_09_stablemaster_reward;;Sprawy Rodzinne;-;6;0;20
+Base game;q103_06_visit_oxenfurt;;Sprawy Rodzinne;-;6;0;50
+Base game;q103_10_botchling_buried;;Sprawy Rodzinne;po zakopaniu porońca ;6;150;0
+Base game;q104_1_met_keira;;Polowanie na czarownicę;po odnalezieniu keiry i zakończeniu zadania;5;100;0
+Base game;q104_1_aarded_rat_nest;;Po omacku;Za zniczenie gniazda szczurów taka sama nagroda za 2 gniazdo więc łącznie 200 expa jest;6;100;0
+Base game;q104_2_first_teleport_gate;;Po omacku;Po wejściu do sali z projekcją Avallac'ha mówiącą o Kelpie;6;100;0
+Base game;q104_3_survived_blizzard;;Po omacku;Po zniszczeniu szczelin przez które wydostawały się ogary Dzikiego Gonu;6;100;0
+Base game;q104_4_defeated_wild_hunt_warrior;;Po omacku;Po pokonaniu Nithrala;6;250;0
+Base game;q104_5_quest_completed;;Po omacku;po zakończeniu zadania;6;350;0
+Base game;q104_6_found_grave;;Magiczny kaganek;po znalezieniu kaganka i zakończeniu zadania;6;100;0
+Base game;q105_1_found_johnny;;Panie Lasu;po rozmowie z Jankiem przed jego jamą;6;150;0
+Base game;q105_2_talk_gobelin;;Panie Lasu;po rozmowie z wiedźmami w chacie;6;150;0
+Base game;q105_3_soltis_reward;;Szepczące Wzgórze;po rozwiązaniu problemu sołtysa i odebraniu nagrody i zakończeniu zadania;6;250;0
+Base game;q105_4_info_witches;;Panie Lasu;po ostatniej rozmowie z wiedźmami i zakończeniu zadania;6;200;0
+Base game;q106_2_exp_oillamp_preparing;;Mysia wieża;zbadaj kagankiem anomalie ;6;50;0
+Base game;q106_3_exp_oillamp_dinner;;Mysia wieża;zbadaj kagankiem anomalie ;6;50;0
+Base game;q106_4_exp_oillamp_magnate;;Mysia wieża;zbadaj kagankiem anomalie ;6;50;0
+Base game;q106_5_exp_found_lab;;Mysia wieża;po wejściu do laboratorium;6;100;0
+Base game;q106_6a_exp_anabelle_taken_to_graham;;Mysia wieża;po zakończeniu zadania (jeśli uwierzyliśmy i zanieśliśmy jej kości Grahamowi);6;300;0
+Base game;q106_6b_exp_plague_maiden_uncursed;;Mysia wieża;po zakończeniu zadania (jeśli nie uwierzyliśmy Anabelle);6;500;0
+Base game;q106_1_oillamp_running;;Mysia wieża;zbadaj kagankiem anomalie ;6;50;0
+Base game;q106_1a_oillamp_swimloot;;Mysia wieża;zbadaj kagankiem anomalie ;6;50;0
+Base game;q106_1b_oillamp_ratcages;;Mysia wieża;zbadaj kagankiem anomalie ;6;50;0
+Base game;q106_1c_oillamp_morowa_victim;;Mysia wieża;po zobaczeniu ostatniej anomalii;6;100;0
+Base game;q107_1_killed_bies;;Powrót na Krzywuchowe Moczary;po pokonaniu biesa;9;200;0
+Base game;q107_2_found_johnny;;Powrót na Krzywuchowe Moczary;po rozmowie z Jankiem (możliwe tylko jeśli Anna została przemieniona w babę wodną);9;50;0
+Base game;q107_3_cured_anna;;Powrót na Krzywuchowe Moczary;po zakończeniu zadania;9;300;0
+Base game;q107_4_reward_baron;;Powrót na Krzywuchowe Moczary;-;9;0;150
+Base game;q107_5_helped_treasure;;Powrót na Krzywuchowe Moczary;obroń chłopa przed rabunkiem ze strony żołnieży w kasztelu wrońce;9;15;0
+Base game;q107_6_helped_raped;;Powrót na Krzywuchowe Moczary;obroń dziewczynę przed żołnieżami w kasztelu wrońce;9;15;0
+Base game;q108_01_eve_ended;;Dziady;po zakończeniu obrzędu Dziadów;7;200;0
+Base game;q108_02_guslar_father_buried;;Dziady;po zakończeniu zadania;7;50;50
+Base game;q109_01_find_keira;;Dla dobra nauki;po odnalezieniu Keiry na Kłomnicy;8;50;0
+Base game;q109_02_kill_keira;;Dla dobra nauki;Zakończ zadanie - Zabij Keire;8;200;0
+Base game;q109_02_persuade_keira;;Dla dobra nauki;Zakończ zadanie - wyślij Keire do kear morhen;8;100;0
+Base game;q109_02_keira_gone;;Dla dobra nauki;Zakończ zadanie - pozwól Keirze pójść do radowida;8;100;0
+Base game;q109_03_achievement;;Dla dobra nauki;-;8;0;0
+Base game;q110_1a_refused_emhyrs_money;;Krajobraz po bitwie;-;20;0;0
+Base game;q110_1b_accepted_emhyrs_reward;;Krajobraz po bitwie;-;20;0;4000
+Base game;q111_1_passed_the_test;;Łysa Góra;Po znalezieniu monety;26;300;0
+Base game;q111_2_killed_witches;;Łysa Góra;po zabiciu wiedźm;26;500;0
+Base game;q111_3_killed_imlerith;;Łysa Góra;Po zabiciu Imleritha;26;1000;0
+Base game;q201_01_boat_bought;;Kierunek - Skellige;po przybyciu na Skellige;16;500;0
+Base game;q201_02_reached_burial;;Kierunek - Skellige;po dotarciu na pogrzeb i zakończeniu zadania ;16;250;0
+Base game;q201_03_suit_obtained;;Umarł, król, niech żyje król;po założeniu skelligijskich ubrań;16;150;0
+Base game;q201_04_after_race;;Umarł, król, niech żyje król;po wyścigu z Cerys;16;150;0
+Base game;q201_05_after_fistfight;;Umarł, król, niech żyje król;po walce z Lugosem;16;150;0
+Base game;q201_06_completed;;Umarł, król, niech żyje król;po zakończeniu zadania;16;600;0
+Base game;q201_07_afterparty;;Umarł, król, niech żyje król;po uczcie (nie za bardzo wiem kiedy to jest);16;100;0
+Base game;q202_5_killed_giant;;Władca Undvik;po zabiciu giganta;17;100;0
+Base game;q202_2_folan_alive;;Władca Undvik;po przybyciu na wybrzeże;17;50;0
+Base game;q202_1_undvik_discovered;;Władca Undvik;po dotarciu łodzią na wybrzeże Undvik;17;100;0
+Base game;q202_2_saved_folan;;Władca Undvik;po uratowaniu Folana;17;200;0
+Base game;q202_2_saved_vigi;;Władca Undvik;po uratowaniu Vigiego;17;200;0
+Base game;q202_4_eight_wood;;Władca Undvik;po przyniesieniu Ósmemu gwoździ i dratwy;17;200;0
+Base game;q202_3_killed_giant;;Władca Undvik;po zakończeniu zadania;17;500;0
+Base game;q203_1_exp_drowners_killed;;Wybraniec bogów;po zabiciu utopców na plaży;17;400;0
+Base game;q203_2_exp_found_broksvard;;Wybraniec bogów;po zabraniu Brokvaru;17;400;0
+Base game;q203_3_exp_discover_him;;Wybraniec bogów;po rozmowie z Cerys o sposobach pokonania hima;17;550;0
+Base game;q203_4_exp_got_rid_of_him;;Wybraniec bogów;po zakończeniu zadania;17;750;0
+Base game;q203_6_exp_examined_cataclysm;;Echa przeszłości;po zakończeniu zadania;13;500;0
+Base game;q205_1_skjal_found;;Bezimienny;po znalezieniu skjala;14;200;0
+Base game;q205_2_quest_completed;;Ktokolwiek widział, ktokolwiek wie;po zakończeniu zadania;15;200;0
+Base game;q206_01_won_fistfight;;Królewski Gambit;po pokonaniu pierwszego vildkaarla w ramach zakładu z Hjalmarem (opcjonalnie);16;100;0
+Base game;q206_01b_defeated_all_vildkaarls;;Królewski Gambit;po pokonaniu trzech vildkaarli (opcjonalnie);16;50;0
+Base game;q206_02_crachs_reward;;Królewski Gambit;po odebraniu nagrody od Cracha;16;500;0
+Base game;q206_03_berserkers_killed;;Królewski Gambit;po pokonaniu niedźwiedzi;16;300;0
+Base game;q206_04_discovered_hallgrim;;Królewski Gambit;ścieżka hjalmara: po wejściu do jaskini berserkerów;16;200;0
+Base game;q206_04_discovered_arnvalds_involvement;;Królewski Gambit;ścieżka cerys: po znalezieniu tuniki arnvaldta;16;300;0
+Base game;q206_05_stopped_aryts;;Królewski Gambit;ścieżka hjalmara: po pokonaniu druidów;16;300;0
+Base game;q206_05_stopped_arnvald;;Królewski Gambit;po rozmowie z Arnvaldtem;16;200;0
+Base game;q206_06_crachs_final_reward;;Królewski Gambit;po zakończeniu zadania;16;400;0
+Base game;q208_1_finished_race_for_crown;;Koronacja;po zakończeniu zadania;18;200;0
+Base game;q210_1_emhyr_done;;Fringilla Vigo;po zakończeniu zadania;28;200;0
+Base game;q210_2_vault_done;;Słoneczny Kamień;po zakończeniu zadania;28;500;0
+Base game;q210_3_lab_done;;Dziecko starszej krwi;po zakończeniu zadania;31;300;0
+Base game;q210_4_skjall_done;;Grób Skjalla;po zakończeniu zadania;28;100;0
+Base game;q301_2_helped_triss;;Stosy Novigradu;po pomocy triss i zakończeniu zadania;7;200;0
+Base game;q301_4_exp_dreamer_dreams;;Sen w wielkim mieście;Zakończ zadanie (wygnaliśmy sare);10;100;0
+Base game;q301_1_oren_followed_thieves;;Stosy Novigradu;po wejściu do Zgniłego Gaju;7;100;0
+Base game;q301_3_bonus_for_house;;Sen w wielkim mieście;za odbiór prowizji od de Jonkheera;9;300;100
+Base game;q302_01_met_big_four;;Dorwać Juniora;po rozmowie z Dijkstrą o możliwych miejscach pobytu Juniora;12;150;0
+Base game;q302_02_investigated_ring;;Dorwać Juniora;po zbadaniu areny;9;150;0
+Base game;q302_02_investigated_casino;q302;Dorwać Juniora;po zbadaniu kasyna;9;150;0
+Base game;q302_02_cleaver_reward;q302;Gangi Novigradu;nagroda od Tasaka (pełna kwota);9;50;300
+Base game;q302_02_cleaver_reward_half;q302;Gangi Novigradu;nagroda od Tasaka (połowa kwoty);9;50;150
+Base game;q302_02_cleaver_reward_nogold;q302;Gangi Novigradu;nagroda od Tasaka (bez złota);9;200;0
+Base game;q302_02_cleaver_reward_beggarking;q302;Gangi Novigradu;nagroda od Króla Żebraków;9;100;0
+Base game;q302_03_roche_camp_visited;q302;Dorwać Juniora;po pierwszej rozmowie z Vernonem Rochem;12;150;0
+Base game;q302_04_radovid_met;q302;Dorwać Juniora;po rozmowie z Radowidem w klubie szachowym;12;150;0
+Base game;q302_05_completed;q302;Dorwać Juniora;po zabiciu lub oszczędzeniu Juniora;12;500;0
+Base game;q302_whoreson_secret_stash;;-;-;9;0;30
+Base game;q302_5_radovid_met;q302;Przysługa dla Radowida;Zakończ zadanie;12;50;0
+Base game;q303_01_found_out_about_bomb;;Skarb Hrabiego Reuvena;po rozmowie z Dijkstrą po przeszukaniu kanałów;12;200;0
+Base game;q303_02_find_lead_to_margrave;;Skarb Hrabiego Reuvena;po zbadaniu basenu;12;50;0
+Base game;q303_03_solve_dudus_riddle;;Skarb Hrabiego Reuvena;po znalezieniu wiadomości od Dudu;12;50;0
+Base game;q303_04_witch_hunters_tricked_menge;;Skarb Hrabiego Reuvena;po zabiciu Mengego (Plan Triss);12;300;0
+Base game;q303_05_witch_hunters_didnt_trick_menge;;Skarb Hrabiego Reuvena;po zabiciu Mengego (Nie według planu Triss);12;200;0
+Base game;q303_06_told_dijkstra_about_treasure;;Skarb Hrabiego Reuvena;po rozmowie z Dijkstrą (Plan Triss/nie wiedług planu Triss);12;100;90
+Base game;q303_07_trapped_spy;;Skarb Hrabiego Reuvena;po spotkaniu z Jamurlakiem (Nie według planu Triss);12;50;0
+Base game;q304_01_hobos_killed;;Spis cudzołużnic;po pokonaniu żebraków i przeczytaniu terminarza Jaskra;11;500;0
+Base game;q304_02_visited_rosa;;Spis cudzołużnic;po rozmowie z Rosą i Edną;11;150;0
+Base game;q304_02_rosa_pays;;Spis cudzołużnic;-;11;0;100
+Base game;q304_03_visited_vespula;;Spis cudzołużnic;po rozmowie z Vespulą;11;150;0
+Base game;q304_04_visited_molly;;Spis cudzołużnic;po rozmowie z Molly;11;150;0
+Base game;q304_04_saddle;;Spis cudzołużnic;-;11;0;0
+Base game;q304_05_visited_marabella;;Spis cudzołużnic;po rozmowie z Marabellą;11;150;0
+Base game;q304_06_visited_elihal;;Spis cudzołużnic;po rozmowie z Elihalem;11;150;0
+Base game;q304_07_visited_all_girls;;Spis cudzołużnic;po rozmowie z wszystkimi dziewczynami;11;300;0
+Base game;q304_08_completed;;Spis cudzołużnic;po rozmowie z Priscillą i zakończeniu zadania;11;800;0
+Base game;q305_01_play_written;;Niech żyje sztuka;po napisaniu sztuki przez Priscillę;11;300;0
+Base game;q305_02_jugglers_addiotionally_hired;;Niech żyje sztuka;po zwerbowaniu Maskonurów;11;150;0
+Base game;q305_03_play_finished;;Niech żyje sztuka;po zakończeniu przedstawienia lub pokonaniu mieszczan (ukończenie zadania - 50, wybór abelarda - 110, wypowiedzenie wszystkich prawidłowo kwestii - 150, Axii przy maskonurach - 40, wygraj na pięści - 25);11;500;0
+Base game;q305_03a_play_correct;;Niech żyje sztuka;po wypowiedzenue wszystkich prawidłowo kwestii;11;150;50
+Base game;q305_03b_play_almost_correct;;Niech żyje sztuka;po wypowiedzenue prawie wszystkich prawidłowo kwestii;11;125;20
+Base game;q305_03c_play_almost_all_bad;;Niech żyje sztuka;po wypowiedzenue błędnie prawie wszystkich kwestii;11;110;0
+Base game;q305_03d_picked_not_drunken_prince;;Niech żyje sztuka;po wybraniu abelarda ;11;110;30
+Base game;q305_04_quest_completed;;Poeta w opałach;po zakończeniu zadania;13;1000;0
+Base game;q305_03b_dandelion_free;;Poeta w opałach;-;11;0;0
+Base game;q305_10_blanka_found;;Niech żyje sztuka;po odnalezieniu Blanki;11;50;0
+Base game;q305_9a_irina_actress;;Niech żyje sztuka;wybór iriny jako aktorki;11;25;10
+Base game;q305_9b_priscilla_actress;;Niech żyje sztuka;wybór priscilli jako aktorki;11;25;20
+Base game;q305_6_jugglers_bonus;;Niech żyje sztuka;dodatek za zwerbowanie maskonurów;11;25;30
+Base game;q308_1_investigated_crimescenes;;Śmiertelne grzechy;po zbadaniu miejsc zbrodni;16;200;0
+Base game;q308_2_killed_nathanel;;Śmiertelne grzechy;po zabiciu Nataniela (także gdy uznaliśmy, że nie jest mordercą);16;100;0
+Base game;q308_3_killed_the_real_psycho;;Śmiertelne grzechy;po zabiciu wampira;16;500;0
+Base game;q309_1_saved_additional_mages;;Teraz albo nigdy;po uratowaniu Bertolda i Anisse;11;200;0
+Base game;q309_2_didnt_abandon_triss;;Teraz albo nigdy;po pokonaniu łowców czarownic w Zimorodku;11;200;0
+Base game;q309_3_killed_vampire;;Teraz albo nigdy;po pokonaniu katakana w kanałach;11;500;0
+Base game;q309_4_left_sewers;;Teraz albo nigdy;po wyjściu z kanałów do portu;11;200;0
+Base game;q309_5_saved_mages_on_ship;;Teraz albo nigdy;po pokonaniu łowców czarownic w porcie;14;300;0
+Base game;q309_6_triss_stayed;;Teraz albo nigdy;po przeniesieniu się do latarni (możliwe tylko przy romansie z Triss);14;300;0
+Base game;q309_1a_saved_only_mage;;Teraz albo nigdy;po uratowaniu tylko maga;14;300;0
+Base game;q309_1b_saved_only_sorceress;;Teraz albo nigdy;po uratowaniu tylko czarodziejki;14;300;0
+Base game;q310_1_retrieved_keiras_body;;Ostatnia przysługa;po odzyskaniu ciała keiry i zakończeniu zadania;26;200;0
+Base game;q310_2_got_philippa;;Najciemniej pod latarnią;po złapaniu fillipy i zakończeniu zadania;28;500;0
+Base game;q310_3_questioned_escapist;;Wielka ucieczka;po rozmowie z Abbe Farią;28;200;0
+Base game;q310_4_got_rita_out;;Wielka ucieczka;po uwolnieniu Margarity;28;300;0
+Base game;q310_5_escaped_prison_fight;;Wielka ucieczka;po ucieczce z więzienia z walką;28;100;0
+Base game;q310_5_escaped_prison_quiet;;Wielka ucieczka;po cichej ucieczce z więzienia;28;300;0
+Base game;q310_6_whoreson_done;;Wyrównanie rachunków;po spotkaniu z Dudu lub z Juniorem;28;200;0
+Base game;q310_7_helped_ciris_friend;;Wyrównanie rachunków; po spotkaniu z Beą;28;200;0
+Base game;q310_8_ciri_complete;;Wyrównanie rachunków;po zakończeniu zadania;28;300;0
+Base game;q310_9_lodge_gathered;;Ostatnie przygotowania;po zakończeniu zadania;28;1000;0
+Base game;q310_10_lessons_learned;;Serce nie sługa;po zakończeniu zadania;28;300;0
+Base game;q311_01_survived_spiral_alone;;Przez czas i przestrzeń;po rozmowie z Avallachem w latarni;26;500;0
+Base game;q311_02_completed;;Przez czas i przestrzeń;po zakończeniu zadania;26;1000;0
+Base game;q401_02_claim_uma;;Najbrzydszy człowiek na świecie;po zakończeniu zadania;19;125;0
+Base game;q401_01_help_yennefer;;Zakłócenia;po zakończeniu zadania;19;600;0
+Base game;q401_02_help_eskel;;Ażeby widłogona zwabić…;po zakończeniu zadania;19;600;0
+Base game;q401_03_eskels_race_prize;;Ażeby widłogona zwabić…;po wygraniu wyścigu z Eskelem i przyjęciu nagrody;19;200;0
+Base game;q401_04_help_lambert;;Ostatnia próba;po zakończeniu zadania;19;500;0
+Base game;q401_05_find_drunk_eskel;;Nie ma jak w domu;po znalezieniu Eskela i zakończeniu zadania;19;500;0
+Base game;q401_06_break_umas_curse;;Va faill elaine;po zakończeniu zadania;19;1500;0
+Base game;q402_1_optional_crach_sword;;Towarzysze broni: Skellige;po otrzymaniu Ostrza Zimy od Cracha;22;50;0
+Base game;q402_2_found_ciri;;Wyspa Mgieł;po zakończeniu zadania;22;4000;0
+Base game;q402_1_full_crew_achiv;q402;Towarzysze broni;za zebranie wszystkich sojuszników w Kaer Morhen (osiągnięcie Pełna załoga);22;50;0
+Base game;q402_1_optional_dijkstra_help;;Towarzysze broni: Novigrad;po uzyskaniu pomocy od Dijkstry;22;50;1000
+Base game;q403_superb_elixirs;;Bitwa w Kear Morhen;-;24;0;0
+Base game;q403_new_gear;;Bitwa w Kear Morhen;-;24;0;0
+Base game;q403_01_got_all_supporters;;Bitwa w Kear Morhen;po przybyciu do Kaer Morhen;24;1000;0
+Base game;q403_02_before_battle;;Bitwa w Kear Morhen;po naradzie;24;500;0
+Base game;q403_03_elixirs;;Bitwa w Kear Morhen;po otrzymaniu eliksirów z laboratorium;24;50;0
+Base game;q403_03_new_gear;;Bitwa w Kear Morhen;po otrzymaniu nowego rynsztunku;24;50;0
+Base game;q403_04_killed_wild_hunt_in_forest;;Bitwa w Kear Morhen;po zamknięciu wszystkich portali w lesie;24;200;0
+Base game;q403_05_forest_done;;Bitwa w Kear Morhen;po wysłaniu sygnału do Triss po zobaczeniu Imleritha;24;500;0
+Base game;q403_06_middle_yard;;Bitwa w Kear Morhen;po wejściu na środkowy dziedziniec;24;500;0
+Base game;q403_07_final_standoff;;Bitwa w Kear Morhen;ostateczna konfrontacja;24;700;0
+Base game;q403_08_survived_assault;;Bitwa w Kear Morhen;po odparciu szturmu;24;1000;0
+Base game;q403_09_completed;;Bitwa w Kear Morhen;po zakończeniu zadania;24;1000;0
+Base game;q501_eredin_killed;;Na cienkim lodzie;-;30;0;0
+Base game;q502_01_conjuntion_started;;Tedd Deireadh, Czas Końca;po rozpoczęciu Koniunkcji;30;500;0
+Base game;q502_02_completed;;Tedd Deireadh, Czas Końca;po zakończeniu zadania;30;1000;0
+Base game;q503_1_optional_helped_werewolf;;Coś się kończy, coś się zaczyna;[Złe zakończenie] Pokonaj chłopów;30;200;0
+Base game;q503_2_ding_dong_witch_is_dead;;Coś się kończy, coś się zaczyna;[Złe zakończenie] Pokonaj Prządke;30;1000;0
+Base game;q504_1_scare_bear;;Coś się kończy, coś się zaczyna;[Cesarskie zakończenie] Po odpędzeniu niedźwiedzia petardą;30;200;0
+Base game;q504_horse_returned;;Coś się kończy, coś się zaczyna;po zwróceniu konia;30;20;15
+Base game;q505_1_meet_emhyr;;Coś się kończy, coś się zaczyna;[Wiedźmińskie zakończenie] Po przybyciu do białego sadu po wcześniejszej audienccji u emhyra;30;150;0
+Base game;q505_2_killed_monster;;Coś się kończy, coś się zaczyna;po zabiciu potwora;30;20;0
+Base game;sq101_1_found_parcel;;Przyjacielska przysługa;po znalezieniu przesyłki Keiry;6;25;0
+Base game;sq101_2_won_race_keira;;Przyjacielska przysługa;po wygraniu wyścigu z Keirą;6;50;0
+Base game;sq101_3_had_date;;Przyjacielska przysługa;po zakończeniu zadania;6;80;0
+Base game;sq102_01_found_lockbox;;Zagłada domu Reardonów;za znalezienie skrytki Dolores;6;50;0
+Base game;sq102_02_found_brother;;Zagłada domu Reardonów;po znalezieniu listu humberta;6;80;0
+Base game;sq102_03_told_brother_dead;;Zagłada domu Reardonów;po powiedzeniu Dolores o Humbercie i jego liście;6;50;0
+Base game;sq102_03_told_farm_safe;;Zagłada domu Reardonów;po zakończeniu zadania;6;25;0
+Base game;sq102_01_find_letho;;Duchy przeszłości;znajdź letho;6;25;0
+Base game;sq102_02_defeat_assassins;;Duchy przeszłości;pokonaj zabójców;6;50;0
+Base game;sq102_03_defeat_bandits;;Duchy przeszłości;pokonaj bandytów;6;50;0
+Base game;sq104_1_lied_about_hanna;;Dzikość serca;po odmowie przyjęcia nagrody od Niellena i zakończeniu zadania;7;50;10
+Base game;sq104_2_finished_quest;;Dzikość serca;Po zbadaniu sprawy do końca i zakończeniu zadania;7;50;0
+Base game;sq104_3_reward_from_margaret;;Dzikość serca;po zaakceptowaniu propozycji Anny (przestajemy poszukiwania);7;80;55
+Base game;sq104_4_generic_xp;;Dzikość serca;po przyjęciu nagrody od Niellena i zakończeniu zadania;7;30;0
+Base game;sq106_1_ekimma_killed;;Po nitce do kłębka;po zabiciu ekimmy;11;50;0
+Base game;sq106_2_vienne_killed;;Po nitce do kłębka;poo rozniwue z Vienne i zabicu jej;11;50;0
+Base game;sq106_2_vienne_saved;;Po nitce do kłębka;po rozmowie z Vienne i zostawieniu jej przy życiu;11;80;0
+Base game;sq106_3_hammond_killed;;Po nitce do kłębka;po zabiciu Hammonda;11;80;0
+Base game;sq106_3_hammond_killed_crach;sq106;Po nitce do kłębka;po zabiciu Hammonda i odebraniu nagrody od Cracha (trzeba z nim porozmawiać przed zabiciem Hammonda);11;50;200
+Base game;sq106_4_tauler_killed;;Po nitce do kłębka;po zabiciu Taulera;11;70;0
+Base game;sq106_4_tauler_saved;;Po nitce do kłębka;po oszczędzeniu Taulera;11;90;0
+Base game;sq107_1_full_money;sq107;Złoto głupców;pełna zapłata w złocie;6;0;100
+Base game;sq107_1_half_money;sq107;Złoto głupców;połowa zapłaty w złocie;10;0;50
+Base game;sq107_2_full_xp;sq107;Złoto głupców;Zakończ zadanie (pełne doświadczenie);10;50;0
+Base game;sq107_2_half_xp;sq107;Złoto głupców;Zakończ zadanie (połowa doświadczenia);10;25;0
+Base game;sq108_griffon_killed;;Zlecenie: Gryf na wzgórzach;-;24;0;25
+Base game;sq108_unlocked_blacksmith;;Mistrz płatnerstwa;-;24;0;0
+Base game;sq108_special_armor;;Mistrz płatnerstwa;-;24;0;0
+Base game;sq201_1_a_killed_werewolf_for_good;;W wilczej skórze;Jeśli nakarmimy Morkvarga jego własnym mięsem: po zniknięciu Morkvarga;15;50;0
+Base game;sq201_1_b_lifted_the_curse;;W wilczej skórze;Jeśli odczarujemy Morkvarga kłem i oszczędzimy go: po odczarowaniu Morkvarga;15;80;0
+Base game;sq201_2_a_let_morkvarg_go;;W wilczej skórze;Jeśli odczarujemy Morkvarga kłem i oszczędzimy go: po zakończeniu rozmowy z Morkvargiem;15;80;0
+Base game;sq201_2_b_kill_morkvarg;;W wilczej skórze;Jeśli odczarujemy Morkvarga kłem i zabijemy go: po zabiciu Morkvarga;15;85;0
+Base game;sq201_3_c_helped_morkvarg;;W wilczej skórze;Jeśli odczarujemy Morkvarga kłem i oszczędzimy go: po odebraniu nagrody od lichwiarza;15;50;0
+Base game;for_killing_morkvarg_priestess;;W wilczej skórze;po odbiorze nagrody od josty;15;50;85
+Base game;sq202_01_crater_found;;Ostatnie życzenie;po wręczeniu Yennefer pieczęci;15;50;0
+Base game;sq202_02_completed;;Ostatnie życzenie;po zakończeniu zadania;15;50;0
+Base game;sq202_pirate_treasure;sq202;Ostatnie życzenie;za skarb piratów;15;0;60
+Base game;sq204_leshy_achievement;;Zlecenie: W sercu lasu;-;22;0;0
+Base game;sq204_1_investigation;;Zlecenie: W sercu lasu;po zakończeniu śledztwa;22;10;0
+Base game;sq204_2_leshy_offerings;;Zlecenie: W sercu lasu;po złożeniu ofiar dla leszego;22;20;0
+Base game;sq204_2a_leshy_killed;;Zlecenie: W sercu lasu;po zabiciu leszego;22;50;0
+Base game;sq204_3a_leshy_reward_harald;;Zlecenie: W sercu lasu;po odebraniu nagrody od haralda;22;50;60
+Base game;sq204_3b_leshy_reward_sven;;Zlecenie: W sercu lasu;po odebraniu nagrody od svena;22;50;60
+Base game;sq205_1_got_alcohol;;Egzamin z alchemii;po zabraniu spirytusu;24;80;0
+Base game;sq205_2_helped_with_ritual;;Egzamin z alchemii;po przeprowadzeniu rytuału z Fridjofem;24;80;0
+Base game;sq205_3_got_fernflower;;Egzamin z alchemii;po zabraniu kurzyśladu;24;80;0
+Base game;sq205_4_finished_quest;;Egzamin z alchemii;po zakończeniu zadania;24;80;0
+Base game;sq209_1_tavern_done;;"Obcy w obcym kraju	";po zakończeniu części w karczmie;14;50;0
+Base game;sq209_2_talked_with_lugos_the_mad;;"Obcy w obcym kraju	";po rozmowie z lugosem szalonym;14;80;0
+Base game;sq209_3_cave_of_dreams_entered;;Jaskinia Snów;po zjedzeniu grzybów;14;25;0
+Base game;sq209_4_vision_1_done;;Jaskinia Snów;po pokonaniu widm z pierwszej wizji;14;50;0
+Base game;sq209_5_vision_2_done;;Jaskinia Snów;po pokonaniu widm z drugiej wizji;14;50;0
+Base game;sq209_6_vision_3_done;;Jaskinia Snów;po pokonaniu widma z trzeciej wizji;14;50;0
+Base game;sq209_7_vision_4_done;;Jaskinia Snów;po walce z widmem Eredina;14;80;0
+Base game;sq209_8_final_no_gold;;Jaskinia Snów;po zakończeniu zadania;14;50;0
+Base game;sq209_8_final_with_gold;;Jaskinia Snów;po zakończeniu zadania;14;50;80
+Base game;sq210_wizard_reward;;Wieża znikąd;-;30;0;0
+Base game;sq210_villager_reward;;Wieża znikąd;-;30;0;65
+Base game;sq210_xp_reward;;Wieża znikąd;po zakończeniu zadania;30;50;0
+Base game;sq301_1_wore_full_dublet;;Kwestia życia i śmierci;po udaniu się na bal w dublecie;12;25;0
+Base game;sq301_2_didnt_fight_drunkard;;Kwestia życia i śmierci;po pokojowym odprawieniu mężczyzny biorącego Triss za „Viviankę”;12;25;0
+Base game;sq301_3_won_cards_on_party;;Kwestia życia i śmierci;po wygraniu wszystkich partyjek gwinta;12;50;0
+Base game;sq301_4_defeated_inquisitors;;Kwestia życia i śmierci;po pokonaniu inkwizytorów;12;50;0
+Base game;sq301_5_completed_quest;;Kwestia życia i śmierci;po zakończeniu zadania;12;50;0
+Base game;sq302_01_philippa_hideout_opened;;Wróg publiczny;po otwarciu wejścia do kryjówki przy pomocy płytki;12;50;0
+Base game;sq302_02_got_to_lowest_floor;;Wróg publiczny;po wejściu przez portal na ostatni poziom kryjówki (ten na którym znajduje się ifryt);12;70;0
+Base game;sq302_03_crystal_gave_away_completed;;Wróg publiczny;oddaj kryształ (nie wiem czy radowidowi czy triss);12;50;0
+Base game;sq302_04_completed;;Wróg publiczny;po zakończeniu zadania;12;50;0
+Base game;sq302_05_radovid_payment;;Wróg publiczny;-;12;0;135
+Base game;sq303_1_lost_to_dandelion;;Kabaret;po przegraniu walki z Jaskrem;14;50;0
+Base game;sq303_1_won_with_dandelion;;Kabaret;po wygraniu walki z Jaskrem;14;25;0
+Base game;sq303_2_polly_acquired;;Kabaret;po rozmowie z Polly;14;50;0
+Base game;sq303_3_poster_found;;Kabaret;po znalezieniu plakatu;14;25;0
+Base game;sq303_5_quest_finished;;Kabaret;w trakcie ostatniej rozmowy z Jaskrem;14;70;0
+Base game;sq303_4_horse_race_won;;Kabaret;za wygranie wyścigu (alternatywnie 20/27[1] za zapłatę długów Latreca);14;25;80
+Base game;sq303_race_reward;;Kabaret;-;14;0;0
+Base game;sq303_4_quest_finished;;Kabaret;po zakończeniu zadania;14;50;0
+Base game;sq304_1_deal_made;;Miecze i pierogi;po pokonaniu z Cyną bandytów Tasaka;24;25;20
+Base game;sq304_2_bodyguards_resolved;;Miecze i pierogi;po rozmowie z Sukrusem po rozwiązaniu problemu kupca;24;10;10
+Base game;sq304_3_sword;;Miecze i pierogi;-;24;0;0
+Base game;sq304_negotiation_success;;Miecze i pierogi;po rozmowie z Hattorim o składnikach potrzebnych do produkcji mieczy;24;25;0
+Base game;sq305_1_finished_quest_vern;;Zlecenie: Potwór z lasu;-;6;0;0
+Base game;sq305_1_finished_quest_guard;;Zlecenie: Potwór z lasu;-;6;0;30
+Base game;sq305_1_generic_xp;;Zlecenie: Potwór z lasu;po zakończeniu zadania;6;25;0
+Base game;sq305_always;;Zlecenie: Potwór z lasu;po zakończeniu zadania;6;25;0
+Base game;sq306_01_defeated_bernard;;O wysoką stawkę;za wygranie w karty z bernardem;26;25;0
+Base game;sq306_02_defeated_sacha;;O wysoką stawkę;za wygranie w karty z sashą;26;50;0
+Base game;sq306_03_defeated_finneas;;O wysoką stawkę;za wygranie w karty z finneasem;26;50;0
+Base game;sq306_04_defeated_tybalt;;O wysoką stawkę;za wygranie w karty z tybaldem;26;80;0
+Base game;sq306_05_solved_investigation;;O wysoką stawkę;po zbadaniu skrzynki z przyprawami;26;50;0
+Base game;sq306_06_retrieved_prize_money;;O wysoką stawkę;po zakończeniu zadania;26;50;4500
+Base game;sq310_gwint_cards;;Niebezpieczna gra;za wybranie kart jako nagrodę;12;0;0
+Base game;sq310_coins;;Niebezpieczna gra;za wybranie pieniędzy jako nagrodę;12;80;150
+Base game;sq312_ves_assisted;;Oko za oko;ratujemy ves;12;50;0
+Base game;sq312_ves_died;;Oko za oko;ves umiera ;12;75;0
+Base game;sq313_1_ruse_complete;sq313;Niespokojna okolica;zakończ zadanie;0;50;0
+Base game;sq315_finished;;Spisek;po zakończeniu zadania;14;25;0
+Base game;mh101_investigation;;Zlecenie: Skrzekacz;po zakończeniu śledztwa;8;25;0
+Base game;mh101_final_reward;;Zlecenie: Skrzekacz;Zakończ zadanie - przyjmij pieniądze;8;235;235
+Base game;mh101_final_reward_no_gold;;Zlecenie: Skrzekacz;Zakończ zadanie - nie przyjmuj pieniędzy;8;250;0
+Base game;mh102_final_reward;;Zlecenie: Zaginiony brat;za wymuszenie nagrody;33;200;280
+Base game;mh102_final_reward_no_gold;;Zlecenie: Zaginiony brat;za nie upomnienie się o nagrodę;33;300;0
+Base game;mh102_investigation;;Zlecenie: Zaginiony brat;za zniszczenie jaj kikimor;33;25;0
+Base game;mh103_investigation;;Zlecenie: Leśnica;po zakończeniu śledztwa;10;25;0
+Base game;mh103_final_reward;;Zlecenie: Leśnica;za zakończenie zadania;10;240;239
+Base game;mh104_investigation_done;;Zlecenie: Tajemnica wsi Stegny;za zakończenie śledztwa;22;25;0
+Base game;mh104_father_reward;;Zlecenie: Tajemnica wsi Stegny;nagroda od ojca;22;25;210
+Base game;mh104_final_reward;;Zlecenie: Tajemnica wsi Stegny;po zakończeniu zadania;22;300;260
+Base game;mh105_villagers_found;;Zlecenie: Zmora kupieckiego traktu;po odnalezieniu wieśniaków;23;30;0
+Base game;mh105_investigation;;Zlecenie: Zmora kupieckiego traktu;po zakończeniu śledztwa;23;25;0
+Base game;mh105_final;;Zlecenie: Zmora kupieckiego traktu;po zakończeniu zadania;23;250;256
+Base game;mh106_final_reward;;Zlecenie: Kłopoty grabarza;po zakończeniu zadania;10;240;240
+Base game;mh106_investigation;;Zlecenie: Kłopoty grabarza;po zakończeniu śledztwa;10;10;0
+Base game;mh107_investigation;;Zlecenie: Tajemnicze ślady;po zakończeniu śledztwa;20;25;0
+Base game;mh107_final_reward;;Zlecenie: Tajemnicze ślady;po zakończeniu zadania;20;400;258
+Base game;mh108_investigation;;Zlecenie: Potwór z bagien;po zakończeniu śledztwa;12;25;0
+Base game;mh108_final_reward;;Zlecenie: Potwór z bagien;po zakończeniu zadania;12;240;242
+Base game;mh202_1_investigation;;Zlecenie: Bestia z Hindarsfjall;po zakończeniu śledztwa;16;25;0
+Base game;mh202_2_final_reward;;Zlecenie: Bestia z Hindarsfjall;po zakończeniu zadania;16;250;520
+Base game;mh203_01_witness_interrogated;;Zlecenie: Morskie Diabły;po przesłuchaniu świadka;18;25;0
+Base game;mh203_02_lair_found;;Zlecenie: Morskie Diabły;po znalezieniu legowiska;18;25;0
+Base game;mh203_03_completed;;Zlecenie: Morskie Diabły;po zakończeniu zadania;18;250;250
+Base game;mh206_arena;;Zlecenie: Zaginiony syn;po walce na arenie;29;15;0
+Base game;mh206_lair;;Zlecenie: Zaginiony syn;po znalezieniu legowiska;29;25;0
+Base game;mh206_final;;Zlecenie: Zaginiony syn;po zakończeniu zadania;29;300;273
+Base game;mh207_mikkjal_found;;Zlecenie: Upiór z Eldbergu;po odnalezieniu Mikkjala;17;25;0
+Base game;mh207_investigation;;Zlecenie: Upiór z Eldbergu;po zakończeniu śledztwa;17;25;0
+Base game;mh207_final;;Zlecenie: Upiór z Eldbergu;po zakończeniu zadania;17;260;246
+Base game;mh208_investigation;;Zlecenie: Smok;po zakończeniu śledztwa;28;25;0
+Base game;mh208_final;;Zlecenie: Smok;po zakończeniu zadania;28;350;273
+Base game;mh208_final_bigger;;Zlecenie: Smok;po zakończeniu zadania i okłamaniu starca;28;40;273
+Base game;mh208_final_reward_smaller;;Zlecenie: Smok;po zakończeniu zadania i opowiedzeniu prawdy;28;90;20
+Base game;mh210_investigation;;Zlecenie: Zaginiony narzeczony;po zakończeniu śledztwa;19;25;0
+Base game;mh210_final;;Zlecenie: Zaginiony narzeczony;po zakończeniu zadania;19;250;249
+Base game;mh210_britt;;Zlecenie: Zaginiony narzeczony;nagroda od Britt;19;25;0
+Base game;mh210_britt_gold;;Zlecenie: Zaginiony narzeczony;nagroda od Britt (ze złotem);19;20;25
+Base game;mh301_reward;;Zlecenie: Bestia z Oxenfurckiej Puszczy;po zakończeniu zadania;35;300;295
+Base game;mh301_investigation;;Zlecenie: Bestia z Oxenfurckiej Puszczy;po zakończeniu śledztwa;35;25;0
+Base game;mh302_investigation;;Zlecenie: Opiekun lasu;po zakończeniu śledztwa;25;25;0
+Base game;mh302_final;;Zlecenie: Opiekun lasu;po zakończeniu zadania;25;250;260
+Base game;mh303_investigation;;Zlecenie: Śmiertelne rozkosze;po zakończeniu śledztwa;15;25;0
+Base game;mh303_succubus;;Zlecenie: Śmiertelne rozkosze;-;15;0;0
+Base game;mh303_final;;Zlecenie: Śmiertelne rozkosze;po zakończeniu zadania;15;270;249
+Base game;mh304_investigation;;Zlecenie: Pijak z Oxenfurtu;po zakończeniu śledztwa;26;25;0
+Base game;mh304_final;;Zlecenie: Pijak z Oxenfurtu;po zakończeniu zadania;26;300;273
+Base game;mh305_investigation;;Zlecenie: Nieuchwytny złodziejaszek;po zakończeniu śledztwa;13;25;0
+Base game;mh305_final;;Zlecenie: Nieuchwytny złodziejaszek;po zakończeniu zadania;13;245;243
+Base game;mh305_doppler_reward;;Zlecenie: Nieuchwytny złodziejaszek;nagroda od dopplera;13;25;215
+Base game;mh306_investigation;;Zlecenie: Nawiedzony dom;po zakończeniu śledztwa;24;25;0
+Base game;mh306_final;;Zlecenie: Nawiedzony dom;po zakończeniu zadania;24;300;267
+Base game;mh307_01_lair_located;;Zlecenie: Barciowe Widziadło;po zlokalizowaniu legowiska;14;25;0
+Base game;mh307_02_minion_fleed_completed;;Zlecenie: Barciowe Widziadło;po ucieczce sługi i zakończeniu zadania;14;125;80
+Base game;mh307_02_minion_killed_completed;;Zlecenie: Barciowe Widziadło;po zakończeniu zadania;14;250;249
+Base game;mh308_investigation;;Zlecenie: Biała Dama;po zakończeniu śledztwa;16;25;0
+Base game;mh308_final;;Zlecenie: Biała Dama;po zakończeniu zadania;16;260;246
+Base game;mq0001_01_reunite_brothers;;Zaginiony w akcji;po zakończeniu zadania;1;25;25
+Base game;mq0002_01_returned_chest;;Cenna przesyłka;Oddać cenną przesyłkę kupcowi;1;25;20
+Base game;mq0002_01_deal_with_merchant;;Cenna przesyłka;Pozostawić kupca przy życiu i pozwolić odejść z przesyłką;1;10;30
+Base game;mq0002_01_extorted_merchant;;Cenna przesyłka;Pozwolić odejść żołnierzowi, ale bez skrzynki;1;10;50
+Base game;mq0002_01_merchant_to_guards;;Cenna przesyłka;wydać geermera czarnym;1;10;30
+Base game;mq0003_01_dispelled_wraith;;Zlecenie: Licho przy studni;po pokonaniu południcy;2;50;0
+Base game;mq0003_02_found_sister;;Zlecenie: Licho przy studni;po odnalezieniu siostry;2;10;10
+Base game;mq0003_03_farmers_reward;;Zlecenie: Licho przy studni;po przyjęciu zapłaty od rolnika;2;50;20
+Base game;mq0003_03_farmers_reward_refused;;Zlecenie: Licho przy studni;po odmówieniu zapłaty od rolnika;2;50;0
+Base game;mq003_02_found_sister;mq003;Zlecenie: Licho przy studni;duplikat mq0003_02_found_sister;2;10;0
+Base game;mq0004_01_returned_pan;;Patelnia jak nowa;po zakończeniu zadania;1;10;0
+Base game;mq0005_01_found_arsonist;;Zabawy z ogniem;po znalezieniu podpalacza;1;25;0
+Base game;mq0005_02_arsonists_pay;;Zabawy z ogniem;po przyjęciu nagrody od niepełki;1;50;20
+Base game;mq0005_02_dwarf_pay;;Zabawy z ogniem;po przyjęciu nagrody od kowala;1;50;20
+Base game;mq1051_1_wyvern_killed;;Zlecenie: Zaginiony patrol;po przyjęciu nagrody od kwatermistrza;7;10;50
+Base game;mq1051_1_wyvern_killed_no_gold;;Zlecenie: Zaginiony patrol;po odmówieniu przyjęcia nagrody od kwatermistrza;7;35;0
+Base game;mq1045_encounter_02_gold;;Dama w opałach;Przyjąć nagrodę ;10;20;40
+Base game;mq1045_encounter_02_exp;;Dama w opałach;Nie przyjmować pieniędzy;10;60;0
+Base game;mq1019_1_site01_burned;;Stosy pogrzebowe;za spalenie pierwszego stosu;3;10;0
+Base game;mq1019_1_site02_burned;;Stosy pogrzebowe;za spalenie drugiego stosu;3;10;0
+Base game;mq1019_1_site03_burned;;Stosy pogrzebowe;za spalenie trzeciego stosu;3;10;0
+Base game;mq1019_2_clue_dealer_story;;Stosy pogrzebowe;po rozmowie z ocalałym człowiekiem;3;25;0
+Base game;mq1019_completed;;Stosy pogrzebowe;po zakończeniu zadania nie wspominając o niczym;3;50;20
+Base game;mq1019_completed_with_bribe;;Stosy pogrzebowe;po zakończeniu zadania przyjmując łapówkę;3;50;60
+Base game;mq1019_completed_fight;;Stosy pogrzebowe;po zakończeniu zadania zabijając kapłana;3;50;0
+Base game;mq1010_3_quest_finished;;Ostatnia posługa;po zakończeniu zadania;9;25;20
+Base game;mq1010_1_ring_placed;;Ostatnia posługa;po położeniu obrączki na grobie;9;10;0
+Base game;mq1010_2_ghost_lamp;;Ostatnia posługa;po użyciu magicznego kaganka;9;25;0
+Base game;mq1033_1_encounter_1;mq1033;Zmierz się ze mną!;po pierwszej walce z Ronvidem;0;25;0
+Base game;mq1033_2_encounter_2;mq1033;Zmierz się ze mną!;po drugiej walce z Ronvidem;0;25;0
+Base game;mq1033_3_encounter_final;mq1033;Zmierz się ze mną!;Zakończ zadanie;0;50;0
+Base game;mq1014_enc01_finished;mq1014;Szabrownicy;pierwsza grupa - pokonaj bandytów;0;10;0
+Base game;mq1014_enc02_finished;mq1014;Szabrownicy;druga grupa - pokonaj alghule;0;10;0
+Base game;mq1014_enc03_finished;mq1014;Szabrownicy;trzecia grupa - pokonaj bandytów;0;10;0
+Base game;mq1041_1_peaceful_ending;mq1041;Obcy w nocy;Zakończ zadanie (pokojowo);0;25;0
+Base game;mq1041_1_pro_redanian_ending;mq1041;Obcy w nocy;Zakończ zadanie (po stronie Redańczyków);0;25;0
+Base game;mq1041_1_fight_all_ending;mq1041;Obcy w nocy;Zakończ zadanie (walka ze wszystkimi);0;25;0
+Base game;mq1041_1_pro_soldier_ending;mq1041;Obcy w nocy;Zakończ zadanie (po stronie żołnierza);0;25;0
+Base game;mq1045_1_cache;;-;-;10;0;50
+Base game;mq1016_1_children_found;;Drób w opałach;po rozmowie z dziećmi;0;10;0
+Base game;mq1016_2_quest_finished_no_gold;;Drób w opałach;po zakończeniu zadania, i przekonaniu staruszki żeby przyjęła dzieci;0;25;0
+Base game;mq1016_2_quest_finished_gold;;Drób w opałach;po zakończeniu zadania i przyjęciu nagrody;0;25;20
+Base game;mq1024_1_encounter_finished;;?;?;0;25;0
+Base game;mq1012_1_helping_believer;;Obrońca wiary;po postawieniu pierwszej kapliczki;10;10;0
+Base game;mq1012_2_chapel_fixed;;Obrońca wiary;po postawieniu drugiej kapliczki;10;25;0
+Base game;mq1012_3_quest_finished;;Obrońca wiary; po zakończeniu zadania;10;50;0
+Base game;mq1051_1_mother_pays;mq1051;Więzy krwi;zakończ zadanie;7;10;50
+Base game;mq1050_1_food_delivered;;Wróżbita prawdę ci powie;po pierwszej rozmowie z wróżem;7;10;0
+Base game;mq1050_2_quest_finished;;Wróżbita prawdę ci powie; po zakończeniu zadania;7;50;0
+Base game;mq1035_1_merchant_gold;mq1035;Karmiczna sprawiedliwość;Uratuj człowieka przed elfami;0;25;50
+Base game;mq1002_1_room_1_cleared;;Nabiał i ciemne siły;po przedostaniu się przez pomieszczenie z serami;9;50;0
+Base game;mq1002_2_room_2_cleared;;Nabiał i ciemne siły;po wejściu do skarbca;9;50;0
+Base game;mq1002_3_quest_finished;;Nabiał i ciemne siły; po zakończeniu zadania;9;75;0
+Base game;mq1002_3_treasure_chest;;-;-;9;0;50
+Base game;mq1011_2_chest;;-;-;0;0;20
+Base game;mq1011_1_merchant_reward;mq1011;Atak na karawanę;Zakończ zadanie;0;25;20
+Base game;mq1038_1_finished;mq1038;Najlepszy przyjaciel człowieka;Pomórz dzieciom i zakończ zadanie;0;10;0
+Base game;mq1028_2_completed_no_gold;;Przesyłka kurierska;zakończ zadanie;2;25;0
+Base game;mq1028_2_completed;;Przesyłka kurierska;zakończ zadanie;2;25;20
+Base game;mq1020_1_elves_found;;Nasza szkapa;po spotkaniu z elfami;12;25;0
+Base game;mq1020_2_wrong_horse_returned;;Nasza szkapa;po zakończeniu zadania po przyprowadzeniu nie tego konia;12;25;50
+Base game;mq1020_2_quick_end;;Nasza szkapa;po zakończeniu zadania;12;25;20
+Base game;mq1036_bandits_killed;mq1036;Na łasce obcych;po zabiciu bandytów;0;50;0
+Base game;mq1036_deserter_met;mq1036;Na łasce obcych;po rozwiązaniu Verduna;0;25;0
+Base game;mq1036_bandits_reward;mq1036;Na łasce obcych;nagroda od bandytów;0;50;50
+Base game;mq1046_1_elf_saved;;Śmierć w ogniu;po uratowaniu elfa;10;25;0
+Base game;mq1046_1_hidden_loot;;-;-;10;0;20
+Base game;mq1057_fugas_located;mq1057;Opium dla ludu;po odnalezieniu Fugasa;7;25;0
+Base game;mq1057_reward_from_villagers;;Opium dla ludu;za końcową rozmowę z chłopami (z nagrodą);7;50;50
+Base game;mq1057_no_reward_from_villagers;;Opium dla ludu;za końcową rozmowę z chłopami (bez nagrody);7;50;0
+Base game;mq1039_quest_completed;mq1039;Nieproszeni goście;Zakończ zadanie;11;25;20
+Base game;mq1013_quest_finished;mq1013;Wiedźmin jak malowany;Zakończ zadanie;10;75;0
+Base game;mq1022_1_finished;mq1022;Ochotnik;Zakończ zadanie;13;50;0
+Base game;mq1022_1_troll_killed;mq1022;Ochotnik;po zabiciu trolla;13;50;0
+Base game;mq1015_finished;mq1015;Samosąd;Zakończ zadanie;7;25;0
+Base game;mq1007_success;mq1007;Pijany motłoch;Zakończ zadanie;0;25;0
+Base game;mq1006_1_cheap_item;mq1006;Dręczenie trolla;nagroda: tani przedmiot;0;10;10
+Base game;mq1006_1_medium_item;mq1006;Dręczenie trolla;nagroda: cenniejszy przedmiot;0;10;25
+Base game;mq1006_1_elf_stew;mq1006;Dręczenie trolla;nagroda: gulasz z elfa;0;25;0
+Base game;mq1001_1_dog_saved;mq1001;Pieskie życie;po uratowaniu psa;5;25;0
+Base game;mq1001_2_locker;;-;-;5;0;10
+Base game;mq1037_enc_01_sword;;-;-;0;0;0
+Base game;mq1005_1_perfect_score;;Hieny cmentarne;po zakończeniu zadania;9;50;50
+Base game;mq1005_1_middle_score;;Hieny cmentarne;po zakończeniu zadania;9;50;20
+Base game;mq1005_1_low_score;;Hieny cmentarne;po zakończeniu zadania;9;50;15
+Base game;mq1005_1_boss_bonus;;-;-;9;0;50
+Base game;mq1003_final;mq1003;Niebezpieczny ładunek;za zabicie Gerta;1;25;0
+Base game;mq1003_cart_owner_freed;mq1003;Niebezpieczny ładunek;po uwolnieniu właściciela wozu;1;10;0
+Base game;mq1003_cart_burned_down;mq1003;Niebezpieczny ładunek;po spaleniu wozu;1;10;0
+Base game;mq1013_pretender_outed;mq1013;Wiedźmin jak malowany;po zdemaskowaniu oszusta;10;10;0
+Base game;mq1013_pretender_let_go;mq1013;Wiedźmin jak malowany;po puszczeniu oszusta wolno;10;10;0
+Base game;mq1046_burning_down_the_house_reward;mq1046;Śmierć w ogniu;po zakończeniu zadania;10;10;0
+Base game;mq1060_schematics_reward;;-;-;15;0;0
+Base game;mq1060_schematics_reward_1;;-;-;15;0;0
+Base game;mq1060_schematics_reward_2;;-;-;15;0;0
+Base game;mq1060_priest_reward;;W cieniu Wiecznego Ognia;po odrebraniu nagrody od kapłana;15;75;200
+Base game;mq1060_priest_dead_reward;;W cieniu Wiecznego Ognia;po zabiciu kapłana przez reinalda;15;75;0
+Base game;mq2013_1_location_reward;mq2013;Smutna historia braci Grossbart;po znalezieniu kryjówki braci;26;50;20
+Base game;mq2013_1_half_of_bounty;;Smutna historia braci Grossbart;po zakończeniu zadania;26;25;50
+Base game;mq2020_chest;;Szemrane interesy;-;12;0;0
+Base game;mq2020_slaves_freed;;Szemrane interesy;po zakończeniu zadania;12;50;0
+Base game;mq2006_chest_1;;-;-;18;0;20
+Base game;mq2006_chest_2;;-;-;18;0;60
+Base game;mq2034_01_completed;mq2034;Cztery twarze Hemdalla;Zakończ zadanie;0;50;0
+Base game;mq2041_1_suceeded;mq2041;Szlak bohaterów;po ukończeniu próby zręczności;0;50;0
+Base game;mq2003_enc_1_women_in_tomb;;Zakłócony spokój;po zakończeniu zadania;25;50;0
+Base game;mq2015_1_half;;Porwana za młodu;po rozmowie z bratem (jeśli miała ona miejsce przed rozmową z Kurisu);25;50;0
+Base game;mq2015_2_final;;Porwana za młodu;Zakończ zadanie;25;75;0
+Base game;mq2030_1_lifted_curse;;Nithing;Przekonaj lotara by wrócił do jony;14;75;0
+Base game;mq2030_1_reversed_curse;;Nithing;napisać na nithingu imię Jony;14;25;60
+Base game;mq2017_wannabes_saved;;Dla sławy i chwały;po zakońćzeniu zadania;15;50;60
+Base game;mq2043_1_succeeded;mq2043;Szlak bohaterów;po ukończeniu próby wytrwałości;0;50;0
+Base game;mq2008_reward_in_chest;;;;0;0;20
+Base game;mq2011_1_second_encounter;mq2011;Kredyt zaufania;-;0;0;20
+Base game;mq2011_2_final_reward;mq2011;Kredyt zaufania;Zakończ zadanie udzielając porzyczki i wypuszczając typa;0;50;200
+Base game;mq2039_01_completed;mq2039;Terapia szokowa;Zakończ zadanie;24;75;0
+Base game;mq2051_final;mq2051;Niespłacony dług;Zakończ zadanie;15;50;0
+Base game;mq2021_shepherd_saved;mq2021;Wrzask syreny;po uratowaniu pasterza;0;50;0
+Base game;mq2022_herbs_given;mq2022;Gdyby kózka nie skakała;po oddaniu ziół;0;50;0
+Base game;mq2024_ghost_vanquished;mq2024;Mistrz areny;po wygnaniu upiora;14;25;0
+Base game;mq2024_final_reward;mq2024;Mistrz areny;po odebraniu nagrody i zakończeniu zadania;14;25;20
+Base game;mq2024_first_reward;mq2024;Mistrz areny;po rozmowie ze Skelligijczykami po wygnaniu upiora;14;10;15
+Base game;mq2001_kaer_trolde_completed;mq2001;Miecz rodowy;Zakończ zadanie;12;75;20
+Base game;mq2001_holmstein_completed;mq2001;Bardzo cenny róg;Zakończ zadanie;12;25;20
+Base game;mq2037_01_completed;mq2037;Cena honoru;Zakończ zadanie;14;75;0
+Base game;mq2018_1_final_no_gold;mq2018;Napad z bronią w ręku;Zakończ zadanie (bez złota);15;25;0
+Base game;mq2002_lied_or_no_sword;mq2002;Znalezione nie kradzione;Zakończ zadanie (kłamstwo lub bez miecza);24;75;50
+Base game;mq2002_sword_given_away;mq2002;Znalezione nie kradzione;Zakończ zadanie (oddanie miecza);24;75;55
+Base game;mq2010_quest_done;mq2010;Opuszczony tartak;;24;0;20
+Base game;mq2038_won_w_jutta;mq2038;Żelazna dziewica;po wygranej z Juttą;19;25;0
+Base game;mq2019_1_ambushers_killed;mq2019;Biada mi!;po zabiciu napastników;0;15;0
+Base game;mq2012_1_final_only_exp;;Złe wieści;po zakońćzeniu zadania;21;25;0
+Base game;mq2012_1_final_exp_and_gold;;Złe wieści;po zakońćzeniu zadania;21;25;20
+Base game;mq2045_1_saved_the_prisoner;mq2045;Zbrodnia i kara;po uratowaniu więźnia;18;10;0
+Base game;mq2045_2_teach_a_lesson;mq2045;Zbrodnia i kara;po daniu nauczki;18;10;0
+Base game;mq2049_1_saved_atheist;mq2049;Wolny duch;po pierwszej rozmowie z Ivarem;13;25;0
+Base game;mq2049_2_brought_him_books;mq2049;Wolny duch;po przyniesieniu książek i zakończeniu zadania;13;50;0
+Base game;mq2010_all_journals_found;mq2010;Opuszczony tartak;-;24;0;20
+Base game;mq2048_saved_foreigner_n_her_child;mq2048;Za siedmioma morzami;po uratowaniu cudzoziemki i jej dziecka;13;50;0
+Base game;mq2009_water_hag_killed;mq2009;Narzeczona dla barda;po zabiciu wodnej baby;15;25;0
+Base game;mq2009_water_hag_loot;mq2009;Narzeczona dla barda;po zabraniu łupu wodnej baby;15;10;0
+Base game;mq2010_leshys_killed;mq2010;Opuszczony tartak;po zabiciu leszych;24;50;0
+Base game;mq2011_final_reward;mq2011;Kredyt zaufania;Zakończ zadanie udzielając porzyczki i wypuszczając typa;0;50;0
+Base game;mq3024_1_blockade_lifted;mq3024;Przejścia nie ma;po zniesieniu blokady;7;75;0
+Base game;mq3009_saving_reward;mq3009;Nalot łowców czarownic;Udziel pomocy remiemu;0;50;0
+Base game;mq3041_1_finished_reward;mq3041;Wykidajło;Zakończ zadanie;14;25;15
+Base game;mq3036_1_villa;mq3036;Lekcja szermierki;po spotkaniu przy willi;12;10;0
+Base game;mq3036_2_bridge;mq3036;Lekcja szermierki;po spotkaniu na moście;12;25;0
+Base game;mq3036_3_inn;mq3036;Lekcja szermierki;po spotkaniu w karczmie;12;25;0
+Base game;mq3036_1_encounter;mq3036;Lekcja szermierki;po pierwszym spotkaniu;12;10;0
+Base game;mq3036_2_second_meeting;mq3036;Lekcja szermierki;po drugim spotkaniu;12;25;0
+Base game;mq3031_1_got_pearl;mq3031;Czarna perła;po zdobyciu perły;13;25;0
+Base game;mq3031_2_finished_quest;mq3031;Czarna perła;-;13;0;10
+Base game;mq3005_quest_completed;mq3005;Spacer po nadbrzeżu;Zakończ zadanie;12;50;10
+Base game;mq3035_1_radovid_dead;mq3035;Racja stanu;Zakończ zadanie (po śmierci Radowida);30;25;0
+Base game;mq3017_1_bribe;mq3017;Wilczyca;oddać Bertmana Wilczycy;15;25;20
+Base game;mq3017_1_villager_reward;mq3017;Wilczyca;zabić Wilczycę, wraz z jej bandą;15;50;10
+Base game;mq3026_01_1opponent_beaten;;Wyścig: Gonitwa Erazma Vegelbuda;Wygraj pierwszy wyścig;0;10;80
+Base game;mq3026_02_2oppponent_beaten;;Wyścig: Gonitwa Erazma Vegelbuda;Wygraj drugi wyścig;0;10;160
+Base game;mq3026_03_3opponent_beaten;;Wyścig: Gonitwa Erazma Vegelbuda;Wygraj trzeci wyścig;0;25;200
+Base game;mq3026_04_4_completed;;Wyścig: Gonitwa Erazma Vegelbuda;Wygraj czwarty wyścig i zakończ zadanie;0;75;80
+Base game;mq3026_04_won_night_race;;Wyścig: Gonitwa Erazma Vegelbuda;-;0;0;40
+Base game;mq3026_reward_race1;;Wyścig: Gonitwa Erazma Vegelbuda;-;0;0;0
+Base game;mq3026_reward_race2;;Wyścig: Gonitwa Erazma Vegelbuda;-;0;0;0
+Base game;mq3026_reward_race3;;Wyścig: Gonitwa Erazma Vegelbuda;-;0;0;0
+Base game;mq3026_reward_race4;;Wyścig: Gonitwa Erazma Vegelbuda;-;0;0;0
+Base game;mq3012_1_noble_reward;;Statuetka szlachcica;Zakończ zadanie;14;50;30
+Base game;mq3012_2_soldier_reward;;Statuetka żołnierza;Zakończ zadanie;14;10;0
+Base game;mq3002_1_starting_stash;;Pełna konspiracja;po odnalezieniu pierwszej wiadomości;8;10;0
+Base game;mq3002_2_key_stash;;Pełna konspiracja;po odnalezieniu drugiej wiadomości;8;10;0
+Base game;mq3002_3_chest;;Pełna konspiracja;-;8;0;50
+Base game;mq3002_3_final;;Pełna konspiracja;Zakończ zadanie;8;25;0
+Base game;mq3005_1_encounter_1_finished;;Spacer po nadbrzeżu;po pierwszym spotkaniu;12;25;0
+Base game;mq3005_2_encounter_2_finished;;Spacer po nadbrzeżu;po drugim spotkaniu;12;25;0
+Base game;mq3015_1_final;mq3015;Najprawdziwszy z bazyliszków;Zakończ zadanie;0;25;0
+Base game;mq3027_found_my_manifest;;Znajomy z dawnych czasów;po odnalezieniu manifestu;0;50;51
+Base game;mq3040_1_encounter_01;mq3040;Cena przejścia;po pierwszym spotkaniu ze strażnikami;0;10;0
+Base game;mq3040_2_encounter_02;mq3040;Cena przejścia;po drugim spotkaniu ze strażnikami;0;10;0
+Base game;mq3040_3_encounter_final;mq3040;Cena przejścia;Zakończ zadanie;0;50;0
+Base game;mq3023_4_threaten;mq3023;Płomień nienawiści;po zastraszeniu tłumu;0;10;0
+Base game;mq3023_1_finished_attack;mq3023;Płomień nienawiści;Pokonaj łowców czarownic;0;25;0
+Base game;mq3023_2_ignore;mq3023;Płomień nienawiści;po zignorowaniu zajścia;0;10;0
+Base game;mq3023_3_we_are_awesome;mq3023;Płomień nienawiści;Ośmiesz kapłana wiecznego ognia (wybór, potem walka z łowcami czarownic);0;10;0
+Base game;mq3037_01_completed;mq3037;Poszukiwacz zaginionej krypty;Zakończ zadanie;13;50;0
+Base game;mq3038_1_human_guilty;mq3038;Przeklęty magazyn;Zakończ zadanie (winny człowiek);13;25;60
+Base game;mq3038_1_dwarf_guilty_or_no_clue;mq3038;Przeklęty magazyn;Zakończ zadanie (winny krasnolud lub brak dowodów);13;25;60
+Base game;mq3008_encounter_01;mq3008;Kurtyzana w opałach;po pierwszym spotkaniu;0;25;50
+Base game;mq3008_encounter_02;mq3008;Kurtyzana w opałach;po drugim spotkaniu;0;10;0
+Base game;mq3039_1_loot_chest;mq3039;Uczta dla kruków;-;20;0;50
+Base game;mq3039_1_no_chest;mq3039;Uczta dla kruków;-;20;0;20
+Base game;mq3016_bards_found;mq3016;Novigradzka gościnność;po odnalezieniu bardów;8;10;0
+Base game;mq4006_01_completed;mq4006;Wiedźmińska kuźnia;Zakończ zadanie;30;25;0
+Base game;mq4002_01_completed;mq4002;Efekt cieplarniany;Zakończ zadanie;27;25;0
+Base game;mq4005_01_completed;mq4005;Miecz Berengara;Zakończ zadanie;27;50;0
+Base game;mq4004_01_completed;mq4004;Bastion;Zakończ zadanie;23;50;0
+Base game;mq4001_01_completed;mq4001;Ścieżka ech;Zakończ zadanie;0;25;0
+Base game;mq4003_01_completed;mq4003;Sąsiedzka sprzeczka;zakończ zadanie;26;50;0
+Base game;lw_rescuetown_plg;;opuszczone miejsce - znacznik;za uwolnienie opuszczonego miejsca w białym sadzie;0;90;0
+Base game;lw_rescuetown_nml;;opuszczone miejsce - znacznik;za uwolnienie opuszczonego miejsca w velen;0;120;50
+Base game;lw_rescuetown_nov;;opuszczone miejsce - znacznik;za uwolnienie opuszczonego miejsca w novigradzie;0;150;50
+Base game;lw_rescuetown_skl;;opuszczone miejsce - znacznik;za uwolnienie opuszczonego miejsca na skellige;0;170;50
+Base game;vivaldis_loan;;-;-;0;0;100
+Base game;generic_gwint_reward;;-;-;0;0;10
+Base game;high_price_gwint_reward;;-;-;0;0;100
+Base game;achievement_monster_hunt_cockatrice;;-;-;0;0;0
+Base game;achievement_monster_hunt_ekimma;;-;-;0;0;0
+Base game;achievement_monster_hunt_fiend;;-;-;0;0;0
+Base game;achievement_monster_hunt_dao;;-;-;0;0;0
+Base game;achievement_monster_hunt_doppler;;-;-;0;0;0
+Base game;achievment_complete_all_monster_hunts;;-;-;0;0;0
+Base game;achievment_complete_all_races;;-;-;0;0;0
+Base game;achievment_ea_explorer;;-;-;0;0;0
+Base game;cg_all_opponents;;-;-;0;0;0
+Base game;ff302_1_victory;ff302;Wściekłe pięści: Novigrad;za wygraną z Cyganem;0;25;50
+Base game;br301_1_victory;br301;-;-;0;25;0
+Base game;br302_1_victory;br302;-;-;0;25;0
+Base game;ff301_1_victory;ff301;Wściekłe pięści: Novigrad;za wygranie z Georgiem;0;25;80
+Base game;ff304_1_victory;ff304;Wściekłe pięści: Novigrad;za pokonanie Krawca i zakończenie zadania;0;75;120
+Base game;ff303_1_victory;ff303;Wściekłe pięści: Novigrad;za wygraną z Kapitanem;0;25;95
+Base game;ff203_1_victory;ff203;Wściekłe pięści: Skellige;po pokonaniu Grima;0;25;70
+Base game;ff204_2_achievement;;-;-;0;0;0
+Base game;ff204_1_victory;ff204;Wściekłe pięści: Skellige;po pokonaniu Olafa i zakończeniu zadania;0;50;90
+Base game;ff201_1_victory;ff201;Wściekłe pięści: Skellige;po pokonaniu Valgarda;0;25;70
+Base game;br201_1_victory;br201;-;-;0;25;0
+Base game;br202_1_victory;br202;-;-;0;25;0
+Base game;ff205_1_victory;ff205;Wściekłe pięści: Mistrz nad Mistrzami;po pokonaniu trolla i zakończeniu zadania;0;50;90
+Base game;ff202_1_victory;ff202;Wściekłe pięści: Skellige;po pokonaniu Einara;0;25;70
+Base game;hr201_regular_reward;hr201;Wyścigi Śmiałków: Ferlund;Wygraj wyścig;0;25;50
+Base game;hr202_regular_reward;hr202;Wyścigi Śmiałków: Fyresdal;Wygraj wyścig;0;25;50
+Base game;hr203_regular_reward;hr203;Wyścigi Śmiałków: Rannvaig;Wygraj wyścig;0;30;80
+Base game;hr204_regular_reward;hr204;Wyścigi Śmiałków: Ku chwale bogini!;Wygraj wyścig;0;50;90
+Base game;hr201_regular_reward_repeat;hr201;Wyścigi Śmiałków: Ferlund;Wygraj wyścig ponownie;0;20;30
+Base game;hr202_regular_reward_repeat;hr202;Wyścigi Śmiałków: Fyresdal;Wygraj wyścig ponownie;0;20;40
+Base game;hr203_regular_reward_repeat;hr203;Wyścigi Śmiałków: Rannvaig;Wygraj wyścig ponownie;0;20;50
+Base game;ff101_1_victory;ff101;Wściekłe pięści: Velen;za pokonanie Kowala;0;25;70
+Base game;ff103_1_victory;ff103;Wściekłe pięści: Velen;za pokonanie Jonasa;0;25;50
+Base game;ff102_1_victory;ff102;Wściekłe pięści: Velen;za pokonanie Rybożera;0;25;70
+Base game;hr101_1_victory;hr101;Wyścigi: Wrońce;Pokonaj Maćka Jąkałe;0;25;50
+Base game;hr101_2_item;;-;-;0;0;20
+Base game;hr101_3_item;;-;-;0;0;30
+Base game;hr101_4_item;;-;-;0;0;40
+Base game;ff104_1_victory;ff104;Wściekłe pięści: Velen;za pokonanie Sierżanta i zakończenie zadania;0;75;80
+Base game;cg_academic;;-;-;0;0;0
+Base game;cg_all_cards_gathered;;Gwint: wszystkie karty;po zebraniu wszystkich kart do gwinta;0;50;0
+Base game;cg_card_prodigy;;Gwint: Rozgrywki w Velen;Wygraj unikatową kartę od Hadka z Podgajów;0;25;0
+Base game;cg_baron;;Gwint: Rozgrywki w Velen;Wygraj unikatową kartę od Barona;0;25;0
+Base game;cg_hermit;;Gwint: Rozgrywki w Velen;Wygraj unikatową kartę od wróża.;0;25;0
+Base game;cg_talar;;Gwint: Partyjka z Talarem;Wygraj unikatową kartę od Talara;0;25;0
+Base game;cg_crossroads_innkeeper;;Gwint: Partyjki z karczmarzami;Wygraj unikatową kartę od karczmarza z Karczmy na Rozstajach;0;25;0
+Base game;cg_boat_builder_nml;;Gwint: Rozgrywki w Velen;Wygraj unikatową kartę od szkutnika z wsi Rudnik;0;25;0
+Base game;cg_dijkstra;;Gwint: Rozgrywki w Novigradzie;Wygraj unikatową kartę od Dijkstry.;0;25;0
+Base game;cg_zoltan;;Gwint: Starzy znajomi;Wygraj unikatową kartę od Zoltana;0;25;0
+Base game;cg_olivier;;Gwint: Partyjki z karczmarzami;Wygraj unikatową kartę od Oliviera;0;25;0
+Base game;cg_lambert;;Gwint: Starzy znajomi;Gdy nadarzy się okazja, wygraj unikatową kartę od Lamberta. Wygraj unikatową kartę od Lamberta;0;25;0
+Base game;cg_vimme_vivaldi;;Gwint: Rozgrywki w Novigradzie;Wygraj unikatową kartę od Vimmego Vivaldiego.;0;25;0
+Base game;cg_roche;;Gwint: Starzy znajomi;Wygraj unikatową kartę od Vernona Roche'a;0;25;0
+Base game;cg_markiza_serenity;;Gwint: Rozgrywki w Novigradzie;Wygraj unikatową kartę od Markizy Serenity.;0;25;0
+Base game;cg_scojateal_trader;;Gwint: Rozgrywki w Novigradzie;Wygraj unikatową kartę od członka komanda Wiewiórek.;0;25;0
+Base game;cg_crach_an_craite;;Gwint: Rozgrywki na Skellige;Wygraj unikatową kartę od Cracha an Craite;0;25;0
+Base game;cg_gremista;;Gwint: Rozgrywki na Skellige;Wygraj unikatową kartę od Gremisty;0;25;0
+Base game;cg_lugos_the_mad;;Gwint: Rozgrywki na Skellige;Wygraj unikatową kartę od Lugosa Szalonego;0;25;0
+Base game;cg_stjepan;;Gwint: Partyjki z karczmarzami;Wygraj unikatową kartę od karczmarza Stjepana;0;25;0
+Base game;cg_mousesack;;Gwint: Rozgrywki na Skellige;Wygraj unikatową kartę od Myszowora;0;25;0
+Base game;cg_sjusta_the_tailor;;Gwint: Rozgrywki na Skellige;Wygraj unikatową kartę od Sjusty;0;25;0
+Base game;ach_SwiftJustice;;-;-;0;0;0

@@ -2,7 +2,8 @@
 
 Usage: python -m witcher3.build_relationships [--file PATH]   (overwrites those sheets and Relationship_issues)
 
-After  -> requires (one prerequisite) or unlocks (one row per alternative: 'S2a/b', 'A|B')
+After  -> requires (one prerequisite) or unlocks (one row per alternative: 'S2a/b', 'A|B');
+          'A & B' needs both (one requires per part; at most one part should hold alternatives)
 Before -> blocks
 Block  -> in_block  (source = block tag, target = member step)
 Path   -> excludes_path between the path tags of one decision (same quest, same outside prerequisites), and
@@ -77,12 +78,14 @@ def build(steps):
         for col, cell, typ in (('After', s.after, None), ('Before', s.before, 'blocks')):
             if pd.isna(cell):
                 continue
-            ids, bad = parse_ref(cell)
-            issues += [(s.location, s.row, s.step_uid, col, str(cell), b) for b in bad]
-            if col == 'After':
-                prereqs[s.step_uid].update(ids)
-            for i in ids:
-                add(s.location, i, typ or ('requires' if len(ids) == 1 else 'unlocks'), s.step_uid)
+            # After 'A & B': every part is needed (a part with alternatives, 'C|D', becomes unlocks)
+            for part in (str(cell).split('&') if col == 'After' else [cell]):
+                ids, bad = parse_ref(part)
+                issues += [(s.location, s.row, s.step_uid, col, str(cell), b) for b in bad]
+                if col == 'After':
+                    prereqs[s.step_uid].update(ids)
+                for i in ids:
+                    add(s.location, i, typ or ('requires' if len(ids) == 1 else 'unlocks'), s.step_uid)
         if pd.notna(s.block_id):
             add(s.location, s.block_id, 'in_block', s.step_uid)
 

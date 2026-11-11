@@ -249,7 +249,8 @@ def validate(ds: Dataset) -> pd.DataFrame:
     for t in sorted(uids - avail):
         add('error', 'unreachable_step', loc_of[t], t, 'prerequisites can never be satisfied')
 
-    # a blocker that is also a (transitive) prerequisite of its own target
+    # a blocker that is also a (transitive) prerequisite of its own target; a blocker that is only one of
+    # several alternatives (an unlocks route the target can also be reached without) is fine
     parents = {t: req[t] | unl[t] for t in uids}
     for s, t in blk:
         seen, stack = set(), [t]
@@ -258,7 +259,16 @@ def validate(ds: Dataset) -> pd.DataFrame:
                 if p not in seen:
                     seen.add(p)
                     stack.append(p)
-        if s in seen:
+        if s not in seen:
+            continue
+        sub, ok, changed = seen | {t}, set(), True
+        while changed:                       # reachability inside the ancestors of t, without s
+            changed = False
+            for x in sub - ok - {s}:
+                if all(p in ok for p in req[x]) and (not unl[x] or any(p in ok for p in unl[x])):
+                    ok.add(x)
+                    changed = True
+        if t not in ok:
             add('error', 'blocker_is_prerequisite', loc_of[t], f'{s} blocks {t}', 'source is required to reach the target')
 
     # source cells that did not become edges (unresolved names / unknown ids)
