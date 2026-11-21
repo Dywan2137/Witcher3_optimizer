@@ -17,3 +17,7 @@ issues.csv
 .vscode/
 .DS_Store
 plan*.csv
+
+# quest data and results: kept local, published only when the project is finished
+Data/
+output/
