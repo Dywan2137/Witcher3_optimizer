@@ -19,5 +19,6 @@ issues.csv
 plan*.csv
 
 # quest data and results: kept local, published only when the project is finished
-Data/
+Data/*
+!Data/Witcher_3_quests_v3.xlsx
 output/
