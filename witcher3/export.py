@@ -37,10 +37,10 @@ ORIGINAL = [('Category', 'category'), ('DLC', 'dlc'), ('ID', 'step_uid'), ('Ques
             ('Quest_Name', 'quest_name'), ('Description', 'description'), ('Location', 'region'),
             ('Has_level_recommendation', 'has_level_recommendation'), ('Recommended_level', 'recommended_level'),
             ('Reward XP', 'reward_xp'), ('Mandatory', 'mandatory'), ('Reward_rule_type', 'reward_rule_type')]
-PLAN_HEAD = ['Order', 'Area'] + [h for h, _ in ORIGINAL] + ['Level before', 'Multiplier', 'XP earned', 'Total XP', 'Level after']
+PLAN_HEAD = ['Order', 'Area'] + [h for h, _ in ORIGINAL] + ['Level before', 'Difficulty', 'Multiplier', 'XP earned', 'Total XP', 'Level after']
 WIDTHS = {'Order': 7, 'Area': 14, 'Category': 20, 'DLC': 16, 'ID': 13, 'Quest_ID': 11, 'Step_ID': 8, 'Quest_Name': 34,
           'Description': 60, 'Location': 16, 'Has_level_recommendation': 12, 'Recommended_level': 12, 'Reward XP': 10,
-          'Mandatory': 10, 'Reward_rule_type': 15, 'Level before': 9, 'Multiplier': 10, 'XP earned': 10, 'Total XP': 10,
+          'Mandatory': 10, 'Reward_rule_type': 15, 'Level before': 9, 'Difficulty': 15, 'Multiplier': 10, 'XP earned': 10, 'Total XP': 10,
           'Level after': 9}
 
 
@@ -91,7 +91,7 @@ def write_plan(wb, ds, run: Run):
     for n, t in enumerate(run.trace, 1):
         s = info.loc[t.uid]
         row = [n, s['location']] + [cell_value(k, t.uid if k == 'step_uid' else s[k]) for _, k in ORIGINAL] + \
-              [t.level_before, t.multiplier, round(t.gain, 1), round(t.xp), t.level]
+              [t.level_before, 'Story and Sword' if t.low else 'Death March', t.multiplier, round(t.gain, 1), round(t.xp), t.level]
         ws.append(row)
         r = ws.max_row
         for c in range(1, len(PLAN_HEAD) + 1):
@@ -133,6 +133,7 @@ def write_summary(wb, plan: Plan, ds, run: Run, scope, level_table):
     cum = list(level_table['cumulative_xp_to_reach_level'])
     skipped = len(plan.model.uids) - len(run.trace)
     facts = [('Scope', ', '.join(scope)), ('Steps to play', len(run.trace)), ('Steps skipped', skipped),
+             ('Rewards taken on Story and Sword', len(run.low)),
              ('Final level', run.level), ('Total quest XP', round(run.xp)),
              ('XP needed for the next level', cum[run.level] if run.level < len(cum) else 'max level')]
     ws.append(['Optimal quest order']); ws['A1'].font = Font(name=FONT, bold=True, size=14)
@@ -143,8 +144,10 @@ def write_summary(wb, plan: Plan, ds, run: Run, scope, level_table):
         ws.cell(ws.max_row, 2).font = Font(name=FONT)
         ws.cell(ws.max_row, 2).alignment = Alignment(horizontal='left')
     ws.append([])
-    notes = ['Starts at level 1 and counts quest XP only (no monster nests, abandoned sites, combat or Gwent XP).',
-             'XP per step = Reward XP x multiplier from the Reward_rules sheet (Death March), set by the level before the step.',
+    notes = ['Starts at level 1 and counts the XP rows of the workbook (quests, and abandoned sites and nests from v5 on); no combat or Gwent XP.',
+             'XP per step = Reward XP x multiplier from the Reward_rules sheet, set by the level before the step and the '
+             'difficulty set when the reward is paid (the Difficulty column: switch to Story and Sword just before '
+             'those rewards and back to Death March after; this loses the Death March achievement).',
              'Follow the Plan sheet from top to bottom. Highlighted rows are the steps where you level up.',
              'The Skipped sheet lists what the plan leaves out and why.']
     for n in notes:
@@ -183,12 +186,17 @@ def main() -> None:
     ap.add_argument('--noise', type=float, default=2.0)
     ap.add_argument('--local', type=int, default=0, help='local search iterations after the greedy (0 = greedy only)')
     ap.add_argument('--chains', type=int, default=1, help='independent local search runs')
+    ap.add_argument('--switch', action='store_true',
+                    help='with --local: allow taking rewards on Story and Sword (<type>_story rules in Reward_rules)')
     ap.add_argument('--out', default=str(DEFAULT_OUT))
     args = ap.parse_args()
 
+    if args.switch and not args.local:
+        ap.error('--switch needs --local (only the local search chooses the difficulty)')
     full, ds, plan = load_plan(args)
     if args.local:
-        run = optimize(plan, args.local, restarts=args.restarts, noise=args.noise, chains=args.chains)[0]
+        run = optimize(plan, args.local, restarts=args.restarts, noise=args.noise, chains=args.chains,
+                       switch=args.switch)[0]
     else:
         run = best_of(plan, args.restarts, args.noise, configs=CONFIGS if args.restarts else None)
     out = export(ds, plan, run, args.out, args.scope.split(','), full.level_table)

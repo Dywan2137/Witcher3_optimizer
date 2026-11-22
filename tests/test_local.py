@@ -51,8 +51,8 @@ class Decoder(unittest.TestCase):
         s = Search(plan, random.Random(1))
         sol = s.solution(keys_of(play(plan, greedy(plan))))
         for _ in range(5):
-            keys, _ = s.move(sol)
-            fast = s.solution(keys, sol) or sol
+            keys, low, _ = s.move(sol)
+            fast = s.solution(keys, sol, low) or sol
             self.assertEqual(fast.run(plan).order, s.solution(keys).run(plan).order)
 
 

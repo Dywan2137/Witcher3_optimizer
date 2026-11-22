@@ -15,6 +15,10 @@ Rule semantics (edge types from the Relationships sheets):
                  may be taken, and no step of a different block, until every member is settled
                  (completed, unavailable, or optional). Steps of the same quest between members stay allowed.
 Rewards: reward_xp x multiplier(rule type, recommended_level - level before the step); no recommended level pays 100%.
+Difficulty switch: the game reads the difficulty at the moment it pays a quest reward, so a reward can be taken on a
+lower difficulty and the game switched back to Death March afterwards. A rule type `<type>_story` in Reward_rules gives
+the rates for that (Story and Sword); `State.low` holds the steps whose reward is taken that way. A step whose rule has
+no `_story` twin (exempt_full) pays the same either way.
 """
 from __future__ import annotations
 
@@ -27,6 +31,7 @@ from functools import cached_property
 from .loader import Dataset
 
 UNSUPPORTED = {'during'}
+STORY = '_story'          # suffix of the rule type used when a reward is taken on the lower difficulty
 
 
 class Model:
@@ -75,6 +80,19 @@ class Model:
         self.rules = {t: (g['level_gap_min'].tolist(), g['level_gap_max'].tolist(), g['multiplier'].tolist())
                       for t, g in rules.groupby('reward_rule_type')}
         self.cum = ds.level_table['cumulative_xp_to_reach_level'].tolist()
+        # rule used when the reward is taken on the lower difficulty; None = no difference (nothing to switch)
+        self.low_rule = [r + STORY if h and r + STORY in self.rules else None for r, h in zip(self.rule, self.has_level)]
+
+    @property
+    def switchable(self) -> list:
+        """Steps whose reward changes with the difficulty."""
+        return [i for i, r in enumerate(self.low_rule) if r is not None]
+
+    def best_multiplier(self, i: int, switch: bool = False) -> float:
+        if not self.has_level[i]:
+            return 1.0
+        best = max(self.rules[self.rule[i]][2])
+        return max(best, max(self.rules[self.low_rule[i]][2])) if switch and self.low_rule[i] else best
 
     @cached_property
     def children(self) -> list:
@@ -114,9 +132,11 @@ class State:
     dead: set = field(default_factory=set)           # made unavailable by `blocks` / `excludes`
     excluded: set = field(default_factory=set)       # path tags that can no longer be chosen
     open_block: str | None = None
+    low: frozenset = frozenset()                     # steps whose reward is taken on the lower difficulty (a choice
+                                                     # fixed for the playthrough, carried along with the state)
 
     def copy(self) -> 'State':
-        return State(self.xp, self.level, set(self.done), set(self.dead), set(self.excluded), self.open_block)
+        return State(self.xp, self.level, set(self.done), set(self.dead), set(self.excluded), self.open_block, self.low)
 
 
 @dataclass
@@ -128,6 +148,7 @@ class Taken:
     gain: float
     xp: float
     level: int
+    low: bool = False           # reward taken on the lower difficulty
 
 
 @dataclass
@@ -139,8 +160,8 @@ class Result:
     state: State
 
 
-def start_state(model: Model, xp: float = 0.0) -> State:
-    return State(xp=xp, level=model.level_of(xp))
+def start_state(model: Model, xp: float = 0.0, low=frozenset()) -> State:
+    return State(xp=xp, level=model.level_of(xp), low=frozenset(low))
 
 
 def is_dead(m: Model, s: State, i: int) -> bool:
@@ -172,7 +193,8 @@ def available(m: Model, s: State) -> list[int]:
 def take(m: Model, s: State, i: int) -> Taken:
     """Complete step i (caller has checked why_not)."""
     gap = (m.rec[i] - s.level) if m.has_level[i] else 0
-    mult = m.multiplier(m.rule[i], gap, m.has_level[i])
+    low = i in s.low and m.low_rule[i] is not None
+    mult = m.multiplier(m.low_rule[i] if low else m.rule[i], gap, m.has_level[i])
     before, gain = s.level, m.xp[i] * mult
     s.xp += gain
     s.level = m.level_of(s.xp)
@@ -186,12 +208,13 @@ def take(m: Model, s: State, i: int) -> Taken:
         s.open_block = m.block[i]
     if s.open_block and all(j in s.done or m.optional[j] or is_dead(m, s, j) for j in m.members[s.open_block]):
         s.open_block = None
-    return Taken(m.uids[i], before, gap, mult, gain, s.xp, s.level)
+    return Taken(m.uids[i], before, gap, mult, gain, s.xp, s.level, low)
 
 
-def simulate(model: Model, order: list[str], start_xp: float = 0.0, on_violation: str = 'raise') -> Result:
-    """Replay `order`. on_violation: 'raise' (ValueError), 'skip' (record it, leave the step out) or 'stop'."""
-    s, trace, bad = start_state(model, start_xp), [], []
+def simulate(model: Model, order: list[str], start_xp: float = 0.0, on_violation: str = 'raise', low=()) -> Result:
+    """Replay `order`. on_violation: 'raise' (ValueError), 'skip' (record it, leave the step out) or 'stop'.
+    `low`: step ids whose reward is taken on the lower difficulty."""
+    s, trace, bad = start_state(model, start_xp, {model.idx[u] for u in low}), [], []
     for pos, uid in enumerate(order):
         i = model.idx.get(uid)
         reason = 'unknown step' if i is None else why_not(model, s, i)

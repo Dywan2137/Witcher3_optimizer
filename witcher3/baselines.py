@@ -42,6 +42,11 @@ class Run:
         return self.state.level
 
     @property
+    def low(self) -> list:
+        """Step ids whose reward was taken on the lower difficulty."""
+        return [t.uid for t in self.trace if t.low]
+
+    @property
     def cliff_steps(self) -> int:
         """Steps played at the minimum (over-leveled) multiplier of 5%."""
         return sum(1 for t in self.trace if t.multiplier <= 0.05)
@@ -73,13 +78,13 @@ def play(plan: Plan, policy, start_xp: float = 0.0) -> Run:
     return Run(order, s, trace, plan.unresolved_choices(s), chosen)
 
 
-def upper_bound(plan: Plan) -> dict:
-    """Valid upper bound on total XP: best multiplier per step, best alternative per choice group, cutoffs ignored."""
+def upper_bound(plan: Plan, switch: bool = False) -> dict:
+    """Valid upper bound on total XP: best multiplier per step (over both difficulties with `switch`), best
+    alternative per choice group, cutoffs ignored."""
     m = plan.model
 
     def best(i):
-        top = 1.0 if not m.has_level[i] else max(m.rules[m.rule[i]][2])
-        return m.xp[i] * top
+        return m.xp[i] * m.best_multiplier(i, switch)
 
     grouped = {i for g in plan.groups.values() for t in g.tags for i in g.steps[t]}
     total = sum(best(i) for i in range(len(m.uids)) if i not in grouped)

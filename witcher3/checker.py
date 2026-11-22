@@ -1,6 +1,7 @@
 """Independent solution checker (does not use simulator.py).
 
-check(ds, order) looks at a finished ordering of step ids and returns (problems, xp, level):
+check(ds, order, low=()) looks at a finished ordering of step ids and returns (problems, xp, level); `low` lists the
+steps whose reward is taken on the lower difficulty (rule type `<type>_story`, when the sheet has one):
 every rule is tested against the positions of the steps in the list, and XP is recomputed from the raw tables.
 It exists to catch bugs in simulator.py, so keep the two implementations separate.
 """
@@ -20,7 +21,7 @@ def _multiplier(rules, rule_type, gap, has_level):
     raise ValueError(f'no {rule_type} rule for gap {gap}')
 
 
-def check(ds: Dataset, order: list[str]):
+def check(ds: Dataset, order: list[str], low=()):
     st = {r.step_uid: r for r in ds.steps.itertuples()}
     pos, problems = {}, []
     for p, u in enumerate(order):
@@ -112,6 +113,9 @@ def check(ds: Dataset, order: list[str]):
             continue
         r = st[u]
         gap = (r.recommended_level - level) if r.has_level_recommendation else 0
-        xp += r.reward_xp * _multiplier(rules, r.reward_rule_type, gap, r.has_level_recommendation)
+        rule = r.reward_rule_type
+        if u in low and rule + '_story' in rules:
+            rule += '_story'
+        xp += r.reward_xp * _multiplier(rules, rule, gap, r.has_level_recommendation)
         level = 1 + sum(1 for c in cum[1:] if c <= xp)
     return problems, xp, level

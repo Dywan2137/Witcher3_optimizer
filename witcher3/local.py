@@ -13,6 +13,9 @@ Moves, picked at a position weighted by the XP lost there (gain vs the step's be
   segment move a run of 2-8 consecutive actions together
   choice  try another variant of a block, or the other path of a free-step choice group, at the same position
   insert  play a never-played action (e.g. one a cutoff killed) at a position where it was available
+  difficulty  (only with `switch`) take one reward, or a run of up to 40 consecutive rewards, on the lower difficulty
+          or back on Death March. A solution is then (keys, low): `low` is the set of steps whose reward is taken on
+          the lower difficulty (simulator.State.low); flipping one replays from the decision that takes it.
 
 Acceptance: simulated annealing on total XP (worse solutions accepted with probability exp(delta / T), T cooled
 geometrically from t0 to t1); `t0 = 0` is plain hill climbing. t0 and t1 are fractions of the mean XP of a paying
@@ -84,10 +87,14 @@ class Decoder:
             illegal.add(n)
         return Point(state, cands, frozenset(illegal), None, [], state)
 
-    def decode(self, keys: dict, prefix: list = ()) -> list:
-        """Play from the end of `prefix` (decision points kept from an earlier decode) to the end of the game."""
+    def decode(self, keys: dict, prefix: list = (), low=frozenset()) -> list:
+        """Play from the end of `prefix` (decision points kept from an earlier decode) to the end of the game,
+        taking the rewards of the steps in `low` on the lower difficulty."""
         points = list(prefix)
-        s = points[-1].after if points else start_state(self.plan.model)
+        s = points[-1].after if points else start_state(self.plan.model, low=low)
+        if s.low != low:
+            s = s.copy()
+            s.low = frozenset(low)
         while True:
             pt = self.decide(keys, s)
             points.append(pt)
@@ -111,6 +118,7 @@ class Decoder:
 @dataclass
 class Solution:
     points: list
+    low: frozenset = frozenset()
 
     @property
     def actions(self) -> list:
@@ -133,20 +141,30 @@ class Solution:
 
 
 class Search:
-    def __init__(self, plan: Plan, rng: random.Random, window: int = 40):
+    def __init__(self, plan: Plan, rng: random.Random, window: int = 40, switch: bool = False):
         self.plan, self.rng, self.window = plan, rng, window
         self.dec = Decoder(plan)
         m = plan.model
-        self.best_gain = [m.xp[i] * (1.0 if not m.has_level[i] else max(m.rules[m.rule[i]][2])) for i in range(len(m.uids))]
+        self.switch = switch and bool(m.switchable)
+        self.best_gain = [m.xp[i] * m.best_multiplier(i, self.switch) for i in range(len(m.uids))]
 
-    def solution(self, keys: dict, base: Solution | None = None) -> Solution | None:
-        """Decode `keys`, reusing the unchanged prefix of `base`. None if nothing changes."""
+    def solution(self, keys: dict, base: Solution | None = None, low=None) -> Solution | None:
+        """Decode `keys` (and `low`, default: that of `base`), reusing the unchanged prefix of `base`.
+        None if nothing changes."""
+        low = frozenset(low if low is not None else base.low if base is not None else ())
         if base is None:
-            return Solution(self.dec.decode(keys))
-        p = self.dec.divergence(base.points, keys)
-        if p is None:
+            return Solution(self.dec.decode(keys, low=low), low)
+        m = self.plan.model
+        starts = [self.dec.divergence(base.points, keys)]
+        flipped = low ^ base.low
+        if flipped:                                    # replay from the decision that takes the first flipped step
+            starts.append(next((p for p, pt in enumerate(base.points) if any(m.idx[t.uid] in flipped for t in pt.taken)),
+                               None))
+        starts = [p for p in starts if p is not None]
+        if not starts:
             return None
-        return Solution(self.dec.decode(keys, base.points[:p]))
+        p = min(starts)
+        return Solution(self.dec.decode(keys, base.points[:p], low), low)
 
     # ---- moves ----
     def pick(self, sol: Solution) -> int:
@@ -155,12 +173,42 @@ class Search:
         floor = sum(loss) / len(loss) * 0.2 + 1.0
         return self.rng.choices(range(len(loss)), weights=[x + floor for x in loss])[0]
 
-    def move(self, sol: Solution) -> tuple[dict, str]:
+    def move(self, sol: Solution) -> tuple[dict, frozenset, str]:
         acts, keys = sol.actions, sol.keys()
-        n, rng, w = len(acts), self.rng, self.window
         i = self.pick(sol)
+        kind = self.rng.choices(['shift', 'swap', 'segment', 'choice', 'insert', 'difficulty'],
+                                weights=[4, 2, 2, 1, 2, 4 if self.switch else 0])[0]
+        if kind == 'difficulty':
+            out = self.flip(sol, i)
+            if out is not None:
+                return keys, out[0], out[1]
+            kind = 'shift'
+        keys, desc = self.reorder(sol, acts, keys, i, kind)
+        return keys, sol.low, desc
+
+    def flip(self, sol: Solution, i: int):
+        """-> (new low set, description): switch the difficulty of one reward of the i-th action, or set a run of
+        consecutive rewards from there to one difficulty. None if nothing there can be switched."""
+        m, rng = self.plan.model, self.rng
+        played = [pt for pt in sol.points if pt.chosen is not None]
+        trace = [m.idx[t.uid] for pt in played for t in pt.taken]
+        start = sum(len(pt.taken) for pt in played[:i])
+        here = [j for j in trace[start:start + len(played[i].taken)] if m.low_rule[j] is not None]
+        if not here:
+            return None
+        if rng.random() < 0.5:
+            j = rng.choice(here)
+            low = sol.low ^ {j}
+            return low, f'difficulty {m.uids[j]} -> {"story" if j in low else "death march"}'
+        run = [j for j in trace[start:start + rng.randint(2, 40)] if m.low_rule[j] is not None]
+        to_low = rng.random() < 0.5
+        low = sol.low | set(run) if to_low else sol.low - set(run)
+        return low, f'difficulty {len(run)} steps from {m.uids[run[0]]} -> {"story" if to_low else "death march"}'
+
+    def reorder(self, sol: Solution, acts: list, keys: dict, i: int, kind: str) -> tuple[dict, str]:
+        """The ordering moves (shift, swap, segment, choice, insert) on the action at position i."""
+        n, rng, w = len(acts), self.rng, self.window
         a = acts[i]
-        kind = rng.choices(['shift', 'swap', 'segment', 'choice', 'insert'], weights=[4, 2, 2, 1, 2])[0]
         if kind == 'insert':
             unplayed = self.unplayed(sol)
             if unplayed:
@@ -232,8 +280,8 @@ class Search:
         history = [(0, cur.xp, best.xp)]
         for it in range(1, iters + 1):
             temp = t0 * (t1 / t0) ** (it / iters) if t0 > 0 else 0.0
-            keys, desc = self.move(cur)
-            new = self.solution(keys, cur)
+            keys, low, desc = self.move(cur)
+            new = self.solution(keys, cur, low)
             if new is None:
                 continue
             delta = new.xp - cur.xp
@@ -248,15 +296,18 @@ class Search:
 
 
 def optimize(plan: Plan, iters: int, seed: int = 0, restarts: int = 0, noise: float = 4.0,
-             t0: float = 0.2, t1: float = 0.005, chains: int = 1, log=None):
+             t0: float = 0.2, t1: float = 0.005, chains: int = 1, log=None, switch: bool = False):
     """Greedy (best of `restarts` randomized runs), then `chains` independent annealing runs of `iters` iterations
-    from it (seeds seed, seed + 1, ...). -> (best Run, greedy start Run, history of the best chain)."""
+    from it (seeds seed, seed + 1, ...). With `switch` the search may also take rewards on the lower difficulty;
+    the chains start on Death March, except the second one, which starts with every reward on the lower
+    difficulty. -> (best Run, greedy start Run, history of the best chain)."""
     start = best_of(plan, restarts, noise, configs=CONFIGS) if restarts else play(plan, greedy(plan))
     keys = {a: float(n) for n, a in enumerate(start.actions)}
     best = history = None
     for c in range(chains):
-        search = Search(plan, random.Random(seed + c))
-        sol, hist = search.anneal(search.solution(keys), iters, t0, t1, log)
+        search = Search(plan, random.Random(seed + c), switch=switch)
+        low = frozenset(plan.model.switchable) if search.switch and c == 1 else frozenset()
+        sol, hist = search.anneal(search.solution(keys, low=low), iters, t0, t1, log)
         if log and chains > 1:
             log(f'chain {c + 1}/{chains}: {sol.xp:,.0f} XP, level {sol.state.level}')
         if best is None or sol.xp > best.xp:
@@ -274,21 +325,25 @@ def main() -> None:
     ap.add_argument('--noise', type=float, default=4.0, help='deadline perturbation, in levels, for the restarts')
     ap.add_argument('--t0', type=float, default=0.2, help='start temperature, x mean step XP (0 = hill climbing)')
     ap.add_argument('--t1', type=float, default=0.005, help='final temperature, x mean step XP')
+    ap.add_argument('--switch', action='store_true',
+                    help='allow taking rewards on the lower difficulty (needs <type>_story rules in Reward_rules)')
     ap.add_argument('--history', help='save (iteration, current xp, best xp) to this CSV file')
     ap.add_argument('--steps', action='store_true', help='print the best run as an ordered list of steps')
     ap.add_argument('--csv', help='save the best run as an ordered list of steps to this CSV file')
     args = ap.parse_args()
 
     _, ds, plan = load_plan(args)
-    ub = upper_bound(plan)
+    ub = upper_bound(plan, args.switch)
     print(f'scope {args.scope}: {len(plan.model.uids)} steps, upper bound {ub["xp"]:,.0f} XP (level {ub["level"]})')
     t = time.time()
     best, start, history = optimize(plan, args.iters, args.seed, args.restarts, args.noise, args.t0, args.t1,
-                                     args.chains, log=print)
+                                     args.chains, log=print, switch=args.switch)
     print(f'greedy start      : {summarize_run(plan, start)}')
     print(f'local search      : {summarize_run(plan, best)}')
     print(f'{args.chains} x {args.iters} iterations in {time.time() - t:.0f} s, gain {best.xp - start.xp:+,.0f} XP')
-    problems = check(ds, best.order)[0]
+    if args.switch:
+        print(f'rewards on the lower difficulty: {len(best.low)} of {len(best.trace)} steps')
+    problems = check(ds, best.order, best.low)[0]
     print('checker: ok' if not problems else f'checker: {len(problems)} problems, first: {problems[0]}')
     if args.history:
         with open(args.history, 'w') as f:
